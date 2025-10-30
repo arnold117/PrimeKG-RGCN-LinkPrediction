@@ -1,0 +1,2 @@
+total_edges,total_node_types,total_relation_types,filtered_edges,filtered_relations,num_drug_nodes,num_gene/protein_nodes,num_disease_nodes,num_drug-gene_edges,num_gene-disease_edges,num_gene-gene_edges,train_edges,val_edges,test_edges,train_target_edges
+8100498,10,30,854278,3,6282,19093,5593,51306,160822,642150,838886,7696,7696,35914
