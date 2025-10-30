@@ -201,14 +201,26 @@ class PrimeKGPreprocessor:
         
         edge_list = []
         edge_types = []
+        num_nodes = len(self.node2idx)
+        invalid_edges = 0
         
         for _, row in tqdm(df.iterrows(), total=len(df), desc="Converting edges"):
             # Get source and target node indices
             src_key = (str(row['x_id']), row['x_type'])
             tgt_key = (str(row['y_id']), row['y_type'])
             
+            # Skip if nodes not in mapping
+            if src_key not in self.node2idx or tgt_key not in self.node2idx:
+                invalid_edges += 1
+                continue
+            
             src_idx = self.node2idx[src_key]
             tgt_idx = self.node2idx[tgt_key]
+            
+            # Validate indices are within bounds
+            if src_idx >= num_nodes or tgt_idx >= num_nodes or src_idx < 0 or tgt_idx < 0:
+                invalid_edges += 1
+                continue
             
             # Get relation index
             rel_idx = self.relation2idx[row['relation_standard']]
@@ -221,9 +233,22 @@ class PrimeKGPreprocessor:
             edge_list.append([tgt_idx, src_idx])
             edge_types.append(rel_idx)
         
+        if invalid_edges > 0:
+            logger.warning(f"Skipped {invalid_edges} invalid edges during conversion")
+        
         # Convert to tensors
         edge_index = torch.tensor(edge_list, dtype=torch.long).t().contiguous()
         edge_type = torch.tensor(edge_types, dtype=torch.long)
+        
+        # Final validation
+        max_idx = edge_index.max().item() if edge_index.numel() > 0 else -1
+        if max_idx >= num_nodes:
+            logger.error(f"Found edge index {max_idx} >= num_nodes {num_nodes}")
+            # Filter invalid edges
+            valid_mask = (edge_index[0] < num_nodes) & (edge_index[1] < num_nodes)
+            edge_index = edge_index[:, valid_mask]
+            edge_type = edge_type[valid_mask]
+            logger.warning(f"Filtered to {edge_index.shape[1]} valid edges")
         
         logger.info(f"Created edge_index: {edge_index.shape}")
         logger.info(f"Created edge_type: {edge_type.shape}")
@@ -231,7 +256,7 @@ class PrimeKGPreprocessor:
         data = {
             'edge_index': edge_index,
             'edge_type': edge_type,
-            'num_nodes': len(self.node2idx),
+            'num_nodes': num_nodes,
             'num_relations': len(self.relation2idx)
         }
         
