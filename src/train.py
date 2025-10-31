@@ -152,9 +152,25 @@ class Trainer:
         self.train_accs = []
         self.val_accs = []
         
-        # Checkpoint directory
-        self.checkpoint_dir = Path(args.checkpoint_dir)
+        # Memory tracking
+        self.peak_memory_allocated = 0
+        self.peak_memory_reserved = 0
+        
+        # Output directories
+        self.output_dir = Path(args.output_dir)
+        self.checkpoint_dir = self.output_dir / 'checkpoints'
+        self.model_dir = self.output_dir / 'models'
+        
+        # Create directories
         self.checkpoint_dir.mkdir(parents=True, exist_ok=True)
+        self.model_dir.mkdir(parents=True, exist_ok=True)
+        
+        logger.info(f"Output directory: {self.output_dir}")
+        logger.info(f"Checkpoints will be saved to: {self.checkpoint_dir}")
+        logger.info(f"Models will be saved to: {self.model_dir}")
+        
+        # Log initial memory usage
+        self._log_memory_usage("Initialization")
     
     def _setup_optimizer(self) -> optim.Optimizer:
         """Setup optimizer with optional weight decay."""
@@ -172,6 +188,37 @@ class Trainer:
             )
         else:
             raise ValueError(f"Unknown optimizer: {self.args.optimizer}")
+    
+    def _log_memory_usage(self, stage: str = ""):
+        """Log current memory usage (CUDA or system RAM)."""
+        if self.device.type == 'cuda':
+            allocated = torch.cuda.memory_allocated(self.device) / 1024**3  # GB
+            reserved = torch.cuda.memory_reserved(self.device) / 1024**3    # GB
+            max_allocated = torch.cuda.max_memory_allocated(self.device) / 1024**3
+            
+            # Update peak memory
+            self.peak_memory_allocated = max(self.peak_memory_allocated, allocated)
+            self.peak_memory_reserved = max(self.peak_memory_reserved, reserved)
+            
+            logger.info(
+                f"[{stage}] GPU Memory - "
+                f"Allocated: {allocated:.2f}GB, "
+                f"Reserved: {reserved:.2f}GB, "
+                f"Peak: {max_allocated:.2f}GB"
+            )
+        else:
+            import psutil
+            process = psutil.Process()
+            mem_info = process.memory_info()
+            ram_used = mem_info.rss / 1024**3  # GB
+            logger.info(f"[{stage}] RAM Usage: {ram_used:.2f}GB")
+    
+    def _clear_memory(self):
+        """Clear GPU/CPU memory cache."""
+        if self.device.type == 'cuda':
+            torch.cuda.empty_cache()
+            torch.cuda.synchronize()
+
     
     def _create_batches(
         self,
@@ -199,7 +246,7 @@ class Trainer:
     
     def train_epoch(self) -> Tuple[float, float]:
         """
-        Train for one epoch.
+        Train for one epoch with gradient accumulation support.
         
         Returns:
             Tuple of (average_loss, accuracy)
@@ -218,9 +265,13 @@ class Trainer:
             shuffle=True
         )
         
+        # Gradient accumulation setup
+        accumulation_steps = getattr(self.args, 'gradient_accumulation_steps', 1)
+        self.optimizer.zero_grad()
+        
         # Training loop
         pbar = tqdm(batches, desc='Training', leave=False)
-        for batch_head, batch_tail, batch_rel in pbar:
+        for batch_idx, (batch_head, batch_tail, batch_rel) in enumerate(pbar):
             # Generate negative samples
             neg_head, neg_tail, neg_rel = self.neg_sampler.sample(
                 batch_head, batch_tail, batch_rel
@@ -237,7 +288,6 @@ class Trainer:
             labels = torch.cat([pos_labels, neg_labels])
             
             # Forward pass
-            self.optimizer.zero_grad()
             scores = self.model(
                 self.train_edge_index,
                 self.train_edge_type,
@@ -249,32 +299,47 @@ class Trainer:
             # Compute loss
             loss = self.criterion(scores, labels)
             
+            # Scale loss for gradient accumulation
+            loss = loss / accumulation_steps
+            
             # Backward pass
             loss.backward()
             
-            # Gradient clipping
-            if self.args.grad_clip > 0:
-                torch.nn.utils.clip_grad_norm_(
-                    self.model.parameters(),
-                    self.args.grad_clip
-                )
-            
-            self.optimizer.step()
+            # Update weights every accumulation_steps batches
+            if (batch_idx + 1) % accumulation_steps == 0 or (batch_idx + 1) == len(batches):
+                # Gradient clipping
+                if self.args.grad_clip > 0:
+                    torch.nn.utils.clip_grad_norm_(
+                        self.model.parameters(),
+                        self.args.grad_clip
+                    )
+                
+                self.optimizer.step()
+                self.optimizer.zero_grad()
             
             # Compute accuracy
             predictions = (torch.sigmoid(scores) > 0.5).float()
             correct = (predictions == labels).sum().item()
             
-            # Update statistics
-            total_loss += loss.item() * labels.size(0)
+            # Update statistics (scale back the loss)
+            total_loss += (loss.item() * accumulation_steps) * labels.size(0)
             total_correct += correct
             total_samples += labels.size(0)
             
             # Update progress bar
             pbar.set_postfix({
-                'loss': f'{loss.item():.4f}',
+                'loss': f'{loss.item() * accumulation_steps:.4f}',
                 'acc': f'{correct / labels.size(0):.4f}'
             })
+            
+            # Memory management: clear intermediate tensors
+            del all_heads, all_tails, all_rels, labels, scores, predictions
+            del batch_head, batch_tail, batch_rel, neg_head, neg_tail, neg_rel
+            del pos_labels, neg_labels
+            
+            # Clear CUDA cache periodically to prevent fragmentation
+            if self.device.type == 'cuda' and (batch_idx + 1) % 50 == 0:
+                torch.cuda.empty_cache()
         
         avg_loss = total_loss / total_samples
         accuracy = total_correct / total_samples
@@ -344,18 +409,25 @@ class Trainer:
         avg_loss = total_loss / total_samples
         accuracy = total_correct / total_samples
         
+        # Memory cleanup after validation
+        if self.device.type == 'cuda':
+            torch.cuda.empty_cache()
+        
         return avg_loss, accuracy
     
     def save_checkpoint(
         self,
         epoch: int,
         is_best: bool = False,
+        is_final: bool = False,
         filename: Optional[str] = None
     ):
-        """Save model checkpoint."""
-        if filename is None:
-            filename = f'checkpoint_epoch_{epoch}.pt'
+        """
+        Save model checkpoint.
         
+        Regular checkpoints go to output/checkpoints/
+        Best and final models go to output/models/
+        """
         checkpoint = {
             'epoch': epoch,
             'model_state_dict': self.model.state_dict(),
@@ -369,23 +441,36 @@ class Trainer:
             'args': self.args
         }
         
-        filepath = self.checkpoint_dir / filename
-        torch.save(checkpoint, filepath)
-        logger.info(f"Saved checkpoint to {filepath}")
+        # Save regular checkpoint to checkpoints folder
+        if not is_best and not is_final:
+            if filename is None:
+                filename = f'checkpoint_epoch_{epoch}.pt'
+            filepath = self.checkpoint_dir / filename
+            torch.save(checkpoint, filepath)
+            logger.info(f"Saved checkpoint to {filepath}")
         
-        # Save best model separately
+        # Save best model to models folder
         if is_best:
-            best_path = self.checkpoint_dir / 'best_model.pt'
+            best_path = self.model_dir / 'best_model.pt'
             torch.save(checkpoint, best_path)
             logger.info(f"Saved best model to {best_path}")
+        
+        # Save final model to models folder
+        if is_final:
+            final_path = self.model_dir / 'final_model.pt'
+            torch.save(checkpoint, final_path)
+            logger.info(f"Saved final model to {final_path}")
     
     def train(self):
-        """Main training loop."""
+        """Main training loop with memory management."""
         logger.info("Starting training...")
         logger.info(f"Training for {self.args.epochs} epochs")
         logger.info(f"Batch size: {self.args.batch_size}")
         logger.info(f"Learning rate: {self.args.lr}")
         logger.info(f"Negative samples: {self.args.num_neg_samples}")
+        
+        # Log memory before training
+        self._log_memory_usage("Before training")
         
         start_time = time.time()
         
@@ -397,10 +482,16 @@ class Trainer:
             self.train_losses.append(train_loss)
             self.train_accs.append(train_acc)
             
+            # Clear memory after training
+            self._clear_memory()
+            
             # Validate
             val_loss, val_acc = self.validate()
             self.val_losses.append(val_loss)
             self.val_accs.append(val_acc)
+            
+            # Clear memory after validation
+            self._clear_memory()
             
             epoch_time = time.time() - epoch_start_time
             
@@ -413,6 +504,10 @@ class Trainer:
                 f"Val Loss: {val_loss:.4f} | "
                 f"Val Acc: {val_acc:.4f}"
             )
+            
+            # Log memory usage every 10 epochs
+            if epoch % 10 == 0:
+                self._log_memory_usage(f"Epoch {epoch}")
             
             # Save checkpoint
             is_best = False
@@ -439,8 +534,17 @@ class Trainer:
         logger.info(f"Best validation loss: {self.best_val_loss:.4f}")
         logger.info(f"Best validation accuracy: {self.best_val_acc:.4f}")
         
+        # Log final memory statistics
+        self._log_memory_usage("After training")
+        if self.device.type == 'cuda':
+            logger.info(
+                f"Peak GPU Memory - "
+                f"Allocated: {self.peak_memory_allocated:.2f}GB, "
+                f"Reserved: {self.peak_memory_reserved:.2f}GB"
+            )
+        
         # Save final checkpoint
-        self.save_checkpoint(epoch, filename='final_model.pt')
+        self.save_checkpoint(epoch, is_final=True)
 
 
 def load_data(data_dir: str) -> Tuple[Dict, Dict, Dict, Dict]:
@@ -542,10 +646,16 @@ def parse_args():
         help='Directory containing processed data'
     )
     parser.add_argument(
+        '--output_dir',
+        type=str,
+        default='output',
+        help='Main output directory (will contain checkpoints/ and models/ subdirectories)'
+    )
+    parser.add_argument(
         '--checkpoint_dir',
         type=str,
-        default='checkpoints',
-        help='Directory to save checkpoints'
+        default=None,
+        help='[DEPRECATED] Use --output_dir instead. Directory to save checkpoints'
     )
     
     # Model arguments
@@ -625,6 +735,12 @@ def parse_args():
         help='Gradient clipping value (0 to disable)'
     )
     parser.add_argument(
+        '--gradient_accumulation_steps',
+        type=int,
+        default=1,
+        help='Number of gradient accumulation steps (useful for limited memory)'
+    )
+    parser.add_argument(
         '--save_every',
         type=int,
         default=10,
@@ -669,6 +785,15 @@ def main():
     """Main training function."""
     # Parse arguments
     args = parse_args()
+    
+    # Handle backward compatibility for checkpoint_dir
+    if args.checkpoint_dir is not None:
+        logger.warning(
+            "WARNING: --checkpoint_dir is deprecated. "
+            "Please use --output_dir instead. "
+            f"Using '{args.checkpoint_dir}' as output directory."
+        )
+        args.output_dir = args.checkpoint_dir
     
     # Set seed
     set_seed(args.seed)
