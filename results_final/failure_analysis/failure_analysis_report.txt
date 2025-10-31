@@ -1,0 +1,173 @@
+================================================================================
+FAILURE ANALYSIS REPORT
+================================================================================
+
+EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+Analyzed 5 failure cases and 5 success cases
+Identified 3 key failure modes
+Generated 9 improvement suggestions
+
+================================================================================
+WORST PREDICTION FAILURES
+================================================================================
+
+1. 4-[(5-CHLOROINDOL-2-YL)SULFONYL]-2-(2-METHYLPROPYL)-1-[[5-(PYRIDIN-4-YL)PYRIMIDIN-2-YL]CARBONYL]PIPERAZINE → oculodentodigital dysplasia, autosomal recessive
+   Type: FP (Predicted positive but actually negative)
+   Prediction Score: 0.9049
+   Ground Truth: 0
+   Confidence Error: 0.9049
+
+   Structural Analysis:
+     - Drug neighborhood: 88 nodes
+     - Disease neighborhood: 105 nodes
+     - Common neighbors: 0
+     - Connecting paths: 0
+
+   Potential Reasons for Failure:
+     ✗ No direct paths connecting drug and disease
+     ✗ No common neighbors between drug and disease
+
+2. 1-[4-(Octahydro-Pyrido[1,2-a]Pyrazin-2-Yl)-Phenyl]-2-Phenyl-1,2,3,4-Tetrahydro-Isoquinolin-6-Ol → childhood onset epileptic encephalopathy
+   Type: FP (Predicted positive but actually negative)
+   Prediction Score: 0.8983
+   Ground Truth: 0
+   Confidence Error: 0.8983
+
+   Structural Analysis:
+     - Drug neighborhood: 1080 nodes
+     - Disease neighborhood: 45 nodes
+     - Common neighbors: 9
+     - Connecting paths: 9
+     - Shortest path length: 4
+
+   Potential Reasons for Failure:
+
+3. Remikiren → otopalatodigital syndrome
+   Type: FP (Predicted positive but actually negative)
+   Prediction Score: 0.8936
+   Ground Truth: 0
+   Confidence Error: 0.8936
+
+   Structural Analysis:
+     - Drug neighborhood: 69 nodes
+     - Disease neighborhood: 419 nodes
+     - Common neighbors: 0
+     - Connecting paths: 0
+
+   Potential Reasons for Failure:
+     ✗ No direct paths connecting drug and disease
+     ✗ No common neighbors between drug and disease
+
+4. N-Acetyl-glucosamine thiazoline → pulmonary arterial hypertension associated with connective tissue disease
+   Type: FP (Predicted positive but actually negative)
+   Prediction Score: 0.8920
+   Ground Truth: 0
+   Confidence Error: 0.8920
+
+   Structural Analysis:
+     - Drug neighborhood: 21 nodes
+     - Disease neighborhood: 123 nodes
+     - Common neighbors: 0
+     - Connecting paths: 0
+
+   Potential Reasons for Failure:
+     ✗ No direct paths connecting drug and disease
+     ✗ No common neighbors between drug and disease
+
+5. 2-Amino-7-[2-(2-Hydroxy-1-Hydroxymethyl-Ethylamino)-Ethyl]-1,7-Dihydro-Purin-6-One → Meacham syndrome
+   Type: FP (Predicted positive but actually negative)
+   Prediction Score: 0.8916
+   Ground Truth: 0
+   Confidence Error: 0.8916
+
+   Structural Analysis:
+     - Drug neighborhood: 48 nodes
+     - Disease neighborhood: 144 nodes
+     - Common neighbors: 2
+     - Connecting paths: 2
+     - Shortest path length: 4
+
+   Potential Reasons for Failure:
+     ⚠ Very few connecting paths (weak connection)
+
+================================================================================
+SUCCESSFUL PREDICTIONS (For Comparison)
+================================================================================
+
+1. Tetrastearoyl cardiolipin → familial hypertrophic cardiomyopathy
+   Prediction Score: 0.8582
+   Ground Truth: 1
+   Paths: 20, Common neighbors: 48
+
+2. Etheno-NAD → glycogen storage disease due to lactate dehydrogenase M-subunit deficiency
+   Prediction Score: 0.8554
+   Ground Truth: 1
+   Paths: 2, Common neighbors: 75
+
+3. (2E)-N-{4-[(3-bromophenyl)amino]quinazolin-6-yl}-4-(dimethylamino)but-2-enamide → colon carcinoma
+   Prediction Score: 0.8505
+   Ground Truth: 1
+   Paths: 20, Common neighbors: 651
+
+4. Levomefolic acid → methylcobalamin deficiency type cblG
+   Prediction Score: 0.8437
+   Ground Truth: 1
+   Paths: 8, Common neighbors: 55
+
+5. Coproporphyrinogen III → hepatoerythropoietic porphyria
+   Prediction Score: 0.8419
+   Ground Truth: 1
+   Paths: 1, Common neighbors: 32
+
+================================================================================
+STRUCTURAL COMPARISON: FAILURES VS SUCCESSES
+================================================================================
+
+Average Connecting Paths:
+  Failures: 2.20
+  Successes: 10.20
+  Difference: 8.00
+
+Average Common Neighbors:
+  Failures: 2.20
+  Successes: 172.20
+  Difference: 170.00
+
+Average Drug Neighborhood Size:
+  Failures: 261
+  Successes: 187
+  Difference: -74
+
+Average Disease Neighborhood Size:
+  Failures: 167
+  Successes: 517
+  Difference: 349
+
+================================================================================
+FAILURE MODE HYPOTHESES
+================================================================================
+
+1. Model fails when there are FEW CONNECTING PATHS between drug and disease (failures: 2.2 paths, successes: 10.2 paths). Suggests model relies heavily on graph connectivity.
+
+2. Model fails when drug and disease have FEW COMMON NEIGHBORS (failures: 2.2, successes: 172.2). Suggests common neighbors provide strong signal for prediction.
+
+3. Model makes more FALSE POSITIVES (5) than false negatives (0). May be over-predicting connections, possibly due to high-degree nodes creating spurious associations.
+
+================================================================================
+SUGGESTED IMPROVEMENTS
+================================================================================
+
+• Use degree-normalized aggregation to reduce bias toward high-degree nodes
+• Increase regularization (dropout, weight decay) to reduce overfitting
+• Add negative sampling during training with hard negatives
+• Add higher-order path features to capture multi-hop relationships
+• Add common neighbor features explicitly to the model
+• Consider attention mechanisms to focus on relevant paths
+• Use graph neural network with higher-order aggregation
+• Increase number of GCN layers to expand receptive field
+• Consider GraphSAINT or similar sampling for better neighborhood coverage
+
+================================================================================
+END OF REPORT
+================================================================================

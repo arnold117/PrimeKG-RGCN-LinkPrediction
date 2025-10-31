@@ -1,0 +1,147 @@
+================================================================================
+DRUG-DISEASE PREDICTION EXPLANATION
+================================================================================
+
+Drug: Metformin
+Disease: permanent neonatal diabetes mellitus
+Prediction Score: 0.7513
+Total Paths Found: 20
+Top Paths Analyzed: 5
+
+--------------------------------------------------------------------------------
+SUMMARY
+--------------------------------------------------------------------------------
+
+The model predicts a high confidence relationship between Metformin and permanent neonatal diabetes mellitus.
+
+This prediction is supported by 20 connecting pathway(s) in the knowledge graph.
+
+================================================================================
+TOP PATHWAYS AND EXPLANATIONS
+================================================================================
+
+Pathway #1 (Importance: 0.2170)
+--------------------------------------------------------------------------------
+Path: Metformin →[drug-gene]→ PRKAB1 →[gene-gene]→ PRKAA1 →[gene-gene]→ RFX6 →[gene-disease]→ permanent neonatal diabetes mellitus
+
+Detailed Steps:
+  1. Metformin (drug)
+     └─ drug-gene ─→
+  2. PRKAB1 (gene/protein)
+     └─ gene-gene ─→
+  3. PRKAA1 (gene/protein)
+     └─ gene-gene ─→
+  4. RFX6 (gene/protein)
+     └─ gene-disease ─→
+  5. permanent neonatal diabetes mellitus (disease)
+
+Explanation:
+  Metformin may treat permanent neonatal diabetes mellitus through a pathway involving PRKAB1, PRKAA1, RFX6. This connection suggests a 4-step mechanism linking the drug's molecular targets to the disease pathology.
+
+
+Pathway #2 (Importance: 0.1945)
+--------------------------------------------------------------------------------
+Path: Metformin →[drug-gene]→ PRKAB1 →[gene-gene]→ PRKAA2 →[gene-gene]→ RFX6 →[gene-disease]→ permanent neonatal diabetes mellitus
+
+Detailed Steps:
+  1. Metformin (drug)
+     └─ drug-gene ─→
+  2. PRKAB1 (gene/protein)
+     └─ gene-gene ─→
+  3. PRKAA2 (gene/protein)
+     └─ gene-gene ─→
+  4. RFX6 (gene/protein)
+     └─ gene-disease ─→
+  5. permanent neonatal diabetes mellitus (disease)
+
+Explanation:
+  Metformin may treat permanent neonatal diabetes mellitus through a pathway involving PRKAB1, PRKAA2, RFX6. This connection suggests a 4-step mechanism linking the drug's molecular targets to the disease pathology.
+
+
+Pathway #3 (Importance: 0.1529)
+--------------------------------------------------------------------------------
+Path: Metformin →[drug-gene]→ GPD1 →[gene-disease]→ drug-induced liver injury →[gene-disease]→ PTF1A →[gene-disease]→ permanent neonatal diabetes mellitus
+
+Detailed Steps:
+  1. Metformin (drug)
+     └─ drug-gene ─→
+  2. GPD1 (gene/protein)
+     └─ gene-disease ─→
+  3. drug-induced liver injury (disease)
+     └─ gene-disease ─→
+  4. PTF1A (gene/protein)
+     └─ gene-disease ─→
+  5. permanent neonatal diabetes mellitus (disease)
+
+Explanation:
+  Metformin may treat permanent neonatal diabetes mellitus through a pathway involving GPD1, PTF1A. This connection suggests a 4-step mechanism linking the drug's molecular targets to the disease pathology.
+
+
+Pathway #4 (Importance: 0.1366)
+--------------------------------------------------------------------------------
+Path: Metformin →[drug-gene]→ PRKAB1 →[gene-gene]→ YBX1 →[gene-gene]→ INSR →[gene-disease]→ permanent neonatal diabetes mellitus
+
+Detailed Steps:
+  1. Metformin (drug)
+     └─ drug-gene ─→
+  2. PRKAB1 (gene/protein)
+     └─ gene-gene ─→
+  3. YBX1 (gene/protein)
+     └─ gene-gene ─→
+  4. INSR (gene/protein)
+     └─ gene-disease ─→
+  5. permanent neonatal diabetes mellitus (disease)
+
+Explanation:
+  Metformin may treat permanent neonatal diabetes mellitus through a pathway involving PRKAB1, YBX1, INSR. This connection suggests a 4-step mechanism linking the drug's molecular targets to the disease pathology.
+
+
+Pathway #5 (Importance: 0.1351)
+--------------------------------------------------------------------------------
+Path: Metformin →[drug-gene]→ GPD1 →[gene-gene]→ PTN →[gene-gene]→ STAT3 →[gene-disease]→ permanent neonatal diabetes mellitus
+
+Detailed Steps:
+  1. Metformin (drug)
+     └─ drug-gene ─→
+  2. GPD1 (gene/protein)
+     └─ gene-gene ─→
+  3. PTN (gene/protein)
+     └─ gene-gene ─→
+  4. STAT3 (gene/protein)
+     └─ gene-disease ─→
+  5. permanent neonatal diabetes mellitus (disease)
+
+Explanation:
+  Metformin may treat permanent neonatal diabetes mellitus through a pathway involving GPD1, PTN, STAT3. This connection suggests a 4-step mechanism linking the drug's molecular targets to the disease pathology.
+
+
+================================================================================
+BIOLOGICAL INTERPRETATION
+================================================================================
+
+Key Genes/Proteins Involved:
+  • PRKAB1: appears in 3 pathway(s)
+  • RFX6: appears in 2 pathway(s)
+  • GPD1: appears in 2 pathway(s)
+  • PRKAA1: appears in 1 pathway(s)
+  • PRKAA2: appears in 1 pathway(s)
+  • PTF1A: appears in 1 pathway(s)
+  • YBX1: appears in 1 pathway(s)
+  • INSR: appears in 1 pathway(s)
+  • PTN: appears in 1 pathway(s)
+  • STAT3: appears in 1 pathway(s)
+
+These genes/proteins represent potential molecular mechanisms through which Metformin may affect permanent neonatal diabetes mellitus.
+
+================================================================================
+RECOMMENDATIONS
+================================================================================
+
+✓ Strong prediction with multiple supporting pathways
+  → Recommended for further investigation
+  → Review literature for validation
+  → Consider for experimental studies
+
+================================================================================
+END OF EXPLANATION
+================================================================================

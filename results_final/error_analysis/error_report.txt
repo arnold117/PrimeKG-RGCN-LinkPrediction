@@ -1,0 +1,299 @@
+================================================================================
+ERROR ANALYSIS REPORT
+Drug-Disease Link Prediction - RGCN Model
+================================================================================
+
+## SUMMARY STATISTICS
+--------------------------------------------------------------------------------
+Total test samples: 15,372
+Correct predictions: 14,354 (93.38%)
+Incorrect predictions: 1,018 (6.62%)
+Low confidence predictions: 264
+False negatives: 1,018
+Classification threshold: 0.5
+
+## ERROR PATTERNS
+--------------------------------------------------------------------------------
+
+### False Negatives by Node Type:
+  unknown: 1018
+
+### Top 10 Most Problematic Head Entities (False Negatives):
+  ('1576', 'CYP3A4', 'gene/protein'): 24 errors
+  ('1017', 'CDK2', 'gene/protein'): 12 errors
+  ('2147', 'F2', 'gene/protein'): 10 errors
+  ('1544', 'CYP1A2', 'gene/protein'): 10 errors
+  ('760', 'CA2', 'gene/protein'): 10 errors
+  ('5644', 'PRSS1', 'gene/protein'): 9 errors
+  ('DB04272', 'Citric acid', 'drug'): 7 errors
+  ('100', 'ADA', 'gene/protein'): 6 errors
+  ('5243', 'ABCB1', 'gene/protein'): 6 errors
+  ('1723', 'DHODH', 'gene/protein'): 6 errors
+
+### Top 10 Most Problematic Tail Entities (False Negatives):
+  ('1576', 'CYP3A4', 'gene/protein'): 24 errors
+  ('1017', 'CDK2', 'gene/protein'): 12 errors
+  ('2147', 'F2', 'gene/protein'): 10 errors
+  ('1544', 'CYP1A2', 'gene/protein'): 10 errors
+  ('760', 'CA2', 'gene/protein'): 10 errors
+  ('5644', 'PRSS1', 'gene/protein'): 9 errors
+  ('DB04272', 'Citric acid', 'drug'): 7 errors
+  ('100', 'ADA', 'gene/protein'): 6 errors
+  ('5243', 'ABCB1', 'gene/protein'): 6 errors
+  ('1723', 'DHODH', 'gene/protein'): 6 errors
+
+## TOP 20 FALSE NEGATIVES (Missed Predictions)
+--------------------------------------------------------------------------------
+
+1. Score: 0.0000
+   Head: ('DB05364', 'ROX-888', 'drug') (unknown)
+   Tail: ('6348', 'CCL3', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+2. Score: 0.0000
+   Head: ('6348', 'CCL3', 'gene/protein') (unknown)
+   Tail: ('DB05364', 'ROX-888', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+3. Score: 0.0000
+   Head: ('6348', 'CCL3', 'gene/protein') (unknown)
+   Tail: ('DB05364', 'ROX-888', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+4. Score: 0.0000
+   Head: ('DB05364', 'ROX-888', 'drug') (unknown)
+   Tail: ('6348', 'CCL3', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+5. Score: 0.0000
+   Head: ('5306', 'PITPNA', 'gene/protein') (unknown)
+   Tail: ('DB02144', '1,2-diacyl-sn-glycero-3-phosphoinositol', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+6. Score: 0.0000
+   Head: ('DB02144', '1,2-diacyl-sn-glycero-3-phosphoinositol', 'drug') (unknown)
+   Tail: ('5306', 'PITPNA', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+7. Score: 0.0000
+   Head: ('5306', 'PITPNA', 'gene/protein') (unknown)
+   Tail: ('DB02144', '1,2-diacyl-sn-glycero-3-phosphoinositol', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+8. Score: 0.0000
+   Head: ('DB02144', '1,2-diacyl-sn-glycero-3-phosphoinositol', 'drug') (unknown)
+   Tail: ('5306', 'PITPNA', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+9. Score: 0.0000
+   Head: ('DB06097', 'GSK-923295', 'drug') (unknown)
+   Tail: ('1062', 'CENPE', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+10. Score: 0.0000
+   Head: ('1062', 'CENPE', 'gene/protein') (unknown)
+   Tail: ('DB06097', 'GSK-923295', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+11. Score: 0.0000
+   Head: ('5553', 'PRG2', 'gene/protein') (unknown)
+   Tail: ('DB06752', 'Chymopapain', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+12. Score: 0.0000
+   Head: ('5553', 'PRG2', 'gene/protein') (unknown)
+   Tail: ('DB06752', 'Chymopapain', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+13. Score: 0.0000
+   Head: ('DB06752', 'Chymopapain', 'drug') (unknown)
+   Tail: ('5553', 'PRG2', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+14. Score: 0.0000
+   Head: ('DB06752', 'Chymopapain', 'drug') (unknown)
+   Tail: ('5553', 'PRG2', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+15. Score: 0.0000
+   Head: ('683', 'BST1', 'gene/protein') (unknown)
+   Tail: ('DB02483', 'Etheno-NAD', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+16. Score: 0.0000
+   Head: ('DB02483', 'Etheno-NAD', 'drug') (unknown)
+   Tail: ('683', 'BST1', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+17. Score: 0.0000
+   Head: ('DB03967', 'Dodecyl sulfate', 'drug') (unknown)
+   Tail: ('4069', 'LYZ', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+18. Score: 0.0000
+   Head: ('4069', 'LYZ', 'gene/protein') (unknown)
+   Tail: ('DB03967', 'Dodecyl sulfate', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+19. Score: 0.0000
+   Head: ('DB09421', 'Protirelin', 'drug') (unknown)
+   Tail: ('7201', 'TRHR', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+20. Score: 0.0000
+   Head: ('7201', 'TRHR', 'gene/protein') (unknown)
+   Tail: ('DB09421', 'Protirelin', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+## TOP 20 LOW CONFIDENCE PREDICTIONS
+--------------------------------------------------------------------------------
+
+1. Score: 0.5029
+   Head: ('5569', 'PKIA', 'gene/protein') (unknown)
+   Tail: ('DB07857', '(2R)-2-(4-chlorophenyl)-2-[4-(1H-pyrazol-4-yl)phenyl]ethanamine', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5029)
+
+2. Score: 0.5029
+   Head: ('DB07857', '(2R)-2-(4-chlorophenyl)-2-[4-(1H-pyrazol-4-yl)phenyl]ethanamine', 'drug') (unknown)
+   Tail: ('5569', 'PKIA', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5029)
+
+3. Score: 0.5030
+   Head: ('DB04447', '1,4-Dithiothreitol', 'drug') (unknown)
+   Tail: ('8312', 'AXIN1', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5030)
+
+4. Score: 0.5030
+   Head: ('8312', 'AXIN1', 'gene/protein') (unknown)
+   Tail: ('DB04447', '1,4-Dithiothreitol', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5030)
+
+5. Score: 0.5073
+   Head: ('3567', 'IL5', 'gene/protein') (unknown)
+   Tail: ('DB01411', 'Pranlukast', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5073)
+
+6. Score: 0.5073
+   Head: ('DB01411', 'Pranlukast', 'drug') (unknown)
+   Tail: ('3567', 'IL5', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5073)
+
+7. Score: 0.5076
+   Head: ('DB00171', 'ATP', 'drug') (unknown)
+   Tail: ('5032', 'P2RY11', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5076)
+
+8. Score: 0.5076
+   Head: ('5032', 'P2RY11', 'gene/protein') (unknown)
+   Tail: ('DB00171', 'ATP', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5076)
+
+9. Score: 0.5121
+   Head: ('DB08604', 'Triclosan', 'drug') (unknown)
+   Tail: ('7173', 'TPO', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5121)
+
+10. Score: 0.5121
+   Head: ('7173', 'TPO', 'gene/protein') (unknown)
+   Tail: ('DB08604', 'Triclosan', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5121)
+
+11. Score: 0.5125
+   Head: ('DB03796', 'Palmitic Acid', 'drug') (unknown)
+   Tail: ('2171', 'FABP5', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5125)
+
+12. Score: 0.5125
+   Head: ('2171', 'FABP5', 'gene/protein') (unknown)
+   Tail: ('DB03796', 'Palmitic Acid', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5125)
+
+13. Score: 0.5150
+   Head: ('DB06603', 'Panobinostat', 'drug') (unknown)
+   Tail: ('1565', 'CYP2D6', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5150)
+
+14. Score: 0.5150
+   Head: ('1565', 'CYP2D6', 'gene/protein') (unknown)
+   Tail: ('DB06603', 'Panobinostat', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5150)
+
+15. Score: 0.5184
+   Head: ('DB00550', 'Propylthiouracil', 'drug') (unknown)
+   Tail: ('4353', 'MPO', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5184)
+
+16. Score: 0.5184
+   Head: ('DB00550', 'Propylthiouracil', 'drug') (unknown)
+   Tail: ('4353', 'MPO', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5184)
+
+17. Score: 0.5184
+   Head: ('4353', 'MPO', 'gene/protein') (unknown)
+   Tail: ('DB00550', 'Propylthiouracil', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5184)
+
+18. Score: 0.5184
+   Head: ('4353', 'MPO', 'gene/protein') (unknown)
+   Tail: ('DB00550', 'Propylthiouracil', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5184)
+
+19. Score: 0.5203
+   Head: ('DB03366', 'Imidazole', 'drug') (unknown)
+   Tail: ('10243', 'GPHN', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5203)
+
+20. Score: 0.5203
+   Head: ('10243', 'GPHN', 'gene/protein') (unknown)
+   Tail: ('DB03366', 'Imidazole', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5203)
+
+## RECOMMENDATIONS
+--------------------------------------------------------------------------------
+1. Review false negative cases for potential data issues
+2. Consider adjusting classification threshold based on use case
+3. Investigate graph structure around problematic entities
+4. Consider additional features or model architecture changes
+5. Validate top errors with domain experts
+
+================================================================================

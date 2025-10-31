@@ -1,0 +1,2030 @@
+[
+  {
+    "drug": {
+      "idx": 9239,
+      "id": "DB06497",
+      "name": "Aplaviroc",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 17,
+      "id": "100164_16391",
+      "name": "permanent neonatal diabetes mellitus",
+      "type": "disease"
+    },
+    "score": 0.8427716493606567,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 9239,
+            "name": "Aplaviroc",
+            "type": "drug"
+          },
+          {
+            "idx": 13925,
+            "name": "CCR5",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26384,
+            "name": "STAT3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 9239,
+            "name": "Aplaviroc",
+            "type": "drug"
+          },
+          {
+            "idx": 13925,
+            "name": "CCR5",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26384,
+            "name": "STAT3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 9239,
+            "name": "Aplaviroc",
+            "type": "drug"
+          },
+          {
+            "idx": 13925,
+            "name": "CCR5",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26384,
+            "name": "STAT3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 9239,
+            "name": "Aplaviroc",
+            "type": "drug"
+          },
+          {
+            "idx": 13925,
+            "name": "CCR5",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26384,
+            "name": "STAT3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 9239,
+            "name": "Aplaviroc",
+            "type": "drug"
+          },
+          {
+            "idx": 13925,
+            "name": "CCR5",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21965,
+            "name": "FOXP3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        13925,
+        "CCR5"
+      ],
+      [
+        21965,
+        "FOXP3"
+      ],
+      [
+        26384,
+        "STAT3"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 7106,
+      "id": "DB01951",
+      "name": "Gpi-1046",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 17,
+      "id": "100164_16391",
+      "name": "permanent neonatal diabetes mellitus",
+      "type": "disease"
+    },
+    "score": 0.8425788879394531,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 7106,
+            "name": "Gpi-1046",
+            "type": "drug"
+          },
+          {
+            "idx": 16459,
+            "name": "FKBP1A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 30311,
+            "name": "ARMC6",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19995,
+            "name": "INS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 7106,
+            "name": "Gpi-1046",
+            "type": "drug"
+          },
+          {
+            "idx": 16459,
+            "name": "FKBP1A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 30311,
+            "name": "ARMC6",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19995,
+            "name": "INS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 7106,
+            "name": "Gpi-1046",
+            "type": "drug"
+          },
+          {
+            "idx": 16459,
+            "name": "FKBP1A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 30311,
+            "name": "ARMC6",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19995,
+            "name": "INS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 7106,
+            "name": "Gpi-1046",
+            "type": "drug"
+          },
+          {
+            "idx": 16459,
+            "name": "FKBP1A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 30311,
+            "name": "ARMC6",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19995,
+            "name": "INS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 7106,
+            "name": "Gpi-1046",
+            "type": "drug"
+          },
+          {
+            "idx": 16459,
+            "name": "FKBP1A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 30311,
+            "name": "ARMC6",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 20005,
+            "name": "INSR",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        30311,
+        "ARMC6"
+      ],
+      [
+        16459,
+        "FKBP1A"
+      ],
+      [
+        19995,
+        "INS"
+      ],
+      [
+        20005,
+        "INSR"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 11521,
+      "id": "DB12960",
+      "name": "INCB-9471",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 17,
+      "id": "100164_16391",
+      "name": "permanent neonatal diabetes mellitus",
+      "type": "disease"
+    },
+    "score": 0.8423408269882202,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 11521,
+            "name": "INCB-9471",
+            "type": "drug"
+          },
+          {
+            "idx": 13925,
+            "name": "CCR5",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26384,
+            "name": "STAT3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 11521,
+            "name": "INCB-9471",
+            "type": "drug"
+          },
+          {
+            "idx": 13925,
+            "name": "CCR5",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26384,
+            "name": "STAT3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 11521,
+            "name": "INCB-9471",
+            "type": "drug"
+          },
+          {
+            "idx": 13925,
+            "name": "CCR5",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26384,
+            "name": "STAT3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 11521,
+            "name": "INCB-9471",
+            "type": "drug"
+          },
+          {
+            "idx": 13925,
+            "name": "CCR5",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26384,
+            "name": "STAT3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 11521,
+            "name": "INCB-9471",
+            "type": "drug"
+          },
+          {
+            "idx": 13925,
+            "name": "CCR5",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21965,
+            "name": "FOXP3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        13925,
+        "CCR5"
+      ],
+      [
+        21965,
+        "FOXP3"
+      ],
+      [
+        26384,
+        "STAT3"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 8145,
+      "id": "DB04012",
+      "name": "(3r)-4-(P-Toluenesulfonyl)-1,4-Thiazane-3-Carboxylicacid-L-Leucine",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 17,
+      "id": "100164_16391",
+      "name": "permanent neonatal diabetes mellitus",
+      "type": "disease"
+    },
+    "score": 0.841442883014679,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 8145,
+            "name": "(3r)-4-(P-Toluenesulfonyl)-1,4-Thiazane-3-Carboxylicacid-L-Leucine",
+            "type": "drug"
+          },
+          {
+            "idx": 16459,
+            "name": "FKBP1A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 30311,
+            "name": "ARMC6",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19995,
+            "name": "INS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 8145,
+            "name": "(3r)-4-(P-Toluenesulfonyl)-1,4-Thiazane-3-Carboxylicacid-L-Leucine",
+            "type": "drug"
+          },
+          {
+            "idx": 16459,
+            "name": "FKBP1A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 30311,
+            "name": "ARMC6",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19995,
+            "name": "INS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 8145,
+            "name": "(3r)-4-(P-Toluenesulfonyl)-1,4-Thiazane-3-Carboxylicacid-L-Leucine",
+            "type": "drug"
+          },
+          {
+            "idx": 16459,
+            "name": "FKBP1A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 30311,
+            "name": "ARMC6",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19995,
+            "name": "INS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 8145,
+            "name": "(3r)-4-(P-Toluenesulfonyl)-1,4-Thiazane-3-Carboxylicacid-L-Leucine",
+            "type": "drug"
+          },
+          {
+            "idx": 16459,
+            "name": "FKBP1A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 30311,
+            "name": "ARMC6",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19995,
+            "name": "INS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 8145,
+            "name": "(3r)-4-(P-Toluenesulfonyl)-1,4-Thiazane-3-Carboxylicacid-L-Leucine",
+            "type": "drug"
+          },
+          {
+            "idx": 16459,
+            "name": "FKBP1A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 30311,
+            "name": "ARMC6",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 20005,
+            "name": "INSR",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        30311,
+        "ARMC6"
+      ],
+      [
+        16459,
+        "FKBP1A"
+      ],
+      [
+        19995,
+        "INS"
+      ],
+      [
+        20005,
+        "INSR"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 9690,
+      "id": "DB07196",
+      "name": "N-methyl-1-(2-thiophen-2-ylphenyl)methanamine",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 17,
+      "id": "100164_16391",
+      "name": "permanent neonatal diabetes mellitus",
+      "type": "disease"
+    },
+    "score": 0.8394729495048523,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 9690,
+            "name": "N-methyl-1-(2-thiophen-2-ylphenyl)methanamine",
+            "type": "drug"
+          },
+          {
+            "idx": 20799,
+            "name": "LTA4H",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26522,
+            "name": "TBP",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19995,
+            "name": "INS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 9690,
+            "name": "N-methyl-1-(2-thiophen-2-ylphenyl)methanamine",
+            "type": "drug"
+          },
+          {
+            "idx": 20799,
+            "name": "LTA4H",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26522,
+            "name": "TBP",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19995,
+            "name": "INS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 9690,
+            "name": "N-methyl-1-(2-thiophen-2-ylphenyl)methanamine",
+            "type": "drug"
+          },
+          {
+            "idx": 20799,
+            "name": "LTA4H",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26522,
+            "name": "TBP",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19995,
+            "name": "INS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 9690,
+            "name": "N-methyl-1-(2-thiophen-2-ylphenyl)methanamine",
+            "type": "drug"
+          },
+          {
+            "idx": 20799,
+            "name": "LTA4H",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26522,
+            "name": "TBP",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19995,
+            "name": "INS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 9690,
+            "name": "N-methyl-1-(2-thiophen-2-ylphenyl)methanamine",
+            "type": "drug"
+          },
+          {
+            "idx": 20799,
+            "name": "LTA4H",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26522,
+            "name": "TBP",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19995,
+            "name": "INS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        19995,
+        "INS"
+      ],
+      [
+        20799,
+        "LTA4H"
+      ],
+      [
+        26522,
+        "TBP"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 9612,
+      "id": "DB07102",
+      "name": "(2S)-2-amino-5-oxo-5-[(4-phenylmethoxyphenyl)amino]pentanoic acid",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 17,
+      "id": "100164_16391",
+      "name": "permanent neonatal diabetes mellitus",
+      "type": "disease"
+    },
+    "score": 0.8390525579452515,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 9612,
+            "name": "(2S)-2-amino-5-oxo-5-[(4-phenylmethoxyphenyl)amino]pentanoic acid",
+            "type": "drug"
+          },
+          {
+            "idx": 20799,
+            "name": "LTA4H",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26522,
+            "name": "TBP",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19995,
+            "name": "INS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 9612,
+            "name": "(2S)-2-amino-5-oxo-5-[(4-phenylmethoxyphenyl)amino]pentanoic acid",
+            "type": "drug"
+          },
+          {
+            "idx": 20799,
+            "name": "LTA4H",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26522,
+            "name": "TBP",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19995,
+            "name": "INS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 9612,
+            "name": "(2S)-2-amino-5-oxo-5-[(4-phenylmethoxyphenyl)amino]pentanoic acid",
+            "type": "drug"
+          },
+          {
+            "idx": 20799,
+            "name": "LTA4H",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26522,
+            "name": "TBP",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19995,
+            "name": "INS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 9612,
+            "name": "(2S)-2-amino-5-oxo-5-[(4-phenylmethoxyphenyl)amino]pentanoic acid",
+            "type": "drug"
+          },
+          {
+            "idx": 20799,
+            "name": "LTA4H",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26522,
+            "name": "TBP",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19995,
+            "name": "INS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 9612,
+            "name": "(2S)-2-amino-5-oxo-5-[(4-phenylmethoxyphenyl)amino]pentanoic acid",
+            "type": "drug"
+          },
+          {
+            "idx": 20799,
+            "name": "LTA4H",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26522,
+            "name": "TBP",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19995,
+            "name": "INS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        19995,
+        "INS"
+      ],
+      [
+        20799,
+        "LTA4H"
+      ],
+      [
+        26522,
+        "TBP"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 7072,
+      "id": "DB01877",
+      "name": "N-Hydroxy 1n(4-Methoxyphenyl)Sulfonyl-4-(Z,E-N-Methoxyimino)Pyrrolidine-2r-Carboxamide",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 17,
+      "id": "100164_16391",
+      "name": "permanent neonatal diabetes mellitus",
+      "type": "disease"
+    },
+    "score": 0.8366919755935669,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 7072,
+            "name": "N-Hydroxy 1n(4-Methoxyphenyl)Sulfonyl-4-(Z,E-N-Methoxyimino)Pyrrolidine-2r-Carboxamide",
+            "type": "drug"
+          },
+          {
+            "idx": 21167,
+            "name": "MMP3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26384,
+            "name": "STAT3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 7072,
+            "name": "N-Hydroxy 1n(4-Methoxyphenyl)Sulfonyl-4-(Z,E-N-Methoxyimino)Pyrrolidine-2r-Carboxamide",
+            "type": "drug"
+          },
+          {
+            "idx": 21167,
+            "name": "MMP3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26384,
+            "name": "STAT3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 7072,
+            "name": "N-Hydroxy 1n(4-Methoxyphenyl)Sulfonyl-4-(Z,E-N-Methoxyimino)Pyrrolidine-2r-Carboxamide",
+            "type": "drug"
+          },
+          {
+            "idx": 21167,
+            "name": "MMP3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26384,
+            "name": "STAT3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 7072,
+            "name": "N-Hydroxy 1n(4-Methoxyphenyl)Sulfonyl-4-(Z,E-N-Methoxyimino)Pyrrolidine-2r-Carboxamide",
+            "type": "drug"
+          },
+          {
+            "idx": 21167,
+            "name": "MMP3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26384,
+            "name": "STAT3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 7072,
+            "name": "N-Hydroxy 1n(4-Methoxyphenyl)Sulfonyl-4-(Z,E-N-Methoxyimino)Pyrrolidine-2r-Carboxamide",
+            "type": "drug"
+          },
+          {
+            "idx": 21167,
+            "name": "MMP3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26384,
+            "name": "STAT3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        21167,
+        "MMP3"
+      ],
+      [
+        26384,
+        "STAT3"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 7862,
+      "id": "DB03451",
+      "name": "Lexacalcitol",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 17,
+      "id": "100164_16391",
+      "name": "permanent neonatal diabetes mellitus",
+      "type": "disease"
+    },
+    "score": 0.8364787101745605,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 7862,
+            "name": "Lexacalcitol",
+            "type": "drug"
+          },
+          {
+            "idx": 27086,
+            "name": "VDR",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 23012,
+            "name": "PPARG",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21965,
+            "name": "FOXP3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 7862,
+            "name": "Lexacalcitol",
+            "type": "drug"
+          },
+          {
+            "idx": 27086,
+            "name": "VDR",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 23012,
+            "name": "PPARG",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21965,
+            "name": "FOXP3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 7862,
+            "name": "Lexacalcitol",
+            "type": "drug"
+          },
+          {
+            "idx": 27086,
+            "name": "VDR",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 23012,
+            "name": "PPARG",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21965,
+            "name": "FOXP3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 7862,
+            "name": "Lexacalcitol",
+            "type": "drug"
+          },
+          {
+            "idx": 27086,
+            "name": "VDR",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 23012,
+            "name": "PPARG",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21965,
+            "name": "FOXP3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 7862,
+            "name": "Lexacalcitol",
+            "type": "drug"
+          },
+          {
+            "idx": 27086,
+            "name": "VDR",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 23012,
+            "name": "PPARG",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21965,
+            "name": "FOXP3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        21965,
+        "FOXP3"
+      ],
+      [
+        23012,
+        "PPARG"
+      ],
+      [
+        27086,
+        "VDR"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 9738,
+      "id": "DB07250",
+      "name": "N'-(5-CHLORO-1,3-BENZODIOXOL-4-YL)-N-(3,4,5- TRIMETHOXYPHENYL)PYRIMIDINE-2,4-DIAMINE",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 17,
+      "id": "100164_16391",
+      "name": "permanent neonatal diabetes mellitus",
+      "type": "disease"
+    },
+    "score": 0.8363053798675537,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 9738,
+            "name": "N'-(5-CHLORO-1,3-BENZODIOXOL-4-YL)-N-(3,4,5- TRIMETHOXYPHENYL)PYRIMIDINE-2,4-DIAMINE",
+            "type": "drug"
+          },
+          {
+            "idx": 16072,
+            "name": "EPHB4",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 13302,
+            "name": "PKP3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19995,
+            "name": "INS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 9738,
+            "name": "N'-(5-CHLORO-1,3-BENZODIOXOL-4-YL)-N-(3,4,5- TRIMETHOXYPHENYL)PYRIMIDINE-2,4-DIAMINE",
+            "type": "drug"
+          },
+          {
+            "idx": 16072,
+            "name": "EPHB4",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 13302,
+            "name": "PKP3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19995,
+            "name": "INS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 9738,
+            "name": "N'-(5-CHLORO-1,3-BENZODIOXOL-4-YL)-N-(3,4,5- TRIMETHOXYPHENYL)PYRIMIDINE-2,4-DIAMINE",
+            "type": "drug"
+          },
+          {
+            "idx": 16072,
+            "name": "EPHB4",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 13302,
+            "name": "PKP3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19995,
+            "name": "INS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 9738,
+            "name": "N'-(5-CHLORO-1,3-BENZODIOXOL-4-YL)-N-(3,4,5- TRIMETHOXYPHENYL)PYRIMIDINE-2,4-DIAMINE",
+            "type": "drug"
+          },
+          {
+            "idx": 16072,
+            "name": "EPHB4",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 13302,
+            "name": "PKP3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19995,
+            "name": "INS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 9738,
+            "name": "N'-(5-CHLORO-1,3-BENZODIOXOL-4-YL)-N-(3,4,5- TRIMETHOXYPHENYL)PYRIMIDINE-2,4-DIAMINE",
+            "type": "drug"
+          },
+          {
+            "idx": 16072,
+            "name": "EPHB4",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 13302,
+            "name": "PKP3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 20005,
+            "name": "INSR",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        16072,
+        "EPHB4"
+      ],
+      [
+        19995,
+        "INS"
+      ],
+      [
+        20005,
+        "INSR"
+      ],
+      [
+        13302,
+        "PKP3"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 10150,
+      "id": "DB07833",
+      "name": "N-(3-cyanophenyl)-2'-methyl-5'-(5-methyl-1,3,4-oxadiazol-2-yl)-4-biphenylcarboxamide",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 17,
+      "id": "100164_16391",
+      "name": "permanent neonatal diabetes mellitus",
+      "type": "disease"
+    },
+    "score": 0.8359465599060059,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 10150,
+            "name": "N-(3-cyanophenyl)-2'-methyl-5'-(5-methyl-1,3,4-oxadiazol-2-yl)-4-biphenylcarboxamide",
+            "type": "drug"
+          },
+          {
+            "idx": 14659,
+            "name": "MAPK14",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 20008,
+            "name": "PDX1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 10150,
+            "name": "N-(3-cyanophenyl)-2'-methyl-5'-(5-methyl-1,3,4-oxadiazol-2-yl)-4-biphenylcarboxamide",
+            "type": "drug"
+          },
+          {
+            "idx": 14659,
+            "name": "MAPK14",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 20008,
+            "name": "PDX1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 10150,
+            "name": "N-(3-cyanophenyl)-2'-methyl-5'-(5-methyl-1,3,4-oxadiazol-2-yl)-4-biphenylcarboxamide",
+            "type": "drug"
+          },
+          {
+            "idx": 14659,
+            "name": "MAPK14",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 20008,
+            "name": "PDX1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 10150,
+            "name": "N-(3-cyanophenyl)-2'-methyl-5'-(5-methyl-1,3,4-oxadiazol-2-yl)-4-biphenylcarboxamide",
+            "type": "drug"
+          },
+          {
+            "idx": 14659,
+            "name": "MAPK14",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 20008,
+            "name": "PDX1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 10150,
+            "name": "N-(3-cyanophenyl)-2'-methyl-5'-(5-methyl-1,3,4-oxadiazol-2-yl)-4-biphenylcarboxamide",
+            "type": "drug"
+          },
+          {
+            "idx": 14659,
+            "name": "MAPK14",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26384,
+            "name": "STAT3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17,
+            "name": "permanent neonatal diabetes mellitus",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        14659,
+        "MAPK14"
+      ],
+      [
+        20008,
+        "PDX1"
+      ],
+      [
+        26384,
+        "STAT3"
+      ]
+    ]
+  }
+]

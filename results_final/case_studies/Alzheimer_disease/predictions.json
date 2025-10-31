@@ -1,0 +1,1894 @@
+[
+  {
+    "drug": {
+      "idx": 8369,
+      "id": "DB04478",
+      "name": "Cp-166572, 2-Hydroxymethyl-4-(4-N,N-Dimethylaminosulfonyl-1-Piperazino)-Pyrimidine",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 732,
+      "id": "11913_7088_11743_12153_7089_11194_12321_15140_4975_11561_11647_11777_12344_12609_12630_12631_14265_10422_14036_14316_100088",
+      "name": "Alzheimer disease",
+      "type": "disease"
+    },
+    "score": 0.8493068218231201,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 8369,
+            "name": "Cp-166572, 2-Hydroxymethyl-4-(4-N,N-Dimethylaminosulfonyl-1-Piperazino)-Pyrimidine",
+            "type": "drug"
+          },
+          {
+            "idx": 26275,
+            "name": "SORD",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 24972,
+            "name": "RAD23A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 24167,
+            "name": "PSEN1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 8369,
+            "name": "Cp-166572, 2-Hydroxymethyl-4-(4-N,N-Dimethylaminosulfonyl-1-Piperazino)-Pyrimidine",
+            "type": "drug"
+          },
+          {
+            "idx": 26275,
+            "name": "SORD",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 24972,
+            "name": "RAD23A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 24167,
+            "name": "PSEN1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 8369,
+            "name": "Cp-166572, 2-Hydroxymethyl-4-(4-N,N-Dimethylaminosulfonyl-1-Piperazino)-Pyrimidine",
+            "type": "drug"
+          },
+          {
+            "idx": 26275,
+            "name": "SORD",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 24972,
+            "name": "RAD23A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 24167,
+            "name": "PSEN1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 8369,
+            "name": "Cp-166572, 2-Hydroxymethyl-4-(4-N,N-Dimethylaminosulfonyl-1-Piperazino)-Pyrimidine",
+            "type": "drug"
+          },
+          {
+            "idx": 26275,
+            "name": "SORD",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 24972,
+            "name": "RAD23A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 24167,
+            "name": "PSEN1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 8369,
+            "name": "Cp-166572, 2-Hydroxymethyl-4-(4-N,N-Dimethylaminosulfonyl-1-Piperazino)-Pyrimidine",
+            "type": "drug"
+          },
+          {
+            "idx": 26275,
+            "name": "SORD",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 24972,
+            "name": "RAD23A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 15901,
+            "name": "A2M",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        15901,
+        "A2M"
+      ],
+      [
+        24167,
+        "PSEN1"
+      ],
+      [
+        24972,
+        "RAD23A"
+      ],
+      [
+        26275,
+        "SORD"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 8700,
+      "id": "DB05049",
+      "name": "DDP733",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 732,
+      "id": "11913_7088_11743_12153_7089_11194_12321_15140_4975_11561_11647_11777_12344_12609_12630_12631_14265_10422_14036_14316_100088",
+      "name": "Alzheimer disease",
+      "type": "disease"
+    },
+    "score": 0.8472675085067749,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 8700,
+            "name": "DDP733",
+            "type": "drug"
+          },
+          {
+            "idx": 19453,
+            "name": "HTR3A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 12568,
+            "name": "ABCA7",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 8700,
+            "name": "DDP733",
+            "type": "drug"
+          },
+          {
+            "idx": 19453,
+            "name": "HTR3A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 12568,
+            "name": "ABCA7",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 8700,
+            "name": "DDP733",
+            "type": "drug"
+          },
+          {
+            "idx": 19453,
+            "name": "HTR3A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 12568,
+            "name": "ABCA7",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 8700,
+            "name": "DDP733",
+            "type": "drug"
+          },
+          {
+            "idx": 19453,
+            "name": "HTR3A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 12568,
+            "name": "ABCA7",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 8700,
+            "name": "DDP733",
+            "type": "drug"
+          },
+          {
+            "idx": 19453,
+            "name": "HTR3A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 12568,
+            "name": "ABCA7",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        12568,
+        "ABCA7"
+      ],
+      [
+        19453,
+        "HTR3A"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 11868,
+      "id": "DB15627",
+      "name": "Dostarlimab",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 732,
+      "id": "11913_7088_11743_12153_7089_11194_12321_15140_4975_11561_11647_11777_12344_12609_12630_12631_14265_10422_14036_14316_100088",
+      "name": "Alzheimer disease",
+      "type": "disease"
+    },
+    "score": 0.8442957401275635,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 11868,
+            "name": "Dostarlimab",
+            "type": "drug"
+          },
+          {
+            "idx": 22259,
+            "name": "PDCD1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 18123,
+            "name": "GK",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26744,
+            "name": "TNF",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 11868,
+            "name": "Dostarlimab",
+            "type": "drug"
+          },
+          {
+            "idx": 22259,
+            "name": "PDCD1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 18123,
+            "name": "GK",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26744,
+            "name": "TNF",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 11868,
+            "name": "Dostarlimab",
+            "type": "drug"
+          },
+          {
+            "idx": 22259,
+            "name": "PDCD1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 18123,
+            "name": "GK",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26744,
+            "name": "TNF",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 11868,
+            "name": "Dostarlimab",
+            "type": "drug"
+          },
+          {
+            "idx": 22259,
+            "name": "PDCD1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 18123,
+            "name": "GK",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26744,
+            "name": "TNF",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 11868,
+            "name": "Dostarlimab",
+            "type": "drug"
+          },
+          {
+            "idx": 22259,
+            "name": "PDCD1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 18123,
+            "name": "GK",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 26744,
+            "name": "TNF",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        18123,
+        "GK"
+      ],
+      [
+        22259,
+        "PDCD1"
+      ],
+      [
+        26744,
+        "TNF"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 8962,
+      "id": "DB05710",
+      "name": "Gantacurium",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 732,
+      "id": "11913_7088_11743_12153_7089_11194_12321_15140_4975_11561_11647_11777_12344_12609_12630_12631_14265_10422_14036_14316_100088",
+      "name": "Alzheimer disease",
+      "type": "disease"
+    },
+    "score": 0.8433696031570435,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 8962,
+            "name": "Gantacurium",
+            "type": "drug"
+          },
+          {
+            "idx": 13490,
+            "name": "CHRNA3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 13517,
+            "name": "CHRNB2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 8962,
+            "name": "Gantacurium",
+            "type": "drug"
+          },
+          {
+            "idx": 13490,
+            "name": "CHRNA3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 13517,
+            "name": "CHRNB2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 8962,
+            "name": "Gantacurium",
+            "type": "drug"
+          },
+          {
+            "idx": 13490,
+            "name": "CHRNA3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 13517,
+            "name": "CHRNB2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 8962,
+            "name": "Gantacurium",
+            "type": "drug"
+          },
+          {
+            "idx": 13490,
+            "name": "CHRNA3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 13517,
+            "name": "CHRNB2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 8962,
+            "name": "Gantacurium",
+            "type": "drug"
+          },
+          {
+            "idx": 13490,
+            "name": "CHRNA3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 13517,
+            "name": "CHRNB2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        13490,
+        "CHRNA3"
+      ],
+      [
+        13517,
+        "CHRNB2"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 10025,
+      "id": "DB07653",
+      "name": "N-(5,6-DIPHENYLFURO[2,3-D]PYRIMIDIN-4-YL)GLYCINE",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 732,
+      "id": "11913_7088_11743_12153_7089_11194_12321_15140_4975_11561_11647_11777_12344_12609_12630_12631_14265_10422_14036_14316_100088",
+      "name": "Alzheimer disease",
+      "type": "disease"
+    },
+    "score": 0.8429397940635681,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 10025,
+            "name": "N-(5,6-DIPHENYLFURO[2,3-D]PYRIMIDIN-4-YL)GLYCINE",
+            "type": "drug"
+          },
+          {
+            "idx": 13227,
+            "name": "CHEK1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19246,
+            "name": "HLA-DRB5",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 10025,
+            "name": "N-(5,6-DIPHENYLFURO[2,3-D]PYRIMIDIN-4-YL)GLYCINE",
+            "type": "drug"
+          },
+          {
+            "idx": 13227,
+            "name": "CHEK1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19246,
+            "name": "HLA-DRB5",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 10025,
+            "name": "N-(5,6-DIPHENYLFURO[2,3-D]PYRIMIDIN-4-YL)GLYCINE",
+            "type": "drug"
+          },
+          {
+            "idx": 13227,
+            "name": "CHEK1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19246,
+            "name": "HLA-DRB5",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 10025,
+            "name": "N-(5,6-DIPHENYLFURO[2,3-D]PYRIMIDIN-4-YL)GLYCINE",
+            "type": "drug"
+          },
+          {
+            "idx": 13227,
+            "name": "CHEK1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19246,
+            "name": "HLA-DRB5",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 10025,
+            "name": "N-(5,6-DIPHENYLFURO[2,3-D]PYRIMIDIN-4-YL)GLYCINE",
+            "type": "drug"
+          },
+          {
+            "idx": 13227,
+            "name": "CHEK1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21023,
+            "name": "MAPT",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        13227,
+        "CHEK1"
+      ],
+      [
+        19246,
+        "HLA-DRB5"
+      ],
+      [
+        21023,
+        "MAPT"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 10021,
+      "id": "DB07647",
+      "name": "(2R)-1-[(5,6-DIPHENYL-7H-PYRROLO[2,3-D]PYRIMIDIN-4-YL)AMINO]PROPAN-2-OL",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 732,
+      "id": "11913_7088_11743_12153_7089_11194_12321_15140_4975_11561_11647_11777_12344_12609_12630_12631_14265_10422_14036_14316_100088",
+      "name": "Alzheimer disease",
+      "type": "disease"
+    },
+    "score": 0.8424555659294128,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 10021,
+            "name": "(2R)-1-[(5,6-DIPHENYL-7H-PYRROLO[2,3-D]PYRIMIDIN-4-YL)AMINO]PROPAN-2-OL",
+            "type": "drug"
+          },
+          {
+            "idx": 13227,
+            "name": "CHEK1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19246,
+            "name": "HLA-DRB5",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 10021,
+            "name": "(2R)-1-[(5,6-DIPHENYL-7H-PYRROLO[2,3-D]PYRIMIDIN-4-YL)AMINO]PROPAN-2-OL",
+            "type": "drug"
+          },
+          {
+            "idx": 13227,
+            "name": "CHEK1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19246,
+            "name": "HLA-DRB5",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 10021,
+            "name": "(2R)-1-[(5,6-DIPHENYL-7H-PYRROLO[2,3-D]PYRIMIDIN-4-YL)AMINO]PROPAN-2-OL",
+            "type": "drug"
+          },
+          {
+            "idx": 13227,
+            "name": "CHEK1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19246,
+            "name": "HLA-DRB5",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 10021,
+            "name": "(2R)-1-[(5,6-DIPHENYL-7H-PYRROLO[2,3-D]PYRIMIDIN-4-YL)AMINO]PROPAN-2-OL",
+            "type": "drug"
+          },
+          {
+            "idx": 13227,
+            "name": "CHEK1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19246,
+            "name": "HLA-DRB5",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 10021,
+            "name": "(2R)-1-[(5,6-DIPHENYL-7H-PYRROLO[2,3-D]PYRIMIDIN-4-YL)AMINO]PROPAN-2-OL",
+            "type": "drug"
+          },
+          {
+            "idx": 13227,
+            "name": "CHEK1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21023,
+            "name": "MAPT",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        13227,
+        "CHEK1"
+      ],
+      [
+        19246,
+        "HLA-DRB5"
+      ],
+      [
+        21023,
+        "MAPT"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 7106,
+      "id": "DB01951",
+      "name": "Gpi-1046",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 732,
+      "id": "11913_7088_11743_12153_7089_11194_12321_15140_4975_11561_11647_11777_12344_12609_12630_12631_14265_10422_14036_14316_100088",
+      "name": "Alzheimer disease",
+      "type": "disease"
+    },
+    "score": 0.8423652648925781,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 7106,
+            "name": "Gpi-1046",
+            "type": "drug"
+          },
+          {
+            "idx": 16459,
+            "name": "FKBP1A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19859,
+            "name": "APP",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 7106,
+            "name": "Gpi-1046",
+            "type": "drug"
+          },
+          {
+            "idx": 16459,
+            "name": "FKBP1A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19859,
+            "name": "APP",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 7106,
+            "name": "Gpi-1046",
+            "type": "drug"
+          },
+          {
+            "idx": 16459,
+            "name": "FKBP1A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19859,
+            "name": "APP",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 7106,
+            "name": "Gpi-1046",
+            "type": "drug"
+          },
+          {
+            "idx": 16459,
+            "name": "FKBP1A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19859,
+            "name": "APP",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 7106,
+            "name": "Gpi-1046",
+            "type": "drug"
+          },
+          {
+            "idx": 16459,
+            "name": "FKBP1A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 12657,
+            "name": "TOMM40",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        19859,
+        "APP"
+      ],
+      [
+        16459,
+        "FKBP1A"
+      ],
+      [
+        12657,
+        "TOMM40"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 8607,
+      "id": "DB04885",
+      "name": "Cilansetron",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 732,
+      "id": "11913_7088_11743_12153_7089_11194_12321_15140_4975_11561_11647_11777_12344_12609_12630_12631_14265_10422_14036_14316_100088",
+      "name": "Alzheimer disease",
+      "type": "disease"
+    },
+    "score": 0.8423641920089722,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 8607,
+            "name": "Cilansetron",
+            "type": "drug"
+          },
+          {
+            "idx": 19453,
+            "name": "HTR3A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 12568,
+            "name": "ABCA7",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 8607,
+            "name": "Cilansetron",
+            "type": "drug"
+          },
+          {
+            "idx": 19453,
+            "name": "HTR3A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 12568,
+            "name": "ABCA7",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 8607,
+            "name": "Cilansetron",
+            "type": "drug"
+          },
+          {
+            "idx": 19453,
+            "name": "HTR3A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 12568,
+            "name": "ABCA7",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 8607,
+            "name": "Cilansetron",
+            "type": "drug"
+          },
+          {
+            "idx": 19453,
+            "name": "HTR3A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 12568,
+            "name": "ABCA7",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 8607,
+            "name": "Cilansetron",
+            "type": "drug"
+          },
+          {
+            "idx": 19453,
+            "name": "HTR3A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 12568,
+            "name": "ABCA7",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        12568,
+        "ABCA7"
+      ],
+      [
+        19453,
+        "HTR3A"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 9562,
+      "id": "DB07038",
+      "name": "2-(cyclohexylamino)benzoic acid",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 732,
+      "id": "11913_7088_11743_12153_7089_11194_12321_15140_4975_11561_11647_11777_12344_12609_12630_12631_14265_10422_14036_14316_100088",
+      "name": "Alzheimer disease",
+      "type": "disease"
+    },
+    "score": 0.8421951532363892,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 9562,
+            "name": "2-(cyclohexylamino)benzoic acid",
+            "type": "drug"
+          },
+          {
+            "idx": 13227,
+            "name": "CHEK1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19246,
+            "name": "HLA-DRB5",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 9562,
+            "name": "2-(cyclohexylamino)benzoic acid",
+            "type": "drug"
+          },
+          {
+            "idx": 13227,
+            "name": "CHEK1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19246,
+            "name": "HLA-DRB5",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 9562,
+            "name": "2-(cyclohexylamino)benzoic acid",
+            "type": "drug"
+          },
+          {
+            "idx": 13227,
+            "name": "CHEK1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19246,
+            "name": "HLA-DRB5",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 9562,
+            "name": "2-(cyclohexylamino)benzoic acid",
+            "type": "drug"
+          },
+          {
+            "idx": 13227,
+            "name": "CHEK1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19246,
+            "name": "HLA-DRB5",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 9562,
+            "name": "2-(cyclohexylamino)benzoic acid",
+            "type": "drug"
+          },
+          {
+            "idx": 13227,
+            "name": "CHEK1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21023,
+            "name": "MAPT",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        13227,
+        "CHEK1"
+      ],
+      [
+        19246,
+        "HLA-DRB5"
+      ],
+      [
+        21023,
+        "MAPT"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 8145,
+      "id": "DB04012",
+      "name": "(3r)-4-(P-Toluenesulfonyl)-1,4-Thiazane-3-Carboxylicacid-L-Leucine",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 732,
+      "id": "11913_7088_11743_12153_7089_11194_12321_15140_4975_11561_11647_11777_12344_12609_12630_12631_14265_10422_14036_14316_100088",
+      "name": "Alzheimer disease",
+      "type": "disease"
+    },
+    "score": 0.8414788246154785,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 8145,
+            "name": "(3r)-4-(P-Toluenesulfonyl)-1,4-Thiazane-3-Carboxylicacid-L-Leucine",
+            "type": "drug"
+          },
+          {
+            "idx": 16459,
+            "name": "FKBP1A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19859,
+            "name": "APP",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 8145,
+            "name": "(3r)-4-(P-Toluenesulfonyl)-1,4-Thiazane-3-Carboxylicacid-L-Leucine",
+            "type": "drug"
+          },
+          {
+            "idx": 16459,
+            "name": "FKBP1A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19859,
+            "name": "APP",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 8145,
+            "name": "(3r)-4-(P-Toluenesulfonyl)-1,4-Thiazane-3-Carboxylicacid-L-Leucine",
+            "type": "drug"
+          },
+          {
+            "idx": 16459,
+            "name": "FKBP1A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19859,
+            "name": "APP",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 8145,
+            "name": "(3r)-4-(P-Toluenesulfonyl)-1,4-Thiazane-3-Carboxylicacid-L-Leucine",
+            "type": "drug"
+          },
+          {
+            "idx": 16459,
+            "name": "FKBP1A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 19859,
+            "name": "APP",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 8145,
+            "name": "(3r)-4-(P-Toluenesulfonyl)-1,4-Thiazane-3-Carboxylicacid-L-Leucine",
+            "type": "drug"
+          },
+          {
+            "idx": 16459,
+            "name": "FKBP1A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 12657,
+            "name": "TOMM40",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        19859,
+        "APP"
+      ],
+      [
+        16459,
+        "FKBP1A"
+      ],
+      [
+        12657,
+        "TOMM40"
+      ]
+    ]
+  }
+]

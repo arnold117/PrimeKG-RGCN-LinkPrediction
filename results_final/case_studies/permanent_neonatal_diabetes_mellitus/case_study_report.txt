@@ -1,0 +1,220 @@
+================================================================================
+DRUG-DISEASE PREDICTION CASE STUDY
+================================================================================
+
+Disease: permanent neonatal diabetes mellitus
+Disease ID: 100164_16391
+Analysis Date: 2025-11-01 00:19:00
+Model: DrugDiseaseModel
+
+--------------------------------------------------------------------------------
+SUMMARY
+--------------------------------------------------------------------------------
+Total predictions analyzed: 10
+Known treatments: 0
+Novel predictions: 10
+Average prediction score: 0.8393
+Total graph paths found: 50
+
+================================================================================
+TOP DRUG PREDICTIONS
+================================================================================
+
+1. Aplaviroc
+   Status: Novel Prediction
+   Prediction Score: 0.8428
+   Drug ID: DB06497
+   Key Genes/Proteins (3):
+      - CCR5
+      - FOXP3
+      - STAT3
+   Connection Paths (5 found):
+      Path 1 (3 steps):
+         Aplaviroc → CCR5 → STAT3 → permanent neonatal diabetes me
+      Path 2 (3 steps):
+         Aplaviroc → CCR5 → STAT3 → permanent neonatal diabetes me
+
+2. Gpi-1046
+   Status: Novel Prediction
+   Prediction Score: 0.8426
+   Drug ID: DB01951
+   Key Genes/Proteins (4):
+      - ARMC6
+      - FKBP1A
+      - INS
+      - INSR
+   Connection Paths (5 found):
+      Path 1 (4 steps):
+         Gpi-1046 → FKBP1A → ARMC6 → INS → permanent neonatal diabetes me
+      Path 2 (4 steps):
+         Gpi-1046 → FKBP1A → ARMC6 → INS → permanent neonatal diabetes me
+
+3. INCB-9471
+   Status: Novel Prediction
+   Prediction Score: 0.8423
+   Drug ID: DB12960
+   Key Genes/Proteins (3):
+      - CCR5
+      - FOXP3
+      - STAT3
+   Connection Paths (5 found):
+      Path 1 (3 steps):
+         INCB-9471 → CCR5 → STAT3 → permanent neonatal diabetes me
+      Path 2 (3 steps):
+         INCB-9471 → CCR5 → STAT3 → permanent neonatal diabetes me
+
+4. (3r)-4-(P-Toluenesulfonyl)-1,4-Thiazane-3-Carboxylicacid-L-Leucine
+   Status: Novel Prediction
+   Prediction Score: 0.8414
+   Drug ID: DB04012
+   Key Genes/Proteins (4):
+      - ARMC6
+      - FKBP1A
+      - INS
+      - INSR
+   Connection Paths (5 found):
+      Path 1 (4 steps):
+         (3r)-4-(P-Toluenesulfonyl)-1,4 → FKBP1A → ARMC6 → INS → permanent neonatal diabetes me
+      Path 2 (4 steps):
+         (3r)-4-(P-Toluenesulfonyl)-1,4 → FKBP1A → ARMC6 → INS → permanent neonatal diabetes me
+
+5. N-methyl-1-(2-thiophen-2-ylphenyl)methanamine
+   Status: Novel Prediction
+   Prediction Score: 0.8395
+   Drug ID: DB07196
+   Key Genes/Proteins (3):
+      - INS
+      - LTA4H
+      - TBP
+   Connection Paths (5 found):
+      Path 1 (4 steps):
+         N-methyl-1-(2-thiophen-2-ylphe → LTA4H → TBP → INS → permanent neonatal diabetes me
+      Path 2 (4 steps):
+         N-methyl-1-(2-thiophen-2-ylphe → LTA4H → TBP → INS → permanent neonatal diabetes me
+
+6. (2S)-2-amino-5-oxo-5-[(4-phenylmethoxyphenyl)amino]pentanoic acid
+   Status: Novel Prediction
+   Prediction Score: 0.8391
+   Drug ID: DB07102
+   Key Genes/Proteins (3):
+      - INS
+      - LTA4H
+      - TBP
+   Connection Paths (5 found):
+      Path 1 (4 steps):
+         (2S)-2-amino-5-oxo-5-[(4-pheny → LTA4H → TBP → INS → permanent neonatal diabetes me
+      Path 2 (4 steps):
+         (2S)-2-amino-5-oxo-5-[(4-pheny → LTA4H → TBP → INS → permanent neonatal diabetes me
+
+7. N-Hydroxy 1n(4-Methoxyphenyl)Sulfonyl-4-(Z,E-N-Methoxyimino)Pyrrolidine-2r-Carboxamide
+   Status: Novel Prediction
+   Prediction Score: 0.8367
+   Drug ID: DB01877
+   Key Genes/Proteins (2):
+      - MMP3
+      - STAT3
+   Connection Paths (5 found):
+      Path 1 (3 steps):
+         N-Hydroxy 1n(4-Methoxyphenyl)S → MMP3 → STAT3 → permanent neonatal diabetes me
+      Path 2 (3 steps):
+         N-Hydroxy 1n(4-Methoxyphenyl)S → MMP3 → STAT3 → permanent neonatal diabetes me
+
+8. Lexacalcitol
+   Status: Novel Prediction
+   Prediction Score: 0.8365
+   Drug ID: DB03451
+   Key Genes/Proteins (3):
+      - FOXP3
+      - PPARG
+      - VDR
+   Connection Paths (5 found):
+      Path 1 (4 steps):
+         Lexacalcitol → VDR → PPARG → FOXP3 → permanent neonatal diabetes me
+      Path 2 (4 steps):
+         Lexacalcitol → VDR → PPARG → FOXP3 → permanent neonatal diabetes me
+
+9. N'-(5-CHLORO-1,3-BENZODIOXOL-4-YL)-N-(3,4,5- TRIMETHOXYPHENYL)PYRIMIDINE-2,4-DIAMINE
+   Status: Novel Prediction
+   Prediction Score: 0.8363
+   Drug ID: DB07250
+   Key Genes/Proteins (4):
+      - EPHB4
+      - INS
+      - INSR
+      - PKP3
+   Connection Paths (5 found):
+      Path 1 (4 steps):
+         N'-(5-CHLORO-1,3-BENZODIOXOL-4 → EPHB4 → PKP3 → INS → permanent neonatal diabetes me
+      Path 2 (4 steps):
+         N'-(5-CHLORO-1,3-BENZODIOXOL-4 → EPHB4 → PKP3 → INS → permanent neonatal diabetes me
+
+10. N-(3-cyanophenyl)-2'-methyl-5'-(5-methyl-1,3,4-oxadiazol-2-yl)-4-biphenylcarboxamide
+   Status: Novel Prediction
+   Prediction Score: 0.8359
+   Drug ID: DB07833
+   Key Genes/Proteins (3):
+      - MAPK14
+      - PDX1
+      - STAT3
+   Connection Paths (5 found):
+      Path 1 (3 steps):
+         N-(3-cyanophenyl)-2'-methyl-5' → MAPK14 → PDX1 → permanent neonatal diabetes me
+      Path 2 (3 steps):
+         N-(3-cyanophenyl)-2'-methyl-5' → MAPK14 → PDX1 → permanent neonatal diabetes me
+
+================================================================================
+MEDICAL INTERPRETATION
+================================================================================
+
+Known Treatments:
+  No known treatments found in top predictions.
+
+Novel Predictions:
+  • Aplaviroc (score: 0.8428)
+    This is a novel prediction not directly seen in training.
+    Connected through: CCR5, FOXP3, STAT3
+  • Gpi-1046 (score: 0.8426)
+    This is a novel prediction not directly seen in training.
+    Connected through: ARMC6, FKBP1A, INS
+  • INCB-9471 (score: 0.8423)
+    This is a novel prediction not directly seen in training.
+    Connected through: CCR5, FOXP3, STAT3
+  • (3r)-4-(P-Toluenesulfonyl)-1,4-Thiazane-3-Carboxylicacid-L-Leucine (score: 0.8414)
+    This is a novel prediction not directly seen in training.
+    Connected through: ARMC6, FKBP1A, INS
+  • N-methyl-1-(2-thiophen-2-ylphenyl)methanamine (score: 0.8395)
+    This is a novel prediction not directly seen in training.
+    Connected through: INS, LTA4H, TBP
+
+================================================================================
+BIOLOGICAL INSIGHTS
+================================================================================
+
+Most frequent intermediate genes/proteins:
+  • INS: appears in 5 prediction paths
+  • STAT3: appears in 4 prediction paths
+  • FOXP3: appears in 3 prediction paths
+  • INSR: appears in 3 prediction paths
+  • CCR5: appears in 2 prediction paths
+  • ARMC6: appears in 2 prediction paths
+  • FKBP1A: appears in 2 prediction paths
+  • LTA4H: appears in 2 prediction paths
+  • TBP: appears in 2 prediction paths
+  • MMP3: appears in 1 prediction paths
+
+These genes may play key roles in the disease mechanism and could be
+potential therapeutic targets.
+
+================================================================================
+RECOMMENDATIONS
+================================================================================
+
+1. Validate novel predictions with literature review and domain experts
+2. Investigate high-confidence predictions for potential drug repurposing
+3. Examine intermediate genes for mechanism of action insights
+4. Consider experimental validation for top novel candidates
+5. Review known treatments for model validation
+
+================================================================================
+END OF REPORT
+================================================================================

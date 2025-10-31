@@ -1,0 +1,216 @@
+================================================================================
+DRUG-DISEASE PREDICTION CASE STUDY
+================================================================================
+
+Disease: Alzheimer disease
+Disease ID: 11913_7088_11743_12153_7089_11194_12321_15140_4975_11561_11647_11777_12344_12609_12630_12631_14265_10422_14036_14316_100088
+Analysis Date: 2025-11-01 00:29:19
+Model: DrugDiseaseModel
+
+--------------------------------------------------------------------------------
+SUMMARY
+--------------------------------------------------------------------------------
+Total predictions analyzed: 10
+Known treatments: 0
+Novel predictions: 10
+Average prediction score: 0.8438
+Total graph paths found: 50
+
+================================================================================
+TOP DRUG PREDICTIONS
+================================================================================
+
+1. Cp-166572, 2-Hydroxymethyl-4-(4-N,N-Dimethylaminosulfonyl-1-Piperazino)-Pyrimidine
+   Status: Novel Prediction
+   Prediction Score: 0.8493
+   Drug ID: DB04478
+   Key Genes/Proteins (4):
+      - A2M
+      - PSEN1
+      - RAD23A
+      - SORD
+   Connection Paths (5 found):
+      Path 1 (4 steps):
+         Cp-166572, 2-Hydroxymethyl-4-( → SORD → RAD23A → PSEN1 → Alzheimer disease
+      Path 2 (4 steps):
+         Cp-166572, 2-Hydroxymethyl-4-( → SORD → RAD23A → PSEN1 → Alzheimer disease
+
+2. DDP733
+   Status: Novel Prediction
+   Prediction Score: 0.8473
+   Drug ID: DB05049
+   Key Genes/Proteins (2):
+      - ABCA7
+      - HTR3A
+   Connection Paths (5 found):
+      Path 1 (3 steps):
+         DDP733 → HTR3A → ABCA7 → Alzheimer disease
+      Path 2 (3 steps):
+         DDP733 → HTR3A → ABCA7 → Alzheimer disease
+
+3. Dostarlimab
+   Status: Novel Prediction
+   Prediction Score: 0.8443
+   Drug ID: DB15627
+   Key Genes/Proteins (3):
+      - GK
+      - PDCD1
+      - TNF
+   Connection Paths (5 found):
+      Path 1 (4 steps):
+         Dostarlimab → PDCD1 → GK → TNF → Alzheimer disease
+      Path 2 (4 steps):
+         Dostarlimab → PDCD1 → GK → TNF → Alzheimer disease
+
+4. Gantacurium
+   Status: Novel Prediction
+   Prediction Score: 0.8434
+   Drug ID: DB05710
+   Key Genes/Proteins (2):
+      - CHRNA3
+      - CHRNB2
+   Connection Paths (5 found):
+      Path 1 (3 steps):
+         Gantacurium → CHRNA3 → CHRNB2 → Alzheimer disease
+      Path 2 (3 steps):
+         Gantacurium → CHRNA3 → CHRNB2 → Alzheimer disease
+
+5. N-(5,6-DIPHENYLFURO[2,3-D]PYRIMIDIN-4-YL)GLYCINE
+   Status: Novel Prediction
+   Prediction Score: 0.8429
+   Drug ID: DB07653
+   Key Genes/Proteins (3):
+      - CHEK1
+      - HLA-DRB5
+      - MAPT
+   Connection Paths (5 found):
+      Path 1 (3 steps):
+         N-(5,6-DIPHENYLFURO[2,3-D]PYRI → CHEK1 → HLA-DRB5 → Alzheimer disease
+      Path 2 (3 steps):
+         N-(5,6-DIPHENYLFURO[2,3-D]PYRI → CHEK1 → HLA-DRB5 → Alzheimer disease
+
+6. (2R)-1-[(5,6-DIPHENYL-7H-PYRROLO[2,3-D]PYRIMIDIN-4-YL)AMINO]PROPAN-2-OL
+   Status: Novel Prediction
+   Prediction Score: 0.8425
+   Drug ID: DB07647
+   Key Genes/Proteins (3):
+      - CHEK1
+      - HLA-DRB5
+      - MAPT
+   Connection Paths (5 found):
+      Path 1 (3 steps):
+         (2R)-1-[(5,6-DIPHENYL-7H-PYRRO → CHEK1 → HLA-DRB5 → Alzheimer disease
+      Path 2 (3 steps):
+         (2R)-1-[(5,6-DIPHENYL-7H-PYRRO → CHEK1 → HLA-DRB5 → Alzheimer disease
+
+7. Gpi-1046
+   Status: Novel Prediction
+   Prediction Score: 0.8424
+   Drug ID: DB01951
+   Key Genes/Proteins (3):
+      - APP
+      - FKBP1A
+      - TOMM40
+   Connection Paths (5 found):
+      Path 1 (3 steps):
+         Gpi-1046 → FKBP1A → APP → Alzheimer disease
+      Path 2 (3 steps):
+         Gpi-1046 → FKBP1A → APP → Alzheimer disease
+
+8. Cilansetron
+   Status: Novel Prediction
+   Prediction Score: 0.8424
+   Drug ID: DB04885
+   Key Genes/Proteins (2):
+      - ABCA7
+      - HTR3A
+   Connection Paths (5 found):
+      Path 1 (3 steps):
+         Cilansetron → HTR3A → ABCA7 → Alzheimer disease
+      Path 2 (3 steps):
+         Cilansetron → HTR3A → ABCA7 → Alzheimer disease
+
+9. 2-(cyclohexylamino)benzoic acid
+   Status: Novel Prediction
+   Prediction Score: 0.8422
+   Drug ID: DB07038
+   Key Genes/Proteins (3):
+      - CHEK1
+      - HLA-DRB5
+      - MAPT
+   Connection Paths (5 found):
+      Path 1 (3 steps):
+         2-(cyclohexylamino)benzoic aci → CHEK1 → HLA-DRB5 → Alzheimer disease
+      Path 2 (3 steps):
+         2-(cyclohexylamino)benzoic aci → CHEK1 → HLA-DRB5 → Alzheimer disease
+
+10. (3r)-4-(P-Toluenesulfonyl)-1,4-Thiazane-3-Carboxylicacid-L-Leucine
+   Status: Novel Prediction
+   Prediction Score: 0.8415
+   Drug ID: DB04012
+   Key Genes/Proteins (3):
+      - APP
+      - FKBP1A
+      - TOMM40
+   Connection Paths (5 found):
+      Path 1 (3 steps):
+         (3r)-4-(P-Toluenesulfonyl)-1,4 → FKBP1A → APP → Alzheimer disease
+      Path 2 (3 steps):
+         (3r)-4-(P-Toluenesulfonyl)-1,4 → FKBP1A → APP → Alzheimer disease
+
+================================================================================
+MEDICAL INTERPRETATION
+================================================================================
+
+Known Treatments:
+  No known treatments found in top predictions.
+
+Novel Predictions:
+  • Cp-166572, 2-Hydroxymethyl-4-(4-N,N-Dimethylaminosulfonyl-1-Piperazino)-Pyrimidine (score: 0.8493)
+    This is a novel prediction not directly seen in training.
+    Connected through: A2M, PSEN1, RAD23A
+  • DDP733 (score: 0.8473)
+    This is a novel prediction not directly seen in training.
+    Connected through: ABCA7, HTR3A
+  • Dostarlimab (score: 0.8443)
+    This is a novel prediction not directly seen in training.
+    Connected through: GK, PDCD1, TNF
+  • Gantacurium (score: 0.8434)
+    This is a novel prediction not directly seen in training.
+    Connected through: CHRNA3, CHRNB2
+  • N-(5,6-DIPHENYLFURO[2,3-D]PYRIMIDIN-4-YL)GLYCINE (score: 0.8429)
+    This is a novel prediction not directly seen in training.
+    Connected through: CHEK1, HLA-DRB5, MAPT
+
+================================================================================
+BIOLOGICAL INSIGHTS
+================================================================================
+
+Most frequent intermediate genes/proteins:
+  • CHEK1: appears in 3 prediction paths
+  • HLA-DRB5: appears in 3 prediction paths
+  • MAPT: appears in 3 prediction paths
+  • ABCA7: appears in 2 prediction paths
+  • HTR3A: appears in 2 prediction paths
+  • APP: appears in 2 prediction paths
+  • FKBP1A: appears in 2 prediction paths
+  • TOMM40: appears in 2 prediction paths
+  • A2M: appears in 1 prediction paths
+  • PSEN1: appears in 1 prediction paths
+
+These genes may play key roles in the disease mechanism and could be
+potential therapeutic targets.
+
+================================================================================
+RECOMMENDATIONS
+================================================================================
+
+1. Validate novel predictions with literature review and domain experts
+2. Investigate high-confidence predictions for potential drug repurposing
+3. Examine intermediate genes for mechanism of action insights
+4. Consider experimental validation for top novel candidates
+5. Review known treatments for model validation
+
+================================================================================
+END OF REPORT
+================================================================================

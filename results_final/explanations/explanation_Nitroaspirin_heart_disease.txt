@@ -1,0 +1,141 @@
+================================================================================
+DRUG-DISEASE PREDICTION EXPLANATION
+================================================================================
+
+Drug: Nitroaspirin
+Disease: heart disease
+Prediction Score: 0.8179
+Total Paths Found: 20
+Top Paths Analyzed: 5
+
+--------------------------------------------------------------------------------
+SUMMARY
+--------------------------------------------------------------------------------
+
+The model predicts a high confidence relationship between Nitroaspirin and heart disease.
+
+This prediction is supported by 20 connecting pathway(s) in the knowledge graph.
+
+================================================================================
+TOP PATHWAYS AND EXPLANATIONS
+================================================================================
+
+Pathway #1 (Importance: 0.2216)
+--------------------------------------------------------------------------------
+Path: Nitroaspirin →[drug-gene]→ PTGS1 →[drug-gene]→ Valproic acid →[drug-gene]→ SLC22A5 →[gene-disease]→ heart disease
+
+Detailed Steps:
+  1. Nitroaspirin (drug)
+     └─ drug-gene ─→
+  2. PTGS1 (gene/protein)
+     └─ drug-gene ─→
+  3. Valproic acid (drug)
+     └─ drug-gene ─→
+  4. SLC22A5 (gene/protein)
+     └─ gene-disease ─→
+  5. heart disease (disease)
+
+Explanation:
+  Nitroaspirin may treat heart disease through a pathway involving PTGS1, SLC22A5. This connection suggests a 4-step mechanism linking the drug's molecular targets to the disease pathology.
+
+
+Pathway #2 (Importance: 0.2118)
+--------------------------------------------------------------------------------
+Path: Nitroaspirin →[drug-gene]→ PTGS1 →[drug-gene]→ Diphenhydramine →[drug-gene]→ SLC22A5 →[gene-disease]→ heart disease
+
+Detailed Steps:
+  1. Nitroaspirin (drug)
+     └─ drug-gene ─→
+  2. PTGS1 (gene/protein)
+     └─ drug-gene ─→
+  3. Diphenhydramine (drug)
+     └─ drug-gene ─→
+  4. SLC22A5 (gene/protein)
+     └─ gene-disease ─→
+  5. heart disease (disease)
+
+Explanation:
+  Nitroaspirin may treat heart disease through a pathway involving PTGS1, SLC22A5. This connection suggests a 4-step mechanism linking the drug's molecular targets to the disease pathology.
+
+
+Pathway #3 (Importance: 0.1515)
+--------------------------------------------------------------------------------
+Path: Nitroaspirin →[drug-gene]→ PTGS1 →[gene-disease]→ schizophrenia →[gene-disease]→ CRP →[gene-disease]→ heart disease
+
+Detailed Steps:
+  1. Nitroaspirin (drug)
+     └─ drug-gene ─→
+  2. PTGS1 (gene/protein)
+     └─ gene-disease ─→
+  3. schizophrenia (disease)
+     └─ gene-disease ─→
+  4. CRP (gene/protein)
+     └─ gene-disease ─→
+  5. heart disease (disease)
+
+Explanation:
+  Nitroaspirin may treat heart disease through a pathway involving PTGS1, CRP. This connection suggests a 4-step mechanism linking the drug's molecular targets to the disease pathology.
+
+
+Pathway #4 (Importance: 0.1496)
+--------------------------------------------------------------------------------
+Path: Nitroaspirin →[drug-gene]→ PTGS1 →[gene-disease]→ schizophrenia →[gene-disease]→ IL6 →[gene-disease]→ heart disease
+
+Detailed Steps:
+  1. Nitroaspirin (drug)
+     └─ drug-gene ─→
+  2. PTGS1 (gene/protein)
+     └─ gene-disease ─→
+  3. schizophrenia (disease)
+     └─ gene-disease ─→
+  4. IL6 (gene/protein)
+     └─ gene-disease ─→
+  5. heart disease (disease)
+
+Explanation:
+  Nitroaspirin may treat heart disease through a pathway involving PTGS1, IL6. This connection suggests a 4-step mechanism linking the drug's molecular targets to the disease pathology.
+
+
+Pathway #5 (Importance: 0.1479)
+--------------------------------------------------------------------------------
+Path: Nitroaspirin →[drug-gene]→ PTGS1 →[gene-disease]→ breast carcinoma →[gene-disease]→ IL6 →[gene-disease]→ heart disease
+
+Detailed Steps:
+  1. Nitroaspirin (drug)
+     └─ drug-gene ─→
+  2. PTGS1 (gene/protein)
+     └─ gene-disease ─→
+  3. breast carcinoma (disease)
+     └─ gene-disease ─→
+  4. IL6 (gene/protein)
+     └─ gene-disease ─→
+  5. heart disease (disease)
+
+Explanation:
+  Nitroaspirin may treat heart disease through a pathway involving PTGS1, IL6. This connection suggests a 4-step mechanism linking the drug's molecular targets to the disease pathology.
+
+
+================================================================================
+BIOLOGICAL INTERPRETATION
+================================================================================
+
+Key Genes/Proteins Involved:
+  • PTGS1: appears in 5 pathway(s)
+  • SLC22A5: appears in 2 pathway(s)
+  • IL6: appears in 2 pathway(s)
+  • CRP: appears in 1 pathway(s)
+
+These genes/proteins represent potential molecular mechanisms through which Nitroaspirin may affect heart disease.
+
+================================================================================
+RECOMMENDATIONS
+================================================================================
+
+✓ Strong prediction with multiple supporting pathways
+  → Recommended for further investigation
+  → Review literature for validation
+  → Consider for experimental studies
+
+================================================================================
+END OF EXPLANATION
+================================================================================
