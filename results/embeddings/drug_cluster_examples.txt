@@ -1,0 +1,119 @@
+DRUG CLUSTERING RESULTS
+================================================================================
+
+Number of clusters: 8
+Silhouette score: 0.1754
+Total drugs: 6282
+
+
+Cluster 0 (1432 drugs):
+--------------------------------------------------------------------------------
+  - Cetuximab
+  - Etanercept
+  - Peginterferon alfa-2a
+  - Alteplase
+  - Reteplase
+  - Interferon alfa-n3
+  - Thyrotropin alfa
+  - Anistreplase
+  - Desmopressin
+  - Drotrecogin alfa
+  ... and 1422 more
+
+Cluster 1 (695 drugs):
+--------------------------------------------------------------------------------
+  - Lepirudin
+  - Leuprolide
+  - Goserelin
+  - Asparaginase Escherichia coli
+  - Menotropins
+  - Lutropin alfa
+  - Cetrorelix
+  - Pegaspargase
+  - Rituximab
+  - Ibritumomab tiuxetan
+  ... and 685 more
+
+Cluster 2 (741 drugs):
+--------------------------------------------------------------------------------
+  - Eptifibatide
+  - Calcitriol
+  - Vidarabine
+  - Moxifloxacin
+  - Bexarotene
+  - Pimecrolimus
+  - Megestrol acetate
+  - Dydrogesterone
+  - Dexrazoxane
+  - Valrubicin
+  ... and 731 more
+
+Cluster 3 (1023 drugs):
+--------------------------------------------------------------------------------
+  - Denileukin diftitox
+  - Bivalirudin
+  - Urokinase
+  - Salmon calcitonin
+  - Anakinra
+  - Human immunoglobulin G
+  - Insulin human
+  - Tenecteplase
+  - Coagulation factor VIIa Recombinant Human
+  - Oprelvekin
+  ... and 1013 more
+
+Cluster 4 (501 drugs):
+--------------------------------------------------------------------------------
+  - Sermorelin
+  - Sargramostim
+  - Antihemophilic factor, human recombinant
+  - Interferon gamma-1b
+  - Glucagon
+  - Collagenase clostridium histolyticum
+  - Alpha-1-proteinase inhibitor
+  - Pegademase
+  - Insulin pork
+  - Agalsidase beta
+  ... and 491 more
+
+Cluster 5 (640 drugs):
+--------------------------------------------------------------------------------
+  - Pegfilgrastim
+  - Trastuzumab
+  - Filgrastim
+  - Adapalene
+  - Diflorasone
+  - Desoximetasone
+  - Metyrosine
+  - Tazarotene
+  - Clocortolone
+  - Dienestrol
+  ... and 630 more
+
+Cluster 6 (898 drugs):
+--------------------------------------------------------------------------------
+  - Interferon alfa-n1
+  - Peginterferon alfa-2b
+  - Gramicidin D
+  - Interferon alfa-2a, Recombinant
+  - Insulin lispro
+  - Insulin glargine
+  - Somatotropin
+  - Abciximab
+  - Interferon beta-1b
+  - Interferon alfacon-1
+  ... and 888 more
+
+Cluster 7 (352 drugs):
+--------------------------------------------------------------------------------
+  - Darbepoetin alfa
+  - Erythropoietin
+  - Pyridoxal
+  - Milrinone
+  - Methocarbamol
+  - Framycetin
+  - Acetyldigitoxin
+  - Pentosan polysulfate
+  - Gadopentetic acid
+  - Ritodrine
+  ... and 342 more

@@ -1,0 +1,21 @@
+CLUSTERING ANALYSIS SUMMARY
+================================================================================
+
+DRUG:
+  Silhouette score: 0.1754
+  Cluster sizes: [1432, 695, 741, 1023, 501, 640, 898, 352]
+  Mean cluster size: 785.2
+  Std cluster size: 313.7
+
+DISEASE:
+  Silhouette score: 0.1522
+  Cluster sizes: [524, 801, 462, 831, 807, 763, 604, 801]
+  Mean cluster size: 699.1
+  Std cluster size: 136.8
+
+GENE:
+  Silhouette score: 0.1491
+  Cluster sizes: [3965, 1828, 2243, 1880, 1838, 2228, 1564, 3505]
+  Mean cluster size: 2381.4
+  Std cluster size: 816.6
+

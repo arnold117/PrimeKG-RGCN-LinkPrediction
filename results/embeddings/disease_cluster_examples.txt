@@ -1,0 +1,119 @@
+DISEASE CLUSTERING RESULTS
+================================================================================
+
+Number of clusters: 8
+Silhouette score: 0.1522
+Total diseases: 5593
+
+
+Cluster 0 (524 diseases):
+--------------------------------------------------------------------------------
+  - sea-blue histiocyte syndrome
+  - X inactivation, familial skewed
+  - IFAP syndrome with or without BRESHECK syndrome
+  - extrahepatic biliary atresia
+  - short stature, facial dysmorphism, and skeletal anomalies with or without cardiac anomalies
+  - Smith-Lemli-Opitz syndrome
+  - Summitt syndrome
+  - Filippi syndrome
+  - transcobalamin II deficiency
+  - trichomegaly-retina pigmentary degeneration-dwarfism syndrome
+  ... and 514 more
+
+Cluster 1 (801 diseases):
+--------------------------------------------------------------------------------
+  - EEC syndrome
+  - hereditary thrombocytopenia and hematological cancer predisposition syndrome associated with RUNX1
+  - schizencephaly
+  - Rajab interstitial lung disease with brain calcifications
+  - Beemer-Langer syndrome
+  - Roberts-SC phocomelia syndrome
+  - Waldenstrom macroglobulinemia
+  - macroglobulinemia, Waldenstrom
+  - SC phocomelia syndrome
+  - situs inversus
+  ... and 791 more
+
+Cluster 2 (462 diseases):
+--------------------------------------------------------------------------------
+  - saccharopinuria
+  - craniometadiaphyseal dysplasia, wormian bone type
+  - familial hyperphosphatemic tumoral calcinosis/hyperphosphatemic hyperostosis syndrome
+  - free sialic acid storage disease, infantile form
+  - sialuria
+  - congenital secretory diarrhea
+  - spondyloperipheral dysplasia-short ulna syndrome
+  - tetraamelia-multiple malformations syndrome
+  - thyroid dyshormonogenesis
+  - isolated thyroid-stimulating hormone deficiency
+  ... and 452 more
+
+Cluster 3 (831 diseases):
+--------------------------------------------------------------------------------
+  - ectodermal dysplasia syndrome
+  - Sandhoff disease
+  - fetal akinesia deformation sequence
+  - mitochondrial complex I deficiency
+  - mitochondrial complex I deficiency, nuclear
+  - 46,XX disorder of sex development
+  - mitochondrial complex II deficiency, nuclear
+  - long QT syndrome
+  - obsolete paraplegia-brachydactyly-cone-shaped epiphysis syndrome
+  - infantile onset spinocerebellar ataxia
+  ... and 821 more
+
+Cluster 4 (807 diseases):
+--------------------------------------------------------------------------------
+  - schneckenbecken dysplasia
+  - adult acute respiratory distress syndrome
+  - permanent neonatal diabetes mellitus
+  - GTP cyclohydrolase I deficiency with hyperphenylalaninemia
+  - liver failure
+  - growth hormone insensitivity with immune dysregulation 1, autosomal recessive
+  - adenosine kinase deficiency
+  - SHORT syndrome
+  - Sjogren syndrome
+  - malignant glioma
+  ... and 797 more
+
+Cluster 5 (763 diseases):
+--------------------------------------------------------------------------------
+  - Dravet syndrome
+  - nephropathic cystinosis
+  - chronic liver failure
+  - combined immunodeficiency due to ZAP70 deficiency
+  - psoriatic arthritis, susceptibility to, 1
+  - Canavan disease
+  - obsolete sudden infant death syndrome
+  - thrombotic thrombocytopenic purpura
+  - thyroid hormone resistance, generalized
+  - thyrotoxicosis
+  ... and 753 more
+
+Cluster 6 (604 diseases):
+--------------------------------------------------------------------------------
+  - myoclonus, familial
+  - neurodegeneration, childhood-onset, stress-induced, with variable ataxia and seizures
+  - Imerslund-Grasbeck syndrome
+  - enhanced S-cone syndrome
+  - Goldmann-Favre syndrome
+  - familial isolated congenital asplenia
+  - mucosulfatidosis
+  - isolated sulfite oxidase deficiency
+  - Dorfman-Chanarin disease
+  - CHIME syndrome
+  ... and 594 more
+
+Cluster 7 (801 diseases):
+--------------------------------------------------------------------------------
+  - Schinzel-Giedion syndrome
+  - carcinoid syndrome
+  - growth delay due to insulin-like growth factor I resistance
+  - thymoma
+  - isolated thyrotropin-releasing hormone deficiency
+  - phocomelia, Schinzel type
+  - VACTERL with hydrocephalus
+  - Weaver syndrome
+  - xeroderma pigmentosum
+  - hypohidrotic ectodermal dysplasia with immunodeficiency
+  ... and 791 more

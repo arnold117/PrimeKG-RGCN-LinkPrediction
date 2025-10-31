@@ -1,0 +1,33 @@
+{
+  "metrics": {
+    "classification": {
+      "auc_roc": 0.9781226434455852,
+      "auc_pr": 0.9663054367169019,
+      "precision": 0.9271506866186342,
+      "recall": 0.9794431433775697,
+      "f1_score": 0.9525797981715226,
+      "threshold": 0.5
+    },
+    "ranking": {
+      "mrr": 0.01870585756387666,
+      "mean_rank": 588.1185922456415,
+      "median_rank": 287.0,
+      "hits@10": 0.040983606557377046,
+      "hits@50": 0.1550871714806141,
+      "hits@100": 0.26880041634139995
+    },
+    "test_edges": 15372,
+    "num_nodes": 30926
+  },
+  "model_info": {
+    "checkpoint_path": "output/models/best_model.pt",
+    "epoch": 1,
+    "num_nodes": 30926,
+    "num_relations": 3,
+    "embedding_dim": 64,
+    "hidden_dim": 128,
+    "num_parameters": 2078208,
+    "best_val_loss": 0.1527403016164734,
+    "best_val_acc": 0.9492904569717485
+  }
+}

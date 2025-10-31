@@ -1,0 +1,38 @@
+================================================================================
+DRUG-DISEASE PREDICTION EXPLANATION
+================================================================================
+
+Drug: Nitroaspirin
+Disease: X-linked intellectual disability-cardiomegaly-congestive heart failure syndrome
+Prediction Score: 0.8905
+Total Paths Found: 0
+Top Paths Analyzed: 0
+
+--------------------------------------------------------------------------------
+SUMMARY
+--------------------------------------------------------------------------------
+
+The model predicts a high confidence relationship between Nitroaspirin and X-linked intellectual disability-cardiomegaly-congestive heart failure syndrome.
+
+Warning: No direct paths found in the knowledge graph. The prediction is based solely on embedding similarity.
+
+================================================================================
+TOP PATHWAYS AND EXPLANATIONS
+================================================================================
+
+================================================================================
+BIOLOGICAL INTERPRETATION
+================================================================================
+
+================================================================================
+RECOMMENDATIONS
+================================================================================
+
+⚠ Moderate prediction
+  → Requires additional validation
+  → Check for clinical evidence
+  → Investigate key genes for biological plausibility
+
+================================================================================
+END OF EXPLANATION
+================================================================================

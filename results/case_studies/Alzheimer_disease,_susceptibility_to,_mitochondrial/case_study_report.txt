@@ -1,0 +1,184 @@
+================================================================================
+DRUG-DISEASE PREDICTION CASE STUDY
+================================================================================
+
+Disease: Alzheimer disease, susceptibility to, mitochondrial
+Disease ID: 10783
+Analysis Date: 2025-10-31 16:09:04
+Model: DrugDiseaseModel
+
+--------------------------------------------------------------------------------
+SUMMARY
+--------------------------------------------------------------------------------
+Total predictions analyzed: 15
+Known treatments: 0
+Novel predictions: 15
+Average prediction score: 0.8592
+Total graph paths found: 15
+
+================================================================================
+TOP DRUG PREDICTIONS
+================================================================================
+
+1. Fexaramine
+   Status: Novel Prediction
+   Prediction Score: 0.8772
+   Drug ID: DB02545
+   No direct paths found in graph
+
+2. 16,17-Androstene-3-Ol
+   Status: Novel Prediction
+   Prediction Score: 0.8770
+   Drug ID: DB01889
+   No direct paths found in graph
+
+3. Aminophosphonic acid-guanylate ester
+   Status: Novel Prediction
+   Prediction Score: 0.8704
+   Drug ID: DB02623
+   No direct paths found in graph
+
+4. 2-amino-N-(4-methyl-1,3-thiazol-2-yl)-5-[(4-methyl-4H-1,2,4-triazol-3-yl)sulfanyl]benzamide
+   Status: Novel Prediction
+   Prediction Score: 0.8612
+   Drug ID: DB07358
+   No direct paths found in graph
+
+5. (2Z)-N-(3-chloro-2'-methoxybiphenyl-4-yl)-2-cyano-3-hydroxybut-2-enamide
+   Status: Novel Prediction
+   Prediction Score: 0.8563
+   Drug ID: DB08172
+   Key Genes/Proteins (3):
+      - DHODH
+      - ND1
+      - NDUFS8
+   Connection Paths (5 found):
+      Path 1 (4 steps):
+         (2Z)-N-(3-chloro-2'-methoxybip → DHODH → NDUFS8 → ND1 → Alzheimer disease, susceptibil
+      Path 2 (4 steps):
+         (2Z)-N-(3-chloro-2'-methoxybip → DHODH → NDUFS8 → ND1 → Alzheimer disease, susceptibil
+
+6. Cetilistat
+   Status: Novel Prediction
+   Prediction Score: 0.8554
+   Drug ID: DB06586
+   No direct paths found in graph
+
+7. 7-Methoxy-8-[1-(Methylsulfonyl)-1h-Pyrazol-4-Yl]Naphthalene-2-Carboximidamide
+   Status: Novel Prediction
+   Prediction Score: 0.8553
+   Drug ID: DB03046
+   No direct paths found in graph
+
+8. N-(4-CARBAMIMIDOYL-3-CHORO-PHENYL)-2-HYDROXY-3-IODO-5-METHYL-BENZAMIDE
+   Status: Novel Prediction
+   Prediction Score: 0.8549
+   Drug ID: DB06857
+   No direct paths found in graph
+
+9. (2Z)-N-biphenyl-4-yl-2-cyano-3-cyclopropyl-3-hydroxyprop-2-enamide
+   Status: Novel Prediction
+   Prediction Score: 0.8548
+   Drug ID: DB08169
+   Key Genes/Proteins (3):
+      - DHODH
+      - ND1
+      - NDUFS8
+   Connection Paths (5 found):
+      Path 1 (4 steps):
+         (2Z)-N-biphenyl-4-yl-2-cyano-3 → DHODH → NDUFS8 → ND1 → Alzheimer disease, susceptibil
+      Path 2 (4 steps):
+         (2Z)-N-biphenyl-4-yl-2-cyano-3 → DHODH → NDUFS8 → ND1 → Alzheimer disease, susceptibil
+
+10. 3-[(4-fluorophenyl)sulfanyl]-N-(4-methyl-1,3-thiazol-2-yl)-6-[(4-methyl-4H-1,2,4-triazol-3-yl)sulfanyl]pyridine-2-carboxamide
+   Status: Novel Prediction
+   Prediction Score: 0.8547
+   Drug ID: DB07359
+   No direct paths found in graph
+
+11. 2-(methylamino)-N-(4-methyl-1,3-thiazol-2-yl)-5-[(4-methyl-4H-1,2,4-triazol-3-yl)sulfanyl]benzamide
+   Status: Novel Prediction
+   Prediction Score: 0.8545
+   Drug ID: DB08118
+   No direct paths found in graph
+
+12. 4-(2-aminoethoxy)-N-(3-chloro-5-piperidin-1-ylphenyl)-3,5-dimethylbenzamide
+   Status: Novel Prediction
+   Prediction Score: 0.8542
+   Drug ID: DB08697
+   No direct paths found in graph
+
+13. N-(3-cyanophenyl)-2'-methyl-5'-(5-methyl-1,3,4-oxadiazol-2-yl)-4-biphenylcarboxamide
+   Status: Novel Prediction
+   Prediction Score: 0.8540
+   Drug ID: DB07833
+   Key Genes/Proteins (3):
+      - MAPK14
+      - ND2
+      - STK11
+   Connection Paths (5 found):
+      Path 1 (4 steps):
+         N-(3-cyanophenyl)-2'-methyl-5' → MAPK14 → STK11 → ND2 → Alzheimer disease, susceptibil
+      Path 2 (4 steps):
+         N-(3-cyanophenyl)-2'-methyl-5' → MAPK14 → STK11 → ND2 → Alzheimer disease, susceptibil
+
+14. BMS-181156
+   Status: Novel Prediction
+   Prediction Score: 0.8538
+   Drug ID: DB02466
+   No direct paths found in graph
+
+15. Urofollitropin
+   Status: Novel Prediction
+   Prediction Score: 0.8535
+   Drug ID: DB00094
+   No direct paths found in graph
+
+================================================================================
+MEDICAL INTERPRETATION
+================================================================================
+
+Known Treatments:
+  No known treatments found in top predictions.
+
+Novel Predictions:
+  • Fexaramine (score: 0.8772)
+    This is a novel prediction not directly seen in training.
+  • 16,17-Androstene-3-Ol (score: 0.8770)
+    This is a novel prediction not directly seen in training.
+  • Aminophosphonic acid-guanylate ester (score: 0.8704)
+    This is a novel prediction not directly seen in training.
+  • 2-amino-N-(4-methyl-1,3-thiazol-2-yl)-5-[(4-methyl-4H-1,2,4-triazol-3-yl)sulfanyl]benzamide (score: 0.8612)
+    This is a novel prediction not directly seen in training.
+  • (2Z)-N-(3-chloro-2'-methoxybiphenyl-4-yl)-2-cyano-3-hydroxybut-2-enamide (score: 0.8563)
+    This is a novel prediction not directly seen in training.
+    Connected through: DHODH, ND1, NDUFS8
+
+================================================================================
+BIOLOGICAL INSIGHTS
+================================================================================
+
+Most frequent intermediate genes/proteins:
+  • DHODH: appears in 2 prediction paths
+  • ND1: appears in 2 prediction paths
+  • NDUFS8: appears in 2 prediction paths
+  • MAPK14: appears in 1 prediction paths
+  • ND2: appears in 1 prediction paths
+  • STK11: appears in 1 prediction paths
+
+These genes may play key roles in the disease mechanism and could be
+potential therapeutic targets.
+
+================================================================================
+RECOMMENDATIONS
+================================================================================
+
+1. Validate novel predictions with literature review and domain experts
+2. Investigate high-confidence predictions for potential drug repurposing
+3. Examine intermediate genes for mechanism of action insights
+4. Consider experimental validation for top novel candidates
+5. Review known treatments for model validation
+
+================================================================================
+END OF REPORT
+================================================================================

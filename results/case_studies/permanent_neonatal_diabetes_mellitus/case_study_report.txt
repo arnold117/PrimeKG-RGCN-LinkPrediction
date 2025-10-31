@@ -1,0 +1,184 @@
+================================================================================
+DRUG-DISEASE PREDICTION CASE STUDY
+================================================================================
+
+Disease: permanent neonatal diabetes mellitus
+Disease ID: 100164_16391
+Analysis Date: 2025-10-31 15:59:54
+Model: DrugDiseaseModel
+
+--------------------------------------------------------------------------------
+SUMMARY
+--------------------------------------------------------------------------------
+Total predictions analyzed: 10
+Known treatments: 0
+Novel predictions: 10
+Average prediction score: 0.8943
+Total graph paths found: 30
+
+================================================================================
+TOP DRUG PREDICTIONS
+================================================================================
+
+1. Fexaramine
+   Status: Novel Prediction
+   Prediction Score: 0.9119
+   Drug ID: DB02545
+   No direct paths found in graph
+
+2. 16,17-Androstene-3-Ol
+   Status: Novel Prediction
+   Prediction Score: 0.9089
+   Drug ID: DB01889
+   No direct paths found in graph
+
+3. Aminophosphonic acid-guanylate ester
+   Status: Novel Prediction
+   Prediction Score: 0.9075
+   Drug ID: DB02623
+   No direct paths found in graph
+
+4. 2-amino-N-(4-methyl-1,3-thiazol-2-yl)-5-[(4-methyl-4H-1,2,4-triazol-3-yl)sulfanyl]benzamide
+   Status: Novel Prediction
+   Prediction Score: 0.8946
+   Drug ID: DB07358
+   Key Genes/Proteins (2):
+      - GCK
+      - SLC2A2
+   Connection Paths (5 found):
+      Path 1 (2 steps):
+         2-amino-N-(4-methyl-1,3-thiazo → GCK → permanent neonatal diabetes me
+      Path 2 (2 steps):
+         2-amino-N-(4-methyl-1,3-thiazo → GCK → permanent neonatal diabetes me
+
+5. Cetilistat
+   Status: Novel Prediction
+   Prediction Score: 0.8871
+   Drug ID: DB06586
+   No direct paths found in graph
+
+6. Urofollitropin
+   Status: Novel Prediction
+   Prediction Score: 0.8868
+   Drug ID: DB00094
+   Key Genes/Proteins (3):
+      - FOXP3
+      - FSHR
+      - GRK2
+   Connection Paths (5 found):
+      Path 1 (4 steps):
+         Urofollitropin → FSHR → GRK2 → FOXP3 → permanent neonatal diabetes me
+      Path 2 (4 steps):
+         Urofollitropin → FSHR → GRK2 → FOXP3 → permanent neonatal diabetes me
+
+7. Tromethamine
+   Status: Novel Prediction
+   Prediction Score: 0.8867
+   Drug ID: DB03754
+   Key Genes/Proteins (4):
+      - APP
+      - FOXP3
+      - HASPIN
+      - NEUROD1
+   Connection Paths (5 found):
+      Path 1 (4 steps):
+         Tromethamine → APP → HASPIN → NEUROD1 → permanent neonatal diabetes me
+      Path 2 (4 steps):
+         Tromethamine → APP → HASPIN → NEUROD1 → permanent neonatal diabetes me
+
+8. AMGN-0007
+   Status: Novel Prediction
+   Prediction Score: 0.8866
+   Drug ID: DB06511
+   Key Genes/Proteins (3):
+      - SRC
+      - STAT3
+      - TNFSF11
+   Connection Paths (5 found):
+      Path 1 (4 steps):
+         AMGN-0007 → TNFSF11 → SRC → STAT3 → permanent neonatal diabetes me
+      Path 2 (4 steps):
+         AMGN-0007 → TNFSF11 → SRC → STAT3 → permanent neonatal diabetes me
+
+9. 6-[N-(4-(Aminomethyl)Phenyl)Carbamyl]-2-Naphthalenecarboxamidine
+   Status: Novel Prediction
+   Prediction Score: 0.8865
+   Drug ID: DB02398
+   Key Genes/Proteins (4):
+      - FOXP3
+      - INSR
+      - PLAU
+      - PRKCA
+   Connection Paths (5 found):
+      Path 1 (4 steps):
+         6-[N-(4-(Aminomethyl)Phenyl)Ca → PLAU → PRKCA → FOXP3 → permanent neonatal diabetes me
+      Path 2 (4 steps):
+         6-[N-(4-(Aminomethyl)Phenyl)Ca → PLAU → PRKCA → FOXP3 → permanent neonatal diabetes me
+
+10. N-(4-CARBAMIMIDOYL-3-CHORO-PHENYL)-2-HYDROXY-3-IODO-5-METHYL-BENZAMIDE
+   Status: Novel Prediction
+   Prediction Score: 0.8863
+   Drug ID: DB06857
+   Key Genes/Proteins (4):
+      - FOXP3
+      - INSR
+      - PLAU
+      - PRKCA
+   Connection Paths (5 found):
+      Path 1 (4 steps):
+         N-(4-CARBAMIMIDOYL-3-CHORO-PHE → PLAU → PRKCA → FOXP3 → permanent neonatal diabetes me
+      Path 2 (4 steps):
+         N-(4-CARBAMIMIDOYL-3-CHORO-PHE → PLAU → PRKCA → FOXP3 → permanent neonatal diabetes me
+
+================================================================================
+MEDICAL INTERPRETATION
+================================================================================
+
+Known Treatments:
+  No known treatments found in top predictions.
+
+Novel Predictions:
+  • Fexaramine (score: 0.9119)
+    This is a novel prediction not directly seen in training.
+  • 16,17-Androstene-3-Ol (score: 0.9089)
+    This is a novel prediction not directly seen in training.
+  • Aminophosphonic acid-guanylate ester (score: 0.9075)
+    This is a novel prediction not directly seen in training.
+  • 2-amino-N-(4-methyl-1,3-thiazol-2-yl)-5-[(4-methyl-4H-1,2,4-triazol-3-yl)sulfanyl]benzamide (score: 0.8946)
+    This is a novel prediction not directly seen in training.
+    Connected through: GCK, SLC2A2
+  • Cetilistat (score: 0.8871)
+    This is a novel prediction not directly seen in training.
+
+================================================================================
+BIOLOGICAL INSIGHTS
+================================================================================
+
+Most frequent intermediate genes/proteins:
+  • FOXP3: appears in 4 prediction paths
+  • INSR: appears in 2 prediction paths
+  • PLAU: appears in 2 prediction paths
+  • PRKCA: appears in 2 prediction paths
+  • GCK: appears in 1 prediction paths
+  • SLC2A2: appears in 1 prediction paths
+  • FSHR: appears in 1 prediction paths
+  • GRK2: appears in 1 prediction paths
+  • APP: appears in 1 prediction paths
+  • HASPIN: appears in 1 prediction paths
+
+These genes may play key roles in the disease mechanism and could be
+potential therapeutic targets.
+
+================================================================================
+RECOMMENDATIONS
+================================================================================
+
+1. Validate novel predictions with literature review and domain experts
+2. Investigate high-confidence predictions for potential drug repurposing
+3. Examine intermediate genes for mechanism of action insights
+4. Consider experimental validation for top novel candidates
+5. Review known treatments for model validation
+
+================================================================================
+END OF REPORT
+================================================================================

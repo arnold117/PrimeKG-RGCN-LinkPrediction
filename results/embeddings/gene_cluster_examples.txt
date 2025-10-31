@@ -1,0 +1,119 @@
+GENE CLUSTERING RESULTS
+================================================================================
+
+Number of clusters: 8
+Silhouette score: 0.1491
+Total genes: 19051
+
+
+Cluster 0 (3965 genes):
+--------------------------------------------------------------------------------
+  - ABI1
+  - GNPDA1
+  - KCNE3
+  - ZBTB33
+  - POM121C
+  - UQCRFS1P1
+  - OST4
+  - UBE2DNL
+  - TEN1
+  - BCL2L10
+  ... and 3955 more
+
+Cluster 1 (1828 genes):
+--------------------------------------------------------------------------------
+  - GAGE12F
+  - ZSCAN30
+  - ZGLP1
+  - TRAPPC3L
+  - ZBTB42
+  - CCDC152
+  - PRR32
+  - SBK3
+  - SYCE1L
+  - ZNF316
+  ... and 1818 more
+
+Cluster 2 (2243 genes):
+--------------------------------------------------------------------------------
+  - NAALAD2
+  - TCF24
+  - HSFX2
+  - TMEM262
+  - SPATA48
+  - KIR2DS2
+  - FAM157B
+  - FAM25G
+  - KCNJ18
+  - UPK3BL1
+  ... and 2233 more
+
+Cluster 3 (1880 genes):
+--------------------------------------------------------------------------------
+  - SNORD116-2
+  - SNORD116-3
+  - SNORD116-4
+  - SNORD116-5
+  - SNORD116-6
+  - SNORD116-7
+  - SNORD116-8
+  - SNORD116-9
+  - SNORD116-10
+  - SNORD116-11
+  ... and 1870 more
+
+Cluster 4 (1838 genes):
+--------------------------------------------------------------------------------
+  - A1BG
+  - NAT2
+  - ADA
+  - HDAC5
+  - PDCD6
+  - SH2B3
+  - CDH5
+  - PARP2
+  - FARSB
+  - ABCC5
+  ... and 1828 more
+
+Cluster 5 (2228 genes):
+--------------------------------------------------------------------------------
+  - MED6
+  - NR2E3
+  - DDTL
+  - ACOT8
+  - VPS9D1-AS1
+  - SNRPGP15
+  - NEMP2
+  - CD300LD
+  - PEG3-AS1
+  - EPOP
+  ... and 2218 more
+
+Cluster 6 (1564 genes):
+--------------------------------------------------------------------------------
+  - SNORD116-1
+  - CDKN2B-AS1
+  - SPG37
+  - SPG38
+  - HOTAIR
+  - MIR300
+  - MIR875
+  - MIR744
+  - MIR877
+  - MIR665
+  ... and 1554 more
+
+Cluster 7 (3505 genes):
+--------------------------------------------------------------------------------
+  - CDH2
+  - AKT3
+  - CDH3
+  - TANK
+  - SRA1
+  - HDAC6
+  - PDCD6IP
+  - RNU4ATAC
+  - BCL2L11
+  - TROAP
+  ... and 3495 more

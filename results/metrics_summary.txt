@@ -1,0 +1,40 @@
+============================================================
+EVALUATION RESULTS SUMMARY
+============================================================
+
+Model Information:
+------------------------------------------------------------
+checkpoint_path: output/models/best_model.pt
+epoch: 1
+num_nodes: 30926
+num_relations: 3
+embedding_dim: 64
+hidden_dim: 128
+num_parameters: 2078208
+best_val_loss: 0.1527403016164734
+best_val_acc: 0.9492904569717485
+
+Dataset Statistics:
+------------------------------------------------------------
+Test edges: 15,372
+Number of nodes: 30,926
+
+Classification Metrics:
+------------------------------------------------------------
+auc_roc: 0.9781
+auc_pr: 0.9663
+precision: 0.9272
+recall: 0.9794
+f1_score: 0.9526
+threshold: 0.5000
+
+Ranking Metrics:
+------------------------------------------------------------
+mrr: 0.0187
+mean_rank: 588.1186
+median_rank: 287.0000
+hits@10: 0.0410
+hits@50: 0.1551
+hits@100: 0.2688
+
+============================================================

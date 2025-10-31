@@ -1,0 +1,317 @@
+head,tail,relation,head_name,tail_name,head_type,tail_type,score,predicted,actual
+14412,7383,drug-gene,"('1357', 'CPA1', 'gene/protein')","('DB02494', '(S)-3-phenyllactic acid', 'drug')",unknown,unknown,0.00567172234877944,0,1.0
+7383,14412,drug-gene,"('DB02494', '(S)-3-phenyllactic acid', 'drug')","('1357', 'CPA1', 'gene/protein')",unknown,unknown,0.005671725608408451,0,1.0
+6606,19394,drug-gene,"('DB01108', 'Trilostane', 'drug')","('3283', 'HSD3B1', 'gene/protein')",unknown,unknown,0.04757777228951454,0,1.0
+19394,6606,drug-gene,"('3283', 'HSD3B1', 'gene/protein')","('DB01108', 'Trilostane', 'drug')",unknown,unknown,0.04757777974009514,0,1.0
+9107,15188,drug-gene,"('DB06190', 'Solabegron', 'drug')","('155', 'ADRB3', 'gene/protein')",unknown,unknown,0.0628882646560669,0,1.0
+9107,15188,drug-gene,"('DB06190', 'Solabegron', 'drug')","('155', 'ADRB3', 'gene/protein')",unknown,unknown,0.06288827955722809,0,1.0
+15188,9107,drug-gene,"('155', 'ADRB3', 'gene/protein')","('DB06190', 'Solabegron', 'drug')",unknown,unknown,0.06288827955722809,0,1.0
+15188,9107,drug-gene,"('155', 'ADRB3', 'gene/protein')","('DB06190', 'Solabegron', 'drug')",unknown,unknown,0.06288827955722809,0,1.0
+8164,13945,drug-gene,"('DB04065', 'N-Cyclopentyl-N-Cyclobutylformamide', 'drug')","('124', 'ADH1A', 'gene/protein')",unknown,unknown,0.11841631680727005,0,1.0
+13945,8164,drug-gene,"('124', 'ADH1A', 'gene/protein')","('DB04065', 'N-Cyclopentyl-N-Cyclobutylformamide', 'drug')",unknown,unknown,0.11841631680727005,0,1.0
+25795,10990,drug-gene,"('645745', 'MT1HL1', 'gene/protein')","('DB09130', 'Copper', 'drug')",unknown,unknown,0.13513198494911194,0,1.0
+10990,25795,drug-gene,"('DB09130', 'Copper', 'drug')","('645745', 'MT1HL1', 'gene/protein')",unknown,unknown,0.13513201475143433,0,1.0
+20087,6359,drug-gene,"('3738', 'KCNA3', 'gene/protein')","('DB00845', 'Clofazimine', 'drug')",unknown,unknown,0.13673348724842072,0,1.0
+6359,20087,drug-gene,"('DB00845', 'Clofazimine', 'drug')","('3738', 'KCNA3', 'gene/protein')",unknown,unknown,0.13673348724842072,0,1.0
+15382,10956,drug-gene,"('162514', 'TRPV3', 'gene/protein')","('DB09086', 'Eugenol', 'drug')",unknown,unknown,0.1429414302110672,0,1.0
+10956,15382,drug-gene,"('DB09086', 'Eugenol', 'drug')","('162514', 'TRPV3', 'gene/protein')",unknown,unknown,0.1429414302110672,0,1.0
+21450,9263,drug-gene,"('4582', 'MUC1', 'gene/protein')","('DB06584', 'TG4010', 'drug')",unknown,unknown,0.15376386046409607,0,1.0
+9263,21450,drug-gene,"('DB06584', 'TG4010', 'drug')","('4582', 'MUC1', 'gene/protein')",unknown,unknown,0.15376390516757965,0,1.0
+10248,16063,drug-gene,"('DB07970', '5-[(2-methyl-5-{[3-(trifluoromethyl)phenyl]carbamoyl}phenyl)amino]pyridine-3-carboxamide', 'drug')","('2045', 'EPHA7', 'gene/protein')",unknown,unknown,0.1708894670009613,0,1.0
+16063,10248,drug-gene,"('2045', 'EPHA7', 'gene/protein')","('DB07970', '5-[(2-methyl-5-{[3-(trifluoromethyl)phenyl]carbamoyl}phenyl)amino]pyridine-3-carboxamide', 'drug')",unknown,unknown,0.1708894968032837,0,1.0
+16063,10248,drug-gene,"('2045', 'EPHA7', 'gene/protein')","('DB07970', '5-[(2-methyl-5-{[3-(trifluoromethyl)phenyl]carbamoyl}phenyl)amino]pyridine-3-carboxamide', 'drug')",unknown,unknown,0.17088951170444489,0,1.0
+10248,16063,drug-gene,"('DB07970', '5-[(2-methyl-5-{[3-(trifluoromethyl)phenyl]carbamoyl}phenyl)amino]pyridine-3-carboxamide', 'drug')","('2045', 'EPHA7', 'gene/protein')",unknown,unknown,0.17088955640792847,0,1.0
+19868,7889,drug-gene,"('353', 'APRT', 'gene/protein')","('DB03506', '9-Deazaadenine', 'drug')",unknown,unknown,0.17197483777999878,0,1.0
+7889,19868,drug-gene,"('DB03506', '9-Deazaadenine', 'drug')","('353', 'APRT', 'gene/protein')",unknown,unknown,0.17197486758232117,0,1.0
+7889,19868,drug-gene,"('DB03506', '9-Deazaadenine', 'drug')","('353', 'APRT', 'gene/protein')",unknown,unknown,0.17197489738464355,0,1.0
+19868,7889,drug-gene,"('353', 'APRT', 'gene/protein')","('DB03506', '9-Deazaadenine', 'drug')",unknown,unknown,0.17197489738464355,0,1.0
+27087,9042,drug-gene,"('7422', 'VEGFA', 'gene/protein')","('DB05969', 'SNS-032', 'drug')",unknown,unknown,0.1728145331144333,0,1.0
+9042,27087,drug-gene,"('DB05969', 'SNS-032', 'drug')","('7422', 'VEGFA', 'gene/protein')",unknown,unknown,0.1728145331144333,0,1.0
+27087,9042,drug-gene,"('7422', 'VEGFA', 'gene/protein')","('DB05969', 'SNS-032', 'drug')",unknown,unknown,0.1728145331144333,0,1.0
+9042,27087,drug-gene,"('DB05969', 'SNS-032', 'drug')","('7422', 'VEGFA', 'gene/protein')",unknown,unknown,0.1728145331144333,0,1.0
+20146,7524,drug-gene,"('375', 'ARF1', 'gene/protein')","('DB02774', '1,3-Propanediol', 'drug')",unknown,unknown,0.1753387302160263,0,1.0
+7524,20146,drug-gene,"('DB02774', '1,3-Propanediol', 'drug')","('375', 'ARF1', 'gene/protein')",unknown,unknown,0.1753387302160263,0,1.0
+7518,26849,drug-gene,"('DB02761', 'S-Mercaptocysteine', 'drug')","('7263', 'TST', 'gene/protein')",unknown,unknown,0.17621654272079468,0,1.0
+26849,7518,drug-gene,"('7263', 'TST', 'gene/protein')","('DB02761', 'S-Mercaptocysteine', 'drug')",unknown,unknown,0.17621658742427826,0,1.0
+8811,14683,drug-gene,"('DB05264', 'NPI 32101', 'drug')","('1439', 'CSF2RB', 'gene/protein')",unknown,unknown,0.17858879268169403,0,1.0
+14683,8811,drug-gene,"('1439', 'CSF2RB', 'gene/protein')","('DB05264', 'NPI 32101', 'drug')",unknown,unknown,0.17858882248401642,0,1.0
+15085,7963,drug-gene,"('152007', 'GLIPR2', 'gene/protein')","('DB03661', 'L-cysteic acid', 'drug')",unknown,unknown,0.2142696976661682,0,1.0
+7963,15085,drug-gene,"('DB03661', 'L-cysteic acid', 'drug')","('152007', 'GLIPR2', 'gene/protein')",unknown,unknown,0.2142696976661682,0,1.0
+5942,15281,drug-gene,"('DB00389', 'Carbimazole', 'drug')","('1588', 'CYP19A1', 'gene/protein')",unknown,unknown,0.2160435914993286,0,1.0
+15281,5942,drug-gene,"('1588', 'CYP19A1', 'gene/protein')","('DB00389', 'Carbimazole', 'drug')",unknown,unknown,0.2160435914993286,0,1.0
+17835,8395,drug-gene,"('26253', 'CLEC4E', 'gene/protein')","('DB04540', 'Cholesterol', 'drug')",unknown,unknown,0.2171931117773056,0,1.0
+8395,17835,drug-gene,"('DB04540', 'Cholesterol', 'drug')","('26253', 'CLEC4E', 'gene/protein')",unknown,unknown,0.217193141579628,0,1.0
+7256,16116,drug-gene,"('DB02239', 'Laevulinic Acid', 'drug')","('210', 'ALAD', 'gene/protein')",unknown,unknown,0.22798532247543335,0,1.0
+16116,7256,drug-gene,"('210', 'ALAD', 'gene/protein')","('DB02239', 'Laevulinic Acid', 'drug')",unknown,unknown,0.22798535227775574,0,1.0
+16116,7256,drug-gene,"('210', 'ALAD', 'gene/protein')","('DB02239', 'Laevulinic Acid', 'drug')",unknown,unknown,0.22798535227775574,0,1.0
+7256,16116,drug-gene,"('DB02239', 'Laevulinic Acid', 'drug')","('210', 'ALAD', 'gene/protein')",unknown,unknown,0.22798538208007812,0,1.0
+11453,19450,drug-gene,"('DB12465', 'Ketanserin', 'drug')","('3356', 'HTR2A', 'gene/protein')",unknown,unknown,0.23430897295475006,0,1.0
+19450,11453,drug-gene,"('3356', 'HTR2A', 'gene/protein')","('DB12465', 'Ketanserin', 'drug')",unknown,unknown,0.23430897295475006,0,1.0
+19450,11453,drug-gene,"('3356', 'HTR2A', 'gene/protein')","('DB12465', 'Ketanserin', 'drug')",unknown,unknown,0.23430897295475006,0,1.0
+11453,19450,drug-gene,"('DB12465', 'Ketanserin', 'drug')","('3356', 'HTR2A', 'gene/protein')",unknown,unknown,0.23430901765823364,0,1.0
+20146,8196,drug-gene,"('375', 'ARF1', 'gene/protein')","('DB04121', ""Guanosine-3'-monophosphate-5'-diphosphate"", 'drug')",unknown,unknown,0.23611049354076385,0,1.0
+8196,20146,drug-gene,"('DB04121', ""Guanosine-3'-monophosphate-5'-diphosphate"", 'drug')","('375', 'ARF1', 'gene/protein')",unknown,unknown,0.23611050844192505,0,1.0
+22999,11126,drug-gene,"('5465', 'PPARA', 'gene/protein')","('DB09422', 'Soybean oil', 'drug')",unknown,unknown,0.236822247505188,0,1.0
+11126,22999,drug-gene,"('DB09422', 'Soybean oil', 'drug')","('5465', 'PPARA', 'gene/protein')",unknown,unknown,0.236822247505188,0,1.0
+5804,19184,drug-gene,"('DB00233', 'Aminosalicylic acid', 'drug')","('30814', 'PLA2G2E', 'gene/protein')",unknown,unknown,0.2434612661600113,0,1.0
+19184,5804,drug-gene,"('30814', 'PLA2G2E', 'gene/protein')","('DB00233', 'Aminosalicylic acid', 'drug')",unknown,unknown,0.24346132576465607,0,1.0
+11730,22604,drug-gene,"('DB14072', 'Reversin 121', 'drug')","('5243', 'ABCB1', 'gene/protein')",unknown,unknown,0.2489938586950302,0,1.0
+22604,11730,drug-gene,"('5243', 'ABCB1', 'gene/protein')","('DB14072', 'Reversin 121', 'drug')",unknown,unknown,0.2489938884973526,0,1.0
+18274,10926,drug-gene,"('2740', 'GLP1R', 'gene/protein')","('DB09045', 'Dulaglutide', 'drug')",unknown,unknown,0.25146546959877014,0,1.0
+10926,18274,drug-gene,"('DB09045', 'Dulaglutide', 'drug')","('2740', 'GLP1R', 'gene/protein')",unknown,unknown,0.2514655292034149,0,1.0
+14278,7800,drug-gene,"('1312', 'COMT', 'gene/protein')","('DB03336', 'BIA', 'drug')",unknown,unknown,0.2522667348384857,0,1.0
+7800,14278,drug-gene,"('DB03336', 'BIA', 'drug')","('1312', 'COMT', 'gene/protein')",unknown,unknown,0.2522667348384857,0,1.0
+11789,15222,drug-gene,"('DB14637', 'Fluprednisolone acetate', 'drug')","('1576', 'CYP3A4', 'gene/protein')",unknown,unknown,0.2530326843261719,0,1.0
+15222,11789,drug-gene,"('1576', 'CYP3A4', 'gene/protein')","('DB14637', 'Fluprednisolone acetate', 'drug')",unknown,unknown,0.2530326843261719,0,1.0
+15222,11601,drug-gene,"('1576', 'CYP3A4', 'gene/protein')","('DB13633', 'Mepartricin', 'drug')",unknown,unknown,0.2565731406211853,0,1.0
+11601,15222,drug-gene,"('DB13633', 'Mepartricin', 'drug')","('1576', 'CYP3A4', 'gene/protein')",unknown,unknown,0.2565732002258301,0,1.0
+6162,17019,drug-gene,"('DB00627', 'Niacin', 'drug')","('23475', 'QPRT', 'gene/protein')",unknown,unknown,0.2566443681716919,0,1.0
+17019,6162,drug-gene,"('23475', 'QPRT', 'gene/protein')","('DB00627', 'Niacin', 'drug')",unknown,unknown,0.2566443979740143,0,1.0
+7713,26675,drug-gene,"('DB03152', 'B-2-Octylglucoside', 'drug')","('7053', 'TGM3', 'gene/protein')",unknown,unknown,0.25881248712539673,0,1.0
+26675,7713,drug-gene,"('7053', 'TGM3', 'gene/protein')","('DB03152', 'B-2-Octylglucoside', 'drug')",unknown,unknown,0.25881248712539673,0,1.0
+15222,9015,drug-gene,"('1576', 'CYP3A4', 'gene/protein')","('DB05903', 'KOS-1584', 'drug')",unknown,unknown,0.262657105922699,0,1.0
+9015,15222,drug-gene,"('DB05903', 'KOS-1584', 'drug')","('1576', 'CYP3A4', 'gene/protein')",unknown,unknown,0.26265713572502136,0,1.0
+9015,15222,drug-gene,"('DB05903', 'KOS-1584', 'drug')","('1576', 'CYP3A4', 'gene/protein')",unknown,unknown,0.26265716552734375,0,1.0
+15222,9015,drug-gene,"('1576', 'CYP3A4', 'gene/protein')","('DB05903', 'KOS-1584', 'drug')",unknown,unknown,0.26265716552734375,0,1.0
+7894,15222,drug-gene,"('DB03515', 'Equilenin', 'drug')","('1576', 'CYP3A4', 'gene/protein')",unknown,unknown,0.26334336400032043,0,1.0
+15222,7894,drug-gene,"('1576', 'CYP3A4', 'gene/protein')","('DB03515', 'Equilenin', 'drug')",unknown,unknown,0.26334336400032043,0,1.0
+7789,19035,drug-gene,"('DB03316', '1,4-Dioxane', 'drug')","('29924', 'EPN1', 'gene/protein')",unknown,unknown,0.26456111669540405,0,1.0
+19035,7789,drug-gene,"('29924', 'EPN1', 'gene/protein')","('DB03316', '1,4-Dioxane', 'drug')",unknown,unknown,0.26456111669540405,0,1.0
+15222,11480,drug-gene,"('1576', 'CYP3A4', 'gene/protein')","('DB12629', '3,5-diiodothyropropionic acid', 'drug')",unknown,unknown,0.2663910984992981,0,1.0
+15222,11480,drug-gene,"('1576', 'CYP3A4', 'gene/protein')","('DB12629', '3,5-diiodothyropropionic acid', 'drug')",unknown,unknown,0.2663911283016205,0,1.0
+11480,15222,drug-gene,"('DB12629', '3,5-diiodothyropropionic acid', 'drug')","('1576', 'CYP3A4', 'gene/protein')",unknown,unknown,0.2663911283016205,0,1.0
+11480,15222,drug-gene,"('DB12629', '3,5-diiodothyropropionic acid', 'drug')","('1576', 'CYP3A4', 'gene/protein')",unknown,unknown,0.26639121770858765,0,1.0
+19916,5616,drug-gene,"('3554', 'IL1R1', 'gene/protein')","('DB00026', 'Anakinra', 'drug')",unknown,unknown,0.26854532957077026,0,1.0
+5616,19916,drug-gene,"('DB00026', 'Anakinra', 'drug')","('3554', 'IL1R1', 'gene/protein')",unknown,unknown,0.26854535937309265,0,1.0
+16141,10736,drug-gene,"('213', 'ALB', 'gene/protein')","('DB08735', 'R,S-Warfarin alcohol', 'drug')",unknown,unknown,0.27745532989501953,0,1.0
+10736,16141,drug-gene,"('DB08735', 'R,S-Warfarin alcohol', 'drug')","('213', 'ALB', 'gene/protein')",unknown,unknown,0.27745532989501953,0,1.0
+8386,20136,drug-gene,"('DB04522', 'Dexfosfoserine', 'drug')","('3749', 'KCNC4', 'gene/protein')",unknown,unknown,0.2877022325992584,0,1.0
+20136,8386,drug-gene,"('3749', 'KCNC4', 'gene/protein')","('DB04522', 'Dexfosfoserine', 'drug')",unknown,unknown,0.2877022325992584,0,1.0
+18789,7791,drug-gene,"('2891', 'GRIA2', 'gene/protein')","('DB03319', '(2S)-2-Ammonio-3-[5-(2-methyl-2-propanyl)-3-oxido-1,2-oxazol-4-yl]propanoate', 'drug')",unknown,unknown,0.2900306284427643,0,1.0
+7791,18789,drug-gene,"('DB03319', '(2S)-2-Ammonio-3-[5-(2-methyl-2-propanyl)-3-oxido-1,2-oxazol-4-yl]propanoate', 'drug')","('2891', 'GRIA2', 'gene/protein')",unknown,unknown,0.29003071784973145,0,1.0
+7953,23030,drug-gene,"('DB03635', 'Ethanesulfonic acid', 'drug')","('5473', 'PPBP', 'gene/protein')",unknown,unknown,0.2929467558860779,0,1.0
+23030,7953,drug-gene,"('5473', 'PPBP', 'gene/protein')","('DB03635', 'Ethanesulfonic acid', 'drug')",unknown,unknown,0.2929467558860779,0,1.0
+16314,5661,drug-gene,"('2213', 'FCGR2B', 'gene/protein')","('DB00081', 'Tositumomab', 'drug')",unknown,unknown,0.30163702368736267,0,1.0
+5661,16314,drug-gene,"('DB00081', 'Tositumomab', 'drug')","('2213', 'FCGR2B', 'gene/protein')",unknown,unknown,0.30163702368736267,0,1.0
+17524,7887,drug-gene,"('2582', 'GALE', 'gene/protein')","('DB03501', ""Galactose-uridine-5'-diphosphate"", 'drug')",unknown,unknown,0.30412355065345764,0,1.0
+7887,17524,drug-gene,"('DB03501', ""Galactose-uridine-5'-diphosphate"", 'drug')","('2582', 'GALE', 'gene/protein')",unknown,unknown,0.30412358045578003,0,1.0
+17524,7887,drug-gene,"('2582', 'GALE', 'gene/protein')","('DB03501', ""Galactose-uridine-5'-diphosphate"", 'drug')",unknown,unknown,0.3041236102581024,0,1.0
+7887,17524,drug-gene,"('DB03501', ""Galactose-uridine-5'-diphosphate"", 'drug')","('2582', 'GALE', 'gene/protein')",unknown,unknown,0.3041236400604248,0,1.0
+7379,15174,drug-gene,"('DB02489', '9-Methylguanine', 'drug')","('1544', 'CYP1A2', 'gene/protein')",unknown,unknown,0.3042444884777069,0,1.0
+15174,7379,drug-gene,"('1544', 'CYP1A2', 'gene/protein')","('DB02489', '9-Methylguanine', 'drug')",unknown,unknown,0.3042445778846741,0,1.0
+7764,16141,drug-gene,"('DB03255', 'Phenol', 'drug')","('213', 'ALB', 'gene/protein')",unknown,unknown,0.3057652413845062,0,1.0
+16141,7764,drug-gene,"('213', 'ALB', 'gene/protein')","('DB03255', 'Phenol', 'drug')",unknown,unknown,0.3057652711868286,0,1.0
+11383,27841,drug-gene,"('DB12010', 'Fostamatinib', 'drug')","('79934', 'COQ8B', 'gene/protein')",unknown,unknown,0.3069002032279968,0,1.0
+27841,11383,drug-gene,"('79934', 'COQ8B', 'gene/protein')","('DB12010', 'Fostamatinib', 'drug')",unknown,unknown,0.3069002330303192,0,1.0
+7955,24139,drug-gene,"('DB03637', 'Guanidine-3-propanol', 'drug')","('5646', 'PRSS3', 'gene/protein')",unknown,unknown,0.3083614110946655,0,1.0
+24139,7955,drug-gene,"('5646', 'PRSS3', 'gene/protein')","('DB03637', 'Guanidine-3-propanol', 'drug')",unknown,unknown,0.3083614110946655,0,1.0
+7955,24139,drug-gene,"('DB03637', 'Guanidine-3-propanol', 'drug')","('5646', 'PRSS3', 'gene/protein')",unknown,unknown,0.3083614408969879,0,1.0
+24139,7955,drug-gene,"('5646', 'PRSS3', 'gene/protein')","('DB03637', 'Guanidine-3-propanol', 'drug')",unknown,unknown,0.3083614706993103,0,1.0
+15174,11583,drug-gene,"('1544', 'CYP1A2', 'gene/protein')","('DB13449', 'Proxyphylline', 'drug')",unknown,unknown,0.30853164196014404,0,1.0
+11583,15174,drug-gene,"('DB13449', 'Proxyphylline', 'drug')","('1544', 'CYP1A2', 'gene/protein')",unknown,unknown,0.30853167176246643,0,1.0
+15174,11583,drug-gene,"('1544', 'CYP1A2', 'gene/protein')","('DB13449', 'Proxyphylline', 'drug')",unknown,unknown,0.308531790971756,0,1.0
+11583,15174,drug-gene,"('DB13449', 'Proxyphylline', 'drug')","('1544', 'CYP1A2', 'gene/protein')",unknown,unknown,0.308531790971756,0,1.0
+11110,16141,drug-gene,"('DB09347', 'Acetrizoic acid', 'drug')","('213', 'ALB', 'gene/protein')",unknown,unknown,0.31288936734199524,0,1.0
+16141,11110,drug-gene,"('213', 'ALB', 'gene/protein')","('DB09347', 'Acetrizoic acid', 'drug')",unknown,unknown,0.3128893971443176,0,1.0
+11110,16141,drug-gene,"('DB09347', 'Acetrizoic acid', 'drug')","('213', 'ALB', 'gene/protein')",unknown,unknown,0.3128894567489624,0,1.0
+16141,11110,drug-gene,"('213', 'ALB', 'gene/protein')","('DB09347', 'Acetrizoic acid', 'drug')",unknown,unknown,0.31288954615592957,0,1.0
+24532,11448,drug-gene,"('5742', 'PTGS1', 'gene/protein')","('DB12445', 'Nitroaspirin', 'drug')",unknown,unknown,0.3201856315135956,0,1.0
+11448,24532,drug-gene,"('DB12445', 'Nitroaspirin', 'drug')","('5742', 'PTGS1', 'gene/protein')",unknown,unknown,0.32018566131591797,0,1.0
+7237,24532,drug-gene,"('DB02198', '2-Bromoacetyl Group', 'drug')","('5742', 'PTGS1', 'gene/protein')",unknown,unknown,0.32066094875335693,0,1.0
+24532,7237,drug-gene,"('5742', 'PTGS1', 'gene/protein')","('DB02198', '2-Bromoacetyl Group', 'drug')",unknown,unknown,0.32066094875335693,0,1.0
+24532,7237,drug-gene,"('5742', 'PTGS1', 'gene/protein')","('DB02198', '2-Bromoacetyl Group', 'drug')",unknown,unknown,0.32066094875335693,0,1.0
+7237,24532,drug-gene,"('DB02198', '2-Bromoacetyl Group', 'drug')","('5742', 'PTGS1', 'gene/protein')",unknown,unknown,0.3206610083580017,0,1.0
+11158,24532,drug-gene,"('DB11071', 'Phenyl salicylate', 'drug')","('5742', 'PTGS1', 'gene/protein')",unknown,unknown,0.32412904500961304,0,1.0
+24532,11158,drug-gene,"('5742', 'PTGS1', 'gene/protein')","('DB11071', 'Phenyl salicylate', 'drug')",unknown,unknown,0.3241291046142578,0,1.0
+10984,15174,drug-gene,"('DB09122', 'Peginterferon beta-1a', 'drug')","('1544', 'CYP1A2', 'gene/protein')",unknown,unknown,0.3253564238548279,0,1.0
+15174,10984,drug-gene,"('1544', 'CYP1A2', 'gene/protein')","('DB09122', 'Peginterferon beta-1a', 'drug')",unknown,unknown,0.32535645365715027,0,1.0
+20799,9690,drug-gene,"('4048', 'LTA4H', 'gene/protein')","('DB07196', 'N-methyl-1-(2-thiophen-2-ylphenyl)methanamine', 'drug')",unknown,unknown,0.3259827494621277,0,1.0
+20799,9690,drug-gene,"('4048', 'LTA4H', 'gene/protein')","('DB07196', 'N-methyl-1-(2-thiophen-2-ylphenyl)methanamine', 'drug')",unknown,unknown,0.3259827494621277,0,1.0
+9690,20799,drug-gene,"('DB07196', 'N-methyl-1-(2-thiophen-2-ylphenyl)methanamine', 'drug')","('4048', 'LTA4H', 'gene/protein')",unknown,unknown,0.32598280906677246,0,1.0
+9690,20799,drug-gene,"('DB07196', 'N-methyl-1-(2-thiophen-2-ylphenyl)methanamine', 'drug')","('4048', 'LTA4H', 'gene/protein')",unknown,unknown,0.32598280906677246,0,1.0
+7335,15619,drug-gene,"('DB02400', 'ES-936', 'drug')","('1728', 'NQO1', 'gene/protein')",unknown,unknown,0.3276998996734619,0,1.0
+15619,7335,drug-gene,"('1728', 'NQO1', 'gene/protein')","('DB02400', 'ES-936', 'drug')",unknown,unknown,0.3276999294757843,0,1.0
+7335,15619,drug-gene,"('DB02400', 'ES-936', 'drug')","('1728', 'NQO1', 'gene/protein')",unknown,unknown,0.3276999294757843,0,1.0
+15619,7335,drug-gene,"('1728', 'NQO1', 'gene/protein')","('DB02400', 'ES-936', 'drug')",unknown,unknown,0.3276999294757843,0,1.0
+8639,15222,drug-gene,"('DB04934', 'Rifalazil', 'drug')","('1576', 'CYP3A4', 'gene/protein')",unknown,unknown,0.3288049101829529,0,1.0
+15222,8639,drug-gene,"('1576', 'CYP3A4', 'gene/protein')","('DB04934', 'Rifalazil', 'drug')",unknown,unknown,0.3288049101829529,0,1.0
+15222,11575,drug-gene,"('1576', 'CYP3A4', 'gene/protein')","('DB13385', 'Dihydroergocryptine', 'drug')",unknown,unknown,0.3288237750530243,0,1.0
+11575,15222,drug-gene,"('DB13385', 'Dihydroergocryptine', 'drug')","('1576', 'CYP3A4', 'gene/protein')",unknown,unknown,0.3288237750530243,0,1.0
+15222,11575,drug-gene,"('1576', 'CYP3A4', 'gene/protein')","('DB13385', 'Dihydroergocryptine', 'drug')",unknown,unknown,0.3288239538669586,0,1.0
+11575,15222,drug-gene,"('DB13385', 'Dihydroergocryptine', 'drug')","('1576', 'CYP3A4', 'gene/protein')",unknown,unknown,0.328823983669281,0,1.0
+11485,14358,drug-gene,"('DB12670', 'Rolofylline', 'drug')","('134', 'ADORA1', 'gene/protein')",unknown,unknown,0.33001700043678284,0,1.0
+14358,11485,drug-gene,"('134', 'ADORA1', 'gene/protein')","('DB12670', 'Rolofylline', 'drug')",unknown,unknown,0.3300170600414276,0,1.0
+11383,16023,drug-gene,"('DB12010', 'Fostamatinib', 'drug')","('2030', 'SLC29A1', 'gene/protein')",unknown,unknown,0.33344122767448425,0,1.0
+16023,11383,drug-gene,"('2030', 'SLC29A1', 'gene/protein')","('DB12010', 'Fostamatinib', 'drug')",unknown,unknown,0.33344125747680664,0,1.0
+9128,19225,drug-gene,"('DB06226', 'Nelipepimut-S', 'drug')","('3105', 'HLA-A', 'gene/protein')",unknown,unknown,0.33845770359039307,0,1.0
+9128,19225,drug-gene,"('DB06226', 'Nelipepimut-S', 'drug')","('3105', 'HLA-A', 'gene/protein')",unknown,unknown,0.33845776319503784,0,1.0
+19225,9128,drug-gene,"('3105', 'HLA-A', 'gene/protein')","('DB06226', 'Nelipepimut-S', 'drug')",unknown,unknown,0.33845776319503784,0,1.0
+19225,9128,drug-gene,"('3105', 'HLA-A', 'gene/protein')","('DB06226', 'Nelipepimut-S', 'drug')",unknown,unknown,0.33845776319503784,0,1.0
+24525,8334,drug-gene,"('5741', 'PTH', 'gene/protein')","('DB04419', 'D-norleucine', 'drug')",unknown,unknown,0.3433695435523987,0,1.0
+8334,24525,drug-gene,"('DB04419', 'D-norleucine', 'drug')","('5741', 'PTH', 'gene/protein')",unknown,unknown,0.3433695435523987,0,1.0
+15301,6864,drug-gene,"('1594', 'CYP27B1', 'gene/protein')","('DB01436', 'Alfacalcidol', 'drug')",unknown,unknown,0.3440709114074707,0,1.0
+6864,15301,drug-gene,"('DB01436', 'Alfacalcidol', 'drug')","('1594', 'CYP27B1', 'gene/protein')",unknown,unknown,0.3440709114074707,0,1.0
+8040,20771,drug-gene,"('DB03814', '2-(N-morpholino)ethanesulfonic acid', 'drug')","('403', 'ARL3', 'gene/protein')",unknown,unknown,0.3442915081977844,0,1.0
+20771,8040,drug-gene,"('403', 'ARL3', 'gene/protein')","('DB03814', '2-(N-morpholino)ethanesulfonic acid', 'drug')",unknown,unknown,0.3442915081977844,0,1.0
+16865,6740,drug-gene,"('2328', 'FMO3', 'gene/protein')","('DB01254', 'Dasatinib', 'drug')",unknown,unknown,0.34598442912101746,0,1.0
+6740,16865,drug-gene,"('DB01254', 'Dasatinib', 'drug')","('2328', 'FMO3', 'gene/protein')",unknown,unknown,0.34598445892333984,0,1.0
+26656,5626,drug-gene,"('7035', 'TFPI', 'gene/protein')","('DB00036', 'Coagulation factor VIIa Recombinant Human', 'drug')",unknown,unknown,0.34676048159599304,0,1.0
+5626,26656,drug-gene,"('DB00036', 'Coagulation factor VIIa Recombinant Human', 'drug')","('7035', 'TFPI', 'gene/protein')",unknown,unknown,0.34676048159599304,0,1.0
+30246,11641,drug-gene,"('930', 'CD19', 'gene/protein')","('DB13881', 'Tisagenlecleucel', 'drug')",unknown,unknown,0.34686121344566345,0,1.0
+11641,30246,drug-gene,"('DB13881', 'Tisagenlecleucel', 'drug')","('930', 'CD19', 'gene/protein')",unknown,unknown,0.34686121344566345,0,1.0
+30246,11641,drug-gene,"('930', 'CD19', 'gene/protein')","('DB13881', 'Tisagenlecleucel', 'drug')",unknown,unknown,0.34686121344566345,0,1.0
+11641,30246,drug-gene,"('DB13881', 'Tisagenlecleucel', 'drug')","('930', 'CD19', 'gene/protein')",unknown,unknown,0.3468612730503082,0,1.0
+26448,7376,drug-gene,"('683', 'BST1', 'gene/protein')","('DB02483', 'Etheno-NAD', 'drug')",unknown,unknown,0.3470979332923889,0,1.0
+7376,26448,drug-gene,"('DB02483', 'Etheno-NAD', 'drug')","('683', 'BST1', 'gene/protein')",unknown,unknown,0.3470979630947113,0,1.0
+10674,26789,drug-gene,"('DB08604', 'Triclosan', 'drug')","('7173', 'TPO', 'gene/protein')",unknown,unknown,0.35146769881248474,0,1.0
+26789,10674,drug-gene,"('7173', 'TPO', 'gene/protein')","('DB08604', 'Triclosan', 'drug')",unknown,unknown,0.35146772861480713,0,1.0
+16141,8744,drug-gene,"('213', 'ALB', 'gene/protein')","('DB05134', 'Tanespimycin', 'drug')",unknown,unknown,0.3593294024467468,0,1.0
+8744,16141,drug-gene,"('DB05134', 'Tanespimycin', 'drug')","('213', 'ALB', 'gene/protein')",unknown,unknown,0.3593294024467468,0,1.0
+8773,29464,drug-gene,"('DB05197', 'Sofalcone', 'drug')","('873', 'CBR1', 'gene/protein')",unknown,unknown,0.36101529002189636,0,1.0
+29464,8773,drug-gene,"('873', 'CBR1', 'gene/protein')","('DB05197', 'Sofalcone', 'drug')",unknown,unknown,0.36101531982421875,0,1.0
+5705,23162,drug-gene,"('DB00132', 'alpha-Linolenic acid', 'drug')","('54898', 'ELOVL2', 'gene/protein')",unknown,unknown,0.36232811212539673,0,1.0
+23162,5705,drug-gene,"('54898', 'ELOVL2', 'gene/protein')","('DB00132', 'alpha-Linolenic acid', 'drug')",unknown,unknown,0.3623281419277191,0,1.0
+6529,15285,drug-gene,"('DB01026', 'Ketoconazole', 'drug')","('1589', 'CYP21A2', 'gene/protein')",unknown,unknown,0.3718523383140564,0,1.0
+15285,6529,drug-gene,"('1589', 'CYP21A2', 'gene/protein')","('DB01026', 'Ketoconazole', 'drug')",unknown,unknown,0.3718523681163788,0,1.0
+9612,20799,drug-gene,"('DB07102', '(2S)-2-amino-5-oxo-5-[(4-phenylmethoxyphenyl)amino]pentanoic acid', 'drug')","('4048', 'LTA4H', 'gene/protein')",unknown,unknown,0.37207749485969543,0,1.0
+20799,9612,drug-gene,"('4048', 'LTA4H', 'gene/protein')","('DB07102', '(2S)-2-amino-5-oxo-5-[(4-phenylmethoxyphenyl)amino]pentanoic acid', 'drug')",unknown,unknown,0.3720776438713074,0,1.0
+8778,18346,drug-gene,"('DB05202', 'Egaptivon pegol', 'drug')","('2811', 'GP1BA', 'gene/protein')",unknown,unknown,0.3741292655467987,0,1.0
+18346,8778,drug-gene,"('2811', 'GP1BA', 'gene/protein')","('DB05202', 'Egaptivon pegol', 'drug')",unknown,unknown,0.3741292655467987,0,1.0
+5743,21853,drug-gene,"('DB00171', 'ATP', 'drug')","('5032', 'P2RY11', 'gene/protein')",unknown,unknown,0.37900322675704956,0,1.0
+21853,5743,drug-gene,"('5032', 'P2RY11', 'gene/protein')","('DB00171', 'ATP', 'drug')",unknown,unknown,0.37900325655937195,0,1.0
+6453,26750,drug-gene,"('DB00945', 'Acetylsalicylic acid', 'drug')","('7130', 'TNFAIP6', 'gene/protein')",unknown,unknown,0.37919965386390686,0,1.0
+26750,6453,drug-gene,"('7130', 'TNFAIP6', 'gene/protein')","('DB00945', 'Acetylsalicylic acid', 'drug')",unknown,unknown,0.37919971346855164,0,1.0
+29543,10233,drug-gene,"('883', 'KYAT1', 'gene/protein')","('DB07950', 'Indoleacetic acid', 'drug')",unknown,unknown,0.3856121003627777,0,1.0
+10233,29543,drug-gene,"('DB07950', 'Indoleacetic acid', 'drug')","('883', 'KYAT1', 'gene/protein')",unknown,unknown,0.3856121301651001,0,1.0
+11514,16153,drug-gene,"('DB12887', 'Tazemetostat', 'drug')","('2146', 'EZH2', 'gene/protein')",unknown,unknown,0.3857734501361847,0,1.0
+16153,11514,drug-gene,"('2146', 'EZH2', 'gene/protein')","('DB12887', 'Tazemetostat', 'drug')",unknown,unknown,0.3857734501361847,0,1.0
+11334,19018,drug-gene,"('DB11793', 'Niraparib', 'drug')","('2990', 'GUSB', 'gene/protein')",unknown,unknown,0.3881089985370636,0,1.0
+19018,11334,drug-gene,"('2990', 'GUSB', 'gene/protein')","('DB11793', 'Niraparib', 'drug')",unknown,unknown,0.388109028339386,0,1.0
+11250,15174,drug-gene,"('DB11567', 'Insulin peglispro', 'drug')","('1544', 'CYP1A2', 'gene/protein')",unknown,unknown,0.38886839151382446,0,1.0
+15174,11250,drug-gene,"('1544', 'CYP1A2', 'gene/protein')","('DB11567', 'Insulin peglispro', 'drug')",unknown,unknown,0.38886839151382446,0,1.0
+15174,11250,drug-gene,"('1544', 'CYP1A2', 'gene/protein')","('DB11567', 'Insulin peglispro', 'drug')",unknown,unknown,0.38886845111846924,0,1.0
+11250,15174,drug-gene,"('DB11567', 'Insulin peglispro', 'drug')","('1544', 'CYP1A2', 'gene/protein')",unknown,unknown,0.38886845111846924,0,1.0
+6760,19825,drug-gene,"('DB01277', 'Mecasermin', 'drug')","('3487', 'IGFBP4', 'gene/protein')",unknown,unknown,0.3893708288669586,0,1.0
+19825,6760,drug-gene,"('3487', 'IGFBP4', 'gene/protein')","('DB01277', 'Mecasermin', 'drug')",unknown,unknown,0.3893708288669586,0,1.0
+8194,15755,drug-gene,"('DB04117', '4-(N,N-Dimethylamino)cinnamoyl-CoA', 'drug')","('1892', 'ECHS1', 'gene/protein')",unknown,unknown,0.39018988609313965,0,1.0
+15755,8194,drug-gene,"('1892', 'ECHS1', 'gene/protein')","('DB04117', '4-(N,N-Dimethylamino)cinnamoyl-CoA', 'drug')",unknown,unknown,0.39018988609313965,0,1.0
+11068,13951,drug-gene,"('DB09285', 'Morniflumate', 'drug')","('1241', 'LTB4R', 'gene/protein')",unknown,unknown,0.3931603729724884,0,1.0
+13951,11068,drug-gene,"('1241', 'LTB4R', 'gene/protein')","('DB09285', 'Morniflumate', 'drug')",unknown,unknown,0.3931604325771332,0,1.0
+6409,27080,drug-gene,"('DB00898', 'Ethanol', 'drug')","('7412', 'VCAM1', 'gene/protein')",unknown,unknown,0.39347365498542786,0,1.0
+27080,6409,drug-gene,"('7412', 'VCAM1', 'gene/protein')","('DB00898', 'Ethanol', 'drug')",unknown,unknown,0.39347365498542786,0,1.0
+6662,26067,drug-gene,"('DB01170', 'Guanethidine', 'drug')","('6530', 'SLC6A2', 'gene/protein')",unknown,unknown,0.394028902053833,0,1.0
+26067,6662,drug-gene,"('6530', 'SLC6A2', 'gene/protein')","('DB01170', 'Guanethidine', 'drug')",unknown,unknown,0.394028902053833,0,1.0
+6662,26067,drug-gene,"('DB01170', 'Guanethidine', 'drug')","('6530', 'SLC6A2', 'gene/protein')",unknown,unknown,0.3940289616584778,0,1.0
+26067,6662,drug-gene,"('6530', 'SLC6A2', 'gene/protein')","('DB01170', 'Guanethidine', 'drug')",unknown,unknown,0.3940289616584778,0,1.0
+11548,18284,drug-gene,"('DB13155', 'Esculin', 'drug')","('2744', 'GLS', 'gene/protein')",unknown,unknown,0.40003716945648193,0,1.0
+18284,11548,drug-gene,"('2744', 'GLS', 'gene/protein')","('DB13155', 'Esculin', 'drug')",unknown,unknown,0.4000371992588043,0,1.0
+19166,6712,drug-gene,"('3066', 'HDAC2', 'gene/protein')","('DB01223', 'Aminophylline', 'drug')",unknown,unknown,0.4000994861125946,0,1.0
+6712,19166,drug-gene,"('DB01223', 'Aminophylline', 'drug')","('3066', 'HDAC2', 'gene/protein')",unknown,unknown,0.4000994861125946,0,1.0
+8013,19859,drug-gene,"('DB03754', 'Tromethamine', 'drug')","('351', 'APP', 'gene/protein')",unknown,unknown,0.40023940801620483,0,1.0
+19859,8013,drug-gene,"('351', 'APP', 'gene/protein')","('DB03754', 'Tromethamine', 'drug')",unknown,unknown,0.40023940801620483,0,1.0
+8013,19859,drug-gene,"('DB03754', 'Tromethamine', 'drug')","('351', 'APP', 'gene/protein')",unknown,unknown,0.4002394676208496,0,1.0
+19859,8013,drug-gene,"('351', 'APP', 'gene/protein')","('DB03754', 'Tromethamine', 'drug')",unknown,unknown,0.4002394676208496,0,1.0
+15614,7699,drug-gene,"('1719', 'DHFR', 'gene/protein')","('DB03125', '2,4-Diamino-5-(3,4,5-Trimethoxy-Benzyl)-Pyrimidin-1-Ium', 'drug')",unknown,unknown,0.40288329124450684,0,1.0
+7699,15614,drug-gene,"('DB03125', '2,4-Diamino-5-(3,4,5-Trimethoxy-Benzyl)-Pyrimidin-1-Ium', 'drug')","('1719', 'DHFR', 'gene/protein')",unknown,unknown,0.40288329124450684,0,1.0
+18972,11555,drug-gene,"('2977', 'GUCY1A2', 'gene/protein')","('DB13170', 'Plecanatide', 'drug')",unknown,unknown,0.4135202169418335,0,1.0
+11555,18972,drug-gene,"('DB13170', 'Plecanatide', 'drug')","('2977', 'GUCY1A2', 'gene/protein')",unknown,unknown,0.41352027654647827,0,1.0
+9351,23658,drug-gene,"('DB06752', 'Chymopapain', 'drug')","('5553', 'PRG2', 'gene/protein')",unknown,unknown,0.4135236144065857,0,1.0
+23658,9351,drug-gene,"('5553', 'PRG2', 'gene/protein')","('DB06752', 'Chymopapain', 'drug')",unknown,unknown,0.4135236144065857,0,1.0
+9351,23658,drug-gene,"('DB06752', 'Chymopapain', 'drug')","('5553', 'PRG2', 'gene/protein')",unknown,unknown,0.4135236144065857,0,1.0
+23658,9351,drug-gene,"('5553', 'PRG2', 'gene/protein')","('DB06752', 'Chymopapain', 'drug')",unknown,unknown,0.4135236144065857,0,1.0
+7268,21197,drug-gene,"('DB02267', 'Argininosuccinate', 'drug')","('435', 'ASL', 'gene/protein')",unknown,unknown,0.4148513674736023,0,1.0
+21197,7268,drug-gene,"('435', 'ASL', 'gene/protein')","('DB02267', 'Argininosuccinate', 'drug')",unknown,unknown,0.41485142707824707,0,1.0
+21738,10861,drug-gene,"('4921', 'DDR2', 'gene/protein')","('DB08896', 'Regorafenib', 'drug')",unknown,unknown,0.4153803586959839,0,1.0
+10861,21738,drug-gene,"('DB08896', 'Regorafenib', 'drug')","('4921', 'DDR2', 'gene/protein')",unknown,unknown,0.4153803884983063,0,1.0
+10861,21738,drug-gene,"('DB08896', 'Regorafenib', 'drug')","('4921', 'DDR2', 'gene/protein')",unknown,unknown,0.41538044810295105,0,1.0
+21738,10861,drug-gene,"('4921', 'DDR2', 'gene/protein')","('DB08896', 'Regorafenib', 'drug')",unknown,unknown,0.41538047790527344,0,1.0
+21162,7628,drug-gene,"('4306', 'NR3C2', 'gene/protein')","('DB02998', 'Metribolone', 'drug')",unknown,unknown,0.4168315529823303,0,1.0
+7628,21162,drug-gene,"('DB02998', 'Metribolone', 'drug')","('4306', 'NR3C2', 'gene/protein')",unknown,unknown,0.4168315529823303,0,1.0
+6740,16061,drug-gene,"('DB01254', 'Dasatinib', 'drug')","('2044', 'EPHA5', 'gene/protein')",unknown,unknown,0.41814953088760376,0,1.0
+16061,6740,drug-gene,"('2044', 'EPHA5', 'gene/protein')","('DB01254', 'Dasatinib', 'drug')",unknown,unknown,0.41814956068992615,0,1.0
+27579,5840,drug-gene,"('79608', 'RIC3', 'gene/protein')","('DB00277', 'Theophylline', 'drug')",unknown,unknown,0.41917678713798523,0,1.0
+5840,27579,drug-gene,"('DB00277', 'Theophylline', 'drug')","('79608', 'RIC3', 'gene/protein')",unknown,unknown,0.4191768765449524,0,1.0
+5730,14269,drug-gene,"('DB00157', 'NADH', 'drug')","('131', 'ADH7', 'gene/protein')",unknown,unknown,0.42243391275405884,0,1.0
+14269,5730,drug-gene,"('131', 'ADH7', 'gene/protein')","('DB00157', 'NADH', 'drug')",unknown,unknown,0.4224339425563812,0,1.0
+14269,5730,drug-gene,"('131', 'ADH7', 'gene/protein')","('DB00157', 'NADH', 'drug')",unknown,unknown,0.422434002161026,0,1.0
+5730,14269,drug-gene,"('DB00157', 'NADH', 'drug')","('131', 'ADH7', 'gene/protein')",unknown,unknown,0.422434002161026,0,1.0
+9101,19915,drug-gene,"('DB06168', 'Canakinumab', 'drug')","('3553', 'IL1B', 'gene/protein')",unknown,unknown,0.42760056257247925,0,1.0
+19915,9101,drug-gene,"('3553', 'IL1B', 'gene/protein')","('DB06168', 'Canakinumab', 'drug')",unknown,unknown,0.4276006519794464,0,1.0
+6529,29219,drug-gene,"('DB01026', 'Ketoconazole', 'drug')","('8529', 'CYP4F2', 'gene/protein')",unknown,unknown,0.4277438521385193,0,1.0
+29219,6529,drug-gene,"('8529', 'CYP4F2', 'gene/protein')","('DB01026', 'Ketoconazole', 'drug')",unknown,unknown,0.4277438521385193,0,1.0
+27153,8116,drug-gene,"('7518', 'XRCC4', 'gene/protein')","('DB03963', 'S-(Dimethylarsenic)Cysteine', 'drug')",unknown,unknown,0.43336185812950134,0,1.0
+8116,27153,drug-gene,"('DB03963', 'S-(Dimethylarsenic)Cysteine', 'drug')","('7518', 'XRCC4', 'gene/protein')",unknown,unknown,0.43336185812950134,0,1.0
+12974,6240,drug-gene,"('10800', 'CYSLTR1', 'gene/protein')","('DB00716', 'Nedocromil', 'drug')",unknown,unknown,0.4333890676498413,0,1.0
+6240,12974,drug-gene,"('DB00716', 'Nedocromil', 'drug')","('10800', 'CYSLTR1', 'gene/protein')",unknown,unknown,0.4333891272544861,0,1.0
+15805,10902,drug-gene,"('196', 'AHR', 'gene/protein')","('DB08995', 'Diosmin', 'drug')",unknown,unknown,0.4339636564254761,0,1.0
+10902,15805,drug-gene,"('DB08995', 'Diosmin', 'drug')","('196', 'AHR', 'gene/protein')",unknown,unknown,0.4339636564254761,0,1.0
+7120,22311,drug-gene,"('DB01970', 'Hg9a-9, Nonanoyl-N-Hydroxyethylglucamide', 'drug')","('5140', 'PDE3B', 'gene/protein')",unknown,unknown,0.4349461495876312,0,1.0
+22311,7120,drug-gene,"('5140', 'PDE3B', 'gene/protein')","('DB01970', 'Hg9a-9, Nonanoyl-N-Hydroxyethylglucamide', 'drug')",unknown,unknown,0.4349462389945984,0,1.0
+23861,9218,drug-gene,"('5578', 'PRKCA', 'gene/protein')","('DB06451', 'Aprinocarsen', 'drug')",unknown,unknown,0.43835335969924927,0,1.0
+9218,23861,drug-gene,"('DB06451', 'Aprinocarsen', 'drug')","('5578', 'PRKCA', 'gene/protein')",unknown,unknown,0.43835341930389404,0,1.0
+13131,11362,drug-gene,"('11001', 'SLC27A2', 'gene/protein')","('DB11936', 'Bempedoic acid', 'drug')",unknown,unknown,0.43956589698791504,0,1.0
+11362,13131,drug-gene,"('DB11936', 'Bempedoic acid', 'drug')","('11001', 'SLC27A2', 'gene/protein')",unknown,unknown,0.4395659565925598,0,1.0
+8400,30072,drug-gene,"('DB04552', 'Niflumic acid', 'drug')","('9194', 'SLC16A7', 'gene/protein')",unknown,unknown,0.4425734579563141,0,1.0
+30072,8400,drug-gene,"('9194', 'SLC16A7', 'gene/protein')","('DB04552', 'Niflumic acid', 'drug')",unknown,unknown,0.44257354736328125,0,1.0
+8467,15450,drug-gene,"('DB04674', '2-HYDROXY-3,5-DIIODOBENZOIC ACID', 'drug')","('1645', 'AKR1C1', 'gene/protein')",unknown,unknown,0.4431866705417633,0,1.0
+15450,8467,drug-gene,"('1645', 'AKR1C1', 'gene/protein')","('DB04674', '2-HYDROXY-3,5-DIIODOBENZOIC ACID', 'drug')",unknown,unknown,0.4431866705417633,0,1.0
+8982,20046,drug-gene,"('DB05787', 'LM-609', 'drug')","('3690', 'ITGB3', 'gene/protein')",unknown,unknown,0.4450034201145172,0,1.0
+20046,8982,drug-gene,"('3690', 'ITGB3', 'gene/protein')","('DB05787', 'LM-609', 'drug')",unknown,unknown,0.4450034201145172,0,1.0
+7814,21051,drug-gene,"('DB03366', 'Imidazole', 'drug')","('4151', 'MB', 'gene/protein')",unknown,unknown,0.4451698064804077,0,1.0
+21051,7814,drug-gene,"('4151', 'MB', 'gene/protein')","('DB03366', 'Imidazole', 'drug')",unknown,unknown,0.4451698660850525,0,1.0
+6978,22827,drug-gene,"('DB01694', 'D-tartaric acid', 'drug')","('54210', 'TREM1', 'gene/protein')",unknown,unknown,0.44896334409713745,0,1.0
+22827,6978,drug-gene,"('54210', 'TREM1', 'gene/protein')","('DB01694', 'D-tartaric acid', 'drug')",unknown,unknown,0.4489634037017822,0,1.0
+7760,23546,drug-gene,"('DB03247', 'Flavin mononucleotide', 'drug')","('55312', 'RFK', 'gene/protein')",unknown,unknown,0.449745774269104,0,1.0
+23546,7760,drug-gene,"('55312', 'RFK', 'gene/protein')","('DB03247', 'Flavin mononucleotide', 'drug')",unknown,unknown,0.449745774269104,0,1.0
+7375,25120,drug-gene,"('DB02482', 'Phosphonothreonine', 'drug')","('6010', 'RHO', 'gene/protein')",unknown,unknown,0.4527333378791809,0,1.0
+25120,7375,drug-gene,"('6010', 'RHO', 'gene/protein')","('DB02482', 'Phosphonothreonine', 'drug')",unknown,unknown,0.4527333378791809,0,1.0
+29473,11408,drug-gene,"('874', 'CBR3', 'gene/protein')","('DB12161', 'Deutetrabenazine', 'drug')",unknown,unknown,0.4528883397579193,0,1.0
+11408,29473,drug-gene,"('DB12161', 'Deutetrabenazine', 'drug')","('874', 'CBR3', 'gene/protein')",unknown,unknown,0.4528883397579193,0,1.0
+23753,11129,drug-gene,"('55662', 'HIF1AN', 'gene/protein')","('DB09459', 'L-tartaric acid', 'drug')",unknown,unknown,0.45356011390686035,0,1.0
+11129,23753,drug-gene,"('DB09459', 'L-tartaric acid', 'drug')","('55662', 'HIF1AN', 'gene/protein')",unknown,unknown,0.45356011390686035,0,1.0
+7327,12553,drug-gene,"('DB02383', 'Tolrestat', 'drug')","('10327', 'AKR1A1', 'gene/protein')",unknown,unknown,0.4622983932495117,0,1.0
+12553,7327,drug-gene,"('10327', 'AKR1A1', 'gene/protein')","('DB02383', 'Tolrestat', 'drug')",unknown,unknown,0.4622983932495117,0,1.0
+6985,16117,drug-gene,"('DB01708', 'Prasterone', 'drug')","('2100', 'ESR2', 'gene/protein')",unknown,unknown,0.4629283547401428,0,1.0
+16117,6985,drug-gene,"('2100', 'ESR2', 'gene/protein')","('DB01708', 'Prasterone', 'drug')",unknown,unknown,0.4629284143447876,0,1.0
+12866,6599,drug-gene,"('1066', 'CES1', 'gene/protein')","('DB01101', 'Capecitabine', 'drug')",unknown,unknown,0.46670225262641907,0,1.0
+6599,12866,drug-gene,"('DB01101', 'Capecitabine', 'drug')","('1066', 'CES1', 'gene/protein')",unknown,unknown,0.46670225262641907,0,1.0
+20147,9283,drug-gene,"('3750', 'KCND1', 'gene/protein')","('DB06637', 'Dalfampridine', 'drug')",unknown,unknown,0.47102877497673035,0,1.0
+9283,20147,drug-gene,"('DB06637', 'Dalfampridine', 'drug')","('3750', 'KCND1', 'gene/protein')",unknown,unknown,0.47102877497673035,0,1.0
+15126,10791,drug-gene,"('153', 'ADRB1', 'gene/protein')","('DB08808', 'Bupranolol', 'drug')",unknown,unknown,0.4710521996021271,0,1.0
+10791,15126,drug-gene,"('DB08808', 'Bupranolol', 'drug')","('153', 'ADRB1', 'gene/protein')",unknown,unknown,0.4710521996021271,0,1.0
+19757,11807,drug-gene,"('3458', 'IFNG', 'gene/protein')","('DB14724', 'Emapalumab', 'drug')",unknown,unknown,0.47523248195648193,0,1.0
+11807,19757,drug-gene,"('DB14724', 'Emapalumab', 'drug')","('3458', 'IFNG', 'gene/protein')",unknown,unknown,0.47523248195648193,0,1.0
+16072,9738,drug-gene,"('2050', 'EPHB4', 'gene/protein')","('DB07250', ""N'-(5-CHLORO-1,3-BENZODIOXOL-4-YL)-N-(3,4,5- TRIMETHOXYPHENYL)PYRIMIDINE-2,4-DIAMINE"", 'drug')",unknown,unknown,0.47614648938179016,0,1.0
+9738,16072,drug-gene,"('DB07250', ""N'-(5-CHLORO-1,3-BENZODIOXOL-4-YL)-N-(3,4,5- TRIMETHOXYPHENYL)PYRIMIDINE-2,4-DIAMINE"", 'drug')","('2050', 'EPHB4', 'gene/protein')",unknown,unknown,0.47614654898643494,0,1.0
+14750,8505,drug-gene,"('1456', 'CSNK1G3', 'gene/protein')","('DB04751', 'Purvalanol A', 'drug')",unknown,unknown,0.4834043085575104,0,1.0
+8505,14750,drug-gene,"('DB04751', 'Purvalanol A', 'drug')","('1456', 'CSNK1G3', 'gene/protein')",unknown,unknown,0.48340436816215515,0,1.0
+8593,12402,drug-gene,"('DB04869', 'Olcegepant', 'drug')","('10203', 'CALCRL', 'gene/protein')",unknown,unknown,0.48584768176078796,0,1.0
+12402,8593,drug-gene,"('10203', 'CALCRL', 'gene/protein')","('DB04869', 'Olcegepant', 'drug')",unknown,unknown,0.48584768176078796,0,1.0
+11546,12803,drug-gene,"('DB13153', 'Levomenol', 'drug')","('10599', 'SLCO1B1', 'gene/protein')",unknown,unknown,0.48602089285850525,0,1.0
+12803,11546,drug-gene,"('10599', 'SLCO1B1', 'gene/protein')","('DB13153', 'Levomenol', 'drug')",unknown,unknown,0.48602089285850525,0,1.0
+5731,17053,drug-gene,"('DB00158', 'Folic acid', 'drug')","('2352', 'FOLR3', 'gene/protein')",unknown,unknown,0.4862627387046814,0,1.0
+17053,5731,drug-gene,"('2352', 'FOLR3', 'gene/protein')","('DB00158', 'Folic acid', 'drug')",unknown,unknown,0.48626279830932617,0,1.0
+16160,11209,drug-gene,"('2153', 'F5', 'gene/protein')","('DB11312', 'Protein C', 'drug')",unknown,unknown,0.49176350235939026,0,1.0
+11209,16160,drug-gene,"('DB11312', 'Protein C', 'drug')","('2153', 'F5', 'gene/protein')",unknown,unknown,0.49176350235939026,0,1.0
+16160,11209,drug-gene,"('2153', 'F5', 'gene/protein')","('DB11312', 'Protein C', 'drug')",unknown,unknown,0.49176356196403503,0,1.0
+11209,16160,drug-gene,"('DB11312', 'Protein C', 'drug')","('2153', 'F5', 'gene/protein')",unknown,unknown,0.4917636215686798,0,1.0
+9534,21678,drug-gene,"('DB07007', '(3R)-3-[(1,2,3,4-tetrahydroisoquinolin-7-yloxy)methyl]-2,3-dihydrothieno[2,3-f][1,4]oxazepin-5-amine', 'drug')","('4843', 'NOS2', 'gene/protein')",unknown,unknown,0.49255287647247314,0,1.0
+21678,9534,drug-gene,"('4843', 'NOS2', 'gene/protein')","('DB07007', '(3R)-3-[(1,2,3,4-tetrahydroisoquinolin-7-yloxy)methyl]-2,3-dihydrothieno[2,3-f][1,4]oxazepin-5-amine', 'drug')",unknown,unknown,0.4925529360771179,0,1.0
+12421,9042,drug-gene,"('1022', 'CDK7', 'gene/protein')","('DB05969', 'SNS-032', 'drug')",unknown,unknown,0.49269169569015503,0,1.0
+9042,12421,drug-gene,"('DB05969', 'SNS-032', 'drug')","('1022', 'CDK7', 'gene/protein')",unknown,unknown,0.49269169569015503,0,1.0
+11226,15174,drug-gene,"('DB11404', 'Enrofloxacin', 'drug')","('1544', 'CYP1A2', 'gene/protein')",unknown,unknown,0.49365049600601196,0,1.0
+15174,11226,drug-gene,"('1544', 'CYP1A2', 'gene/protein')","('DB11404', 'Enrofloxacin', 'drug')",unknown,unknown,0.49365055561065674,0,1.0
+29568,6275,drug-gene,"('8856', 'NR1I2', 'gene/protein')","('DB00754', 'Ethotoin', 'drug')",unknown,unknown,0.4946924149990082,0,1.0
+29568,6275,drug-gene,"('8856', 'NR1I2', 'gene/protein')","('DB00754', 'Ethotoin', 'drug')",unknown,unknown,0.4946924149990082,0,1.0
+6275,29568,drug-gene,"('DB00754', 'Ethotoin', 'drug')","('8856', 'NR1I2', 'gene/protein')",unknown,unknown,0.4946924149990082,0,1.0
+6275,29568,drug-gene,"('DB00754', 'Ethotoin', 'drug')","('8856', 'NR1I2', 'gene/protein')",unknown,unknown,0.49469247460365295,0,1.0
+7306,28312,drug-gene,"('DB02345', 'Selenocysteine', 'drug')","('820', 'CAMP', 'gene/protein')",unknown,unknown,0.49611005187034607,0,1.0
+28312,7306,drug-gene,"('820', 'CAMP', 'gene/protein')","('DB02345', 'Selenocysteine', 'drug')",unknown,unknown,0.49611005187034607,0,1.0
+15209,9272,drug-gene,"('1565', 'CYP2D6', 'gene/protein')","('DB06603', 'Panobinostat', 'drug')",unknown,unknown,0.4974900782108307,0,1.0
+9272,15209,drug-gene,"('DB06603', 'Panobinostat', 'drug')","('1565', 'CYP2D6', 'gene/protein')",unknown,unknown,0.4974900782108307,0,1.0
+26668,5703,drug-gene,"('7047', 'TGM4', 'gene/protein')","('DB00130', 'L-Glutamine', 'drug')",unknown,unknown,0.49776166677474976,0,1.0
+5703,26668,drug-gene,"('DB00130', 'L-Glutamine', 'drug')","('7047', 'TGM4', 'gene/protein')",unknown,unknown,0.49776166677474976,0,1.0
+6464,14297,drug-gene,"('DB00958', 'Carboplatin', 'drug')","('1318', 'SLC31A2', 'gene/protein')",unknown,unknown,0.49834752082824707,0,1.0
+14297,6464,drug-gene,"('1318', 'SLC31A2', 'gene/protein')","('DB00958', 'Carboplatin', 'drug')",unknown,unknown,0.49834752082824707,0,1.0
+8208,18559,drug-gene,"('DB04147', 'Dodecyldimethylamine N-oxide', 'drug')","('28442', 'IGHV3-23', 'gene/protein')",unknown,unknown,0.49902576208114624,0,1.0
+18559,8208,drug-gene,"('28442', 'IGHV3-23', 'gene/protein')","('DB04147', 'Dodecyldimethylamine N-oxide', 'drug')",unknown,unknown,0.49902576208114624,0,1.0
