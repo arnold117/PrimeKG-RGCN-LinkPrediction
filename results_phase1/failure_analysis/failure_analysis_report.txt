@@ -1,0 +1,174 @@
+================================================================================
+FAILURE ANALYSIS REPORT
+================================================================================
+
+EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+Analyzed 5 failure cases and 5 success cases
+Identified 4 key failure modes
+Generated 12 improvement suggestions
+
+================================================================================
+WORST PREDICTION FAILURES
+================================================================================
+
+1. Nebivolol → microphthalmia with brain and digit anomalies
+   Type: FP (Predicted positive but actually negative)
+   Prediction Score: 0.8065
+   Ground Truth: 0
+   Confidence Error: 0.8065
+
+   Structural Analysis:
+     - Drug neighborhood: 1874 nodes
+     - Disease neighborhood: 430 nodes
+     - Common neighbors: 41
+     - Connecting paths: 20
+     - Shortest path length: 4
+
+   Potential Reasons for Failure:
+
+2. Fluocortolone → tall stature-intellectual disability-facial dysmorphism syndrome
+   Type: FP (Predicted positive but actually negative)
+   Prediction Score: 0.8033
+   Ground Truth: 0
+   Confidence Error: 0.8033
+
+   Structural Analysis:
+     - Drug neighborhood: 1021 nodes
+     - Disease neighborhood: 128 nodes
+     - Common neighbors: 7
+     - Connecting paths: 7
+     - Shortest path length: 4
+
+   Potential Reasons for Failure:
+
+3. N-METHYL-N-[(1R)-1-METHYL-2-PHENYLETHYL]PROP-2-EN-1-AMINE → ectopic ACTH secretion syndrome
+   Type: FP (Predicted positive but actually negative)
+   Prediction Score: 0.7988
+   Ground Truth: 0
+   Confidence Error: 0.7988
+
+   Structural Analysis:
+     - Drug neighborhood: 116 nodes
+     - Disease neighborhood: 164 nodes
+     - Common neighbors: 13
+     - Connecting paths: 13
+     - Shortest path length: 4
+
+   Potential Reasons for Failure:
+
+4. Sobetirome → Basaran Yilmaz syndrome
+   Type: FP (Predicted positive but actually negative)
+   Prediction Score: 0.7979
+   Ground Truth: 0
+   Confidence Error: 0.7979
+
+   Structural Analysis:
+     - Drug neighborhood: 92 nodes
+     - Disease neighborhood: 105 nodes
+     - Common neighbors: 4
+     - Connecting paths: 4
+     - Shortest path length: 4
+
+   Potential Reasons for Failure:
+
+5. Dexrabeprazole → microphthalmia-ankyloblepharon-intellectual disability syndrome
+   Type: FP (Predicted positive but actually negative)
+   Prediction Score: 0.7972
+   Ground Truth: 0
+   Confidence Error: 0.7972
+
+   Structural Analysis:
+     - Drug neighborhood: 311 nodes
+     - Disease neighborhood: 380 nodes
+     - Common neighbors: 7
+     - Connecting paths: 10
+     - Shortest path length: 4
+
+   Potential Reasons for Failure:
+
+================================================================================
+SUCCESSFUL PREDICTIONS (For Comparison)
+================================================================================
+
+1. Tamoxifen → multiple epiphyseal dysplasia, Al-Gazali type
+   Prediction Score: 0.7850
+   Ground Truth: 1
+   Paths: 20, Common neighbors: 240
+
+2. Cyproterone acetate → prostate neoplasm
+   Prediction Score: 0.7741
+   Ground Truth: 1
+   Paths: 20, Common neighbors: 97
+
+3. Lorpiprazole → major affective disorder
+   Prediction Score: 0.7731
+   Ground Truth: 1
+   Paths: 20, Common neighbors: 1360
+
+4. Fluoxetine → major affective disorder
+   Prediction Score: 0.7729
+   Ground Truth: 1
+   Paths: 20, Common neighbors: 1266
+
+5. Tiludronic acid → renal tubular acidosis, distal, with or without sensorineural hearing loss
+   Prediction Score: 0.7694
+   Ground Truth: 1
+   Paths: 20, Common neighbors: 50
+
+================================================================================
+STRUCTURAL COMPARISON: FAILURES VS SUCCESSES
+================================================================================
+
+Average Connecting Paths:
+  Failures: 10.80
+  Successes: 20.00
+  Difference: 9.20
+
+Average Common Neighbors:
+  Failures: 14.40
+  Successes: 602.60
+  Difference: 588.20
+
+Average Drug Neighborhood Size:
+  Failures: 683
+  Successes: 2709
+  Difference: 2026
+
+Average Disease Neighborhood Size:
+  Failures: 241
+  Successes: 5176
+  Difference: 4934
+
+================================================================================
+FAILURE MODE HYPOTHESES
+================================================================================
+
+1. Model fails when there are FEW CONNECTING PATHS between drug and disease (failures: 10.8 paths, successes: 20.0 paths). Suggests model relies heavily on graph connectivity.
+
+2. Model fails when drug and disease have FEW COMMON NEIGHBORS (failures: 14.4, successes: 602.6). Suggests common neighbors provide strong signal for prediction.
+
+3. Model makes more FALSE POSITIVES (5) than false negatives (0). May be over-predicting connections, possibly due to high-degree nodes creating spurious associations.
+
+4. Failures occur in SPARSE NEIGHBORHOODS (avg 910 nodes) compared to successes (7282 nodes). Model may need more context to make accurate predictions.
+
+================================================================================
+SUGGESTED IMPROVEMENTS
+================================================================================
+
+• Increase number of GCN layers to expand receptive field
+• Augment graph with inferred edges (e.g., from similarity)
+• Add common neighbor features explicitly to the model
+• Add negative sampling during training with hard negatives
+• Add auxiliary node features (e.g., from external databases)
+• Consider GraphSAINT or similar sampling for better neighborhood coverage
+• Use degree-normalized aggregation to reduce bias toward high-degree nodes
+• Use graph completion techniques to densify neighborhoods
+• Increase regularization (dropout, weight decay) to reduce overfitting
+• Consider attention mechanisms to focus on relevant paths
+• Add higher-order path features to capture multi-hop relationships
+• Use graph neural network with higher-order aggregation
+
+================================================================================
+END OF REPORT
+================================================================================

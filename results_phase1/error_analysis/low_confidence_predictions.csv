@@ -1,0 +1,29 @@
+head,tail,relation,head_name,tail_name,head_type,tail_type,score,predicted,actual
+10990,27159,drug-gene,"('DB09130', 'Copper', 'drug')","('7529', 'YWHAB', 'gene/protein')",unknown,unknown,0.588154137134552,1,1.0
+27159,10990,drug-gene,"('7529', 'YWHAB', 'gene/protein')","('DB09130', 'Copper', 'drug')",unknown,unknown,0.5881541967391968,1,1.0
+5725,30566,drug-gene,"('DB00152', 'Thiamine', 'drug')","('957', 'ENTPD5', 'gene/protein')",unknown,unknown,0.5913522839546204,1,1.0
+30566,5725,drug-gene,"('957', 'ENTPD5', 'gene/protein')","('DB00152', 'Thiamine', 'drug')",unknown,unknown,0.5913522839546204,1,1.0
+6409,27080,drug-gene,"('DB00898', 'Ethanol', 'drug')","('7412', 'VCAM1', 'gene/protein')",unknown,unknown,0.593689501285553,1,1.0
+27080,6409,drug-gene,"('7412', 'VCAM1', 'gene/protein')","('DB00898', 'Ethanol', 'drug')",unknown,unknown,0.593689501285553,1,1.0
+8618,15206,drug-gene,"('DB04898', 'Ximelagatran', 'drug')","('1559', 'CYP2C9', 'gene/protein')",unknown,unknown,0.6011155843734741,1,1.0
+15206,8618,drug-gene,"('1559', 'CYP2C9', 'gene/protein')","('DB04898', 'Ximelagatran', 'drug')",unknown,unknown,0.6011157035827637,1,1.0
+19384,5898,drug-gene,"('3269', 'HRH1', 'gene/protein')","('DB00341', 'Cetirizine', 'drug')",unknown,unknown,0.6117019653320312,1,1.0
+5898,19384,drug-gene,"('DB00341', 'Cetirizine', 'drug')","('3269', 'HRH1', 'gene/protein')",unknown,unknown,0.6117019653320312,1,1.0
+19384,5898,drug-gene,"('3269', 'HRH1', 'gene/protein')","('DB00341', 'Cetirizine', 'drug')",unknown,unknown,0.6117022633552551,1,1.0
+5898,19384,drug-gene,"('DB00341', 'Cetirizine', 'drug')","('3269', 'HRH1', 'gene/protein')",unknown,unknown,0.6117022633552551,1,1.0
+10482,19852,drug-gene,"('DB08294', '2-(4-HYDROXY-3-NITROPHENYL)ACETIC ACID', 'drug')","('3500', 'IGHG1', 'gene/protein')",unknown,unknown,0.6138408780097961,1,1.0
+19852,10482,drug-gene,"('3500', 'IGHG1', 'gene/protein')","('DB08294', '2-(4-HYDROXY-3-NITROPHENYL)ACETIC ACID', 'drug')",unknown,unknown,0.6138408780097961,1,1.0
+5730,19397,drug-gene,"('DB00157', 'NADH', 'drug')","('3290', 'HSD11B1', 'gene/protein')",unknown,unknown,0.617642343044281,1,1.0
+19397,5730,drug-gene,"('3290', 'HSD11B1', 'gene/protein')","('DB00157', 'NADH', 'drug')",unknown,unknown,0.617642343044281,1,1.0
+19400,5730,drug-gene,"('3293', 'HSD17B3', 'gene/protein')","('DB00157', 'NADH', 'drug')",unknown,unknown,0.6334843039512634,1,1.0
+5730,19400,drug-gene,"('DB00157', 'NADH', 'drug')","('3293', 'HSD17B3', 'gene/protein')",unknown,unknown,0.6334843039512634,1,1.0
+16141,5871,drug-gene,"('213', 'ALB', 'gene/protein')","('DB00310', 'Chlorthalidone', 'drug')",unknown,unknown,0.6392444372177124,1,1.0
+5871,16141,drug-gene,"('DB00310', 'Chlorthalidone', 'drug')","('213', 'ALB', 'gene/protein')",unknown,unknown,0.6392444372177124,1,1.0
+21573,6633,drug-gene,"('4718', 'NDUFC2', 'gene/protein')","('DB01136', 'Carvedilol', 'drug')",unknown,unknown,0.6463785767555237,1,1.0
+6633,21573,drug-gene,"('DB01136', 'Carvedilol', 'drug')","('4718', 'NDUFC2', 'gene/protein')",unknown,unknown,0.6463785767555237,1,1.0
+11067,22427,drug-gene,"('DB09283', 'Trapidil', 'drug')","('5159', 'PDGFRB', 'gene/protein')",unknown,unknown,0.6468806862831116,1,1.0
+22427,11067,drug-gene,"('5159', 'PDGFRB', 'gene/protein')","('DB09283', 'Trapidil', 'drug')",unknown,unknown,0.6468806862831116,1,1.0
+6691,22604,drug-gene,"('DB01202', 'Levetiracetam', 'drug')","('5243', 'ABCB1', 'gene/protein')",unknown,unknown,0.6928417682647705,1,1.0
+22604,6691,drug-gene,"('5243', 'ABCB1', 'gene/protein')","('DB01202', 'Levetiracetam', 'drug')",unknown,unknown,0.6928418874740601,1,1.0
+15951,6903,drug-gene,"('200959', 'GABRR3', 'gene/protein')","('DB01567', 'Fludiazepam', 'drug')",unknown,unknown,0.6955989599227905,1,1.0
+6903,15951,drug-gene,"('DB01567', 'Fludiazepam', 'drug')","('200959', 'GABRR3', 'gene/protein')",unknown,unknown,0.6955989599227905,1,1.0

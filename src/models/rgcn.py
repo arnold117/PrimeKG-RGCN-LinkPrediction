@@ -55,18 +55,22 @@ class DrugDiseaseRGCN(nn.Module):
         embedding_dim: int = 64,
         hidden_dim: int = 128,
         dropout: float = 0.5,
-        num_bases: Optional[int] = None
+        num_bases: Optional[int] = None,
+        use_layer_norm: bool = True,
+        use_skip_connections: bool = True
     ):
         super(DrugDiseaseRGCN, self).__init__()
-        
+
         self.num_nodes = num_nodes
         self.num_relations = num_relations
         self.embedding_dim = embedding_dim
         self.hidden_dim = hidden_dim
-        
+        self.use_layer_norm = use_layer_norm
+        self.use_skip_connections = use_skip_connections
+
         # Learnable node embeddings as input features
         self.node_embeddings = nn.Embedding(num_nodes, embedding_dim)
-        
+
         # RGCN layers
         # Layer 1: embedding_dim -> hidden_dim
         self.conv1 = RGCNConv(
@@ -75,7 +79,7 @@ class DrugDiseaseRGCN(nn.Module):
             num_relations=num_relations,
             num_bases=num_bases
         )
-        
+
         # Layer 2: hidden_dim -> hidden_dim
         self.conv2 = RGCNConv(
             in_channels=hidden_dim,
@@ -83,10 +87,15 @@ class DrugDiseaseRGCN(nn.Module):
             num_relations=num_relations,
             num_bases=num_bases
         )
-        
+
+        # OPTIMIZATION: Layer normalization for training stability (optional for backward compatibility)
+        if self.use_layer_norm:
+            self.norm1 = nn.LayerNorm(hidden_dim)
+            self.norm2 = nn.LayerNorm(hidden_dim)
+
         # Dropout for regularization
         self.dropout = nn.Dropout(dropout)
-        
+
         # Initialize embeddings
         self._init_embeddings()
     
@@ -118,15 +127,27 @@ class DrugDiseaseRGCN(nn.Module):
             x = self.node_embeddings.weight
         else:
             x = self.node_embeddings(node_indices)
-        
-        # First RGCN layer
+
+        # First RGCN layer with optional LayerNorm (OPTIMIZATION)
         x = self.conv1(x, edge_index, edge_type)
+        if self.use_layer_norm:
+            x = self.norm1(x)
         x = F.relu(x)
         x = self.dropout(x)
-        
-        # Second RGCN layer
+
+        # Store for skip connection (OPTIMIZATION)
+        if self.use_skip_connections:
+            x_skip = x
+
+        # Second RGCN layer with optional LayerNorm and skip connection (OPTIMIZATION)
         x = self.conv2(x, edge_index, edge_type)
-        
+        if self.use_layer_norm:
+            x = self.norm2(x)
+
+        # Add skip connection (enables deeper networks and better gradient flow)
+        if self.use_skip_connections:
+            x = x + x_skip
+
         return x
     
     def get_node_embeddings(self, node_indices: torch.Tensor) -> torch.Tensor:

@@ -219,61 +219,67 @@ class ModelEvaluator:
     def compute_ranking_metrics(self, k_values: List[int] = [10, 50]) -> Dict:
         """
         Compute ranking-based metrics: Hits@K and MRR.
-        
+
         For each test triple (h, r, t), we rank t among all possible entities
         and compute metrics based on the rank of the true tail.
-        
+
         Args:
             k_values: List of K values for Hits@K metric
-        
+
         Returns:
             Dictionary with ranking metrics
         """
         logger.info("Computing ranking metrics...")
-        
+
         ranks = []
         reciprocal_ranks = []
-        
+
         # Process test data in batches
         num_batches = (self.num_test_edges + self.batch_size - 1) // self.batch_size
-        
+
         with torch.no_grad():
+            # OPTIMIZATION: Encode all nodes ONCE before the loop (cache embeddings)
+            logger.info("Encoding all node embeddings (cached for all batches)...")
+            all_node_embeddings = self.model.encoder(
+                self.full_edge_index,
+                self.full_edge_type
+            )
+            logger.info(f"Cached embeddings shape: {all_node_embeddings.shape}")
+
             for batch_idx in tqdm(range(num_batches), desc="Computing ranks"):
                 start_idx = batch_idx * self.batch_size
                 end_idx = min(start_idx + self.batch_size, self.num_test_edges)
-                
+
                 # Get test triples
                 batch_head = self.test_edge_index[0, start_idx:end_idx]
                 batch_tail = self.test_edge_index[1, start_idx:end_idx]
                 batch_rel = self.test_edge_type[start_idx:end_idx]
-                
-                # Encode all nodes
-                all_node_embeddings = self.model.encoder(
-                    self.full_edge_index,
-                    self.full_edge_type
-                )
-                
-                # Get head embeddings
+
+                # Get head embeddings (from cached embeddings)
                 head_emb = all_node_embeddings[batch_head]
-                
+
                 # Score all possible tails
                 scores = self.model.decoder.score_all_tails(
                     head_emb, batch_rel, all_node_embeddings
                 )
-                
-                # Get ranks of true tails
-                # Rank is 1-indexed (1 = best)
-                for i, true_tail in enumerate(batch_tail):
-                    # Sort scores in descending order
-                    sorted_indices = torch.argsort(scores[i], descending=True)
-                    
-                    # Find position of true tail (0-indexed)
-                    rank_0indexed = (sorted_indices == true_tail).nonzero(as_tuple=True)[0].item()
-                    
-                    # Convert to 1-indexed rank
-                    rank = rank_0indexed + 1
-                    ranks.append(rank)
-                    reciprocal_ranks.append(1.0 / rank)
+
+                # OPTIMIZATION: Vectorized ranking computation (replace Python loop)
+                # Get ranks of true tails in batch
+                # Sort scores in descending order
+                sorted_indices = torch.argsort(scores, dim=1, descending=True)
+
+                # Find positions of true tails (0-indexed)
+                # Create a mask where sorted_indices == true_tail for each sample
+                true_tail_expanded = batch_tail.unsqueeze(1)  # [batch_size, 1]
+                matches = (sorted_indices == true_tail_expanded)  # [batch_size, num_nodes]
+
+                # Get the column index (rank) where match occurs
+                ranks_0indexed = matches.nonzero(as_tuple=True)[1]  # [batch_size]
+
+                # Convert to 1-indexed ranks
+                batch_ranks = (ranks_0indexed + 1).cpu().numpy()
+                ranks.extend(batch_ranks.tolist())
+                reciprocal_ranks.extend((1.0 / batch_ranks).tolist())
         
         ranks = np.array(ranks)
         reciprocal_ranks = np.array(reciprocal_ranks)

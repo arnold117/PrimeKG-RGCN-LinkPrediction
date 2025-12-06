@@ -1,0 +1,23 @@
+head,tail,relation,head_name,tail_name,head_type,tail_type,score,predicted,actual
+24908,11151,drug-gene,"('58488', 'PCTP', 'gene/protein')","('DB09568', 'Omega-3-carboxylic acids', 'drug')",unknown,unknown,0.019552120938897133,0,1.0
+11151,24908,drug-gene,"('DB09568', 'Omega-3-carboxylic acids', 'drug')","('58488', 'PCTP', 'gene/protein')",unknown,unknown,0.01955212466418743,0,1.0
+9129,16164,drug-gene,"('DB06228', 'Rivaroxaban', 'drug')","('2159', 'F10', 'gene/protein')",unknown,unknown,0.03652225434780121,0,1.0
+16164,9129,drug-gene,"('2159', 'F10', 'gene/protein')","('DB06228', 'Rivaroxaban', 'drug')",unknown,unknown,0.0365222729742527,0,1.0
+11781,15222,drug-gene,"('DB14596', 'Loteprednol etabonate', 'drug')","('1576', 'CYP3A4', 'gene/protein')",unknown,unknown,0.042341217398643494,0,1.0
+15222,11781,drug-gene,"('1576', 'CYP3A4', 'gene/protein')","('DB14596', 'Loteprednol etabonate', 'drug')",unknown,unknown,0.04234122857451439,0,1.0
+15050,9293,drug-gene,"('1513', 'CTSK', 'gene/protein')","('DB06670', 'Odanacatib', 'drug')",unknown,unknown,0.05695599317550659,0,1.0
+9293,15050,drug-gene,"('DB06670', 'Odanacatib', 'drug')","('1513', 'CTSK', 'gene/protein')",unknown,unknown,0.056956011801958084,0,1.0
+9293,15050,drug-gene,"('DB06670', 'Odanacatib', 'drug')","('1513', 'CTSK', 'gene/protein')",unknown,unknown,0.05695602297782898,0,1.0
+15050,9293,drug-gene,"('1513', 'CTSK', 'gene/protein')","('DB06670', 'Odanacatib', 'drug')",unknown,unknown,0.05695602297782898,0,1.0
+11044,26143,drug-gene,"('DB09237', 'Levamlodipine', 'drug')","('6555', 'SLC10A2', 'gene/protein')",unknown,unknown,0.26346826553344727,0,1.0
+11044,26143,drug-gene,"('DB09237', 'Levamlodipine', 'drug')","('6555', 'SLC10A2', 'gene/protein')",unknown,unknown,0.26346829533576965,0,1.0
+26143,11044,drug-gene,"('6555', 'SLC10A2', 'gene/protein')","('DB09237', 'Levamlodipine', 'drug')",unknown,unknown,0.26346829533576965,0,1.0
+26143,11044,drug-gene,"('6555', 'SLC10A2', 'gene/protein')","('DB09237', 'Levamlodipine', 'drug')",unknown,unknown,0.26346829533576965,0,1.0
+10990,13722,drug-gene,"('DB09130', 'Copper', 'drug')","('116844', 'LRG1', 'gene/protein')",unknown,unknown,0.31592124700546265,0,1.0
+10990,13722,drug-gene,"('DB09130', 'Copper', 'drug')","('116844', 'LRG1', 'gene/protein')",unknown,unknown,0.31592124700546265,0,1.0
+13722,10990,drug-gene,"('116844', 'LRG1', 'gene/protein')","('DB09130', 'Copper', 'drug')",unknown,unknown,0.3159213364124298,0,1.0
+13722,10990,drug-gene,"('116844', 'LRG1', 'gene/protein')","('DB09130', 'Copper', 'drug')",unknown,unknown,0.3159213960170746,0,1.0
+6534,21936,drug-gene,"('DB01032', 'Probenecid', 'drug')","('50833', 'TAS2R16', 'gene/protein')",unknown,unknown,0.4815967381000519,0,1.0
+21936,6534,drug-gene,"('50833', 'TAS2R16', 'gene/protein')","('DB01032', 'Probenecid', 'drug')",unknown,unknown,0.4815967381000519,0,1.0
+21936,6534,drug-gene,"('50833', 'TAS2R16', 'gene/protein')","('DB01032', 'Probenecid', 'drug')",unknown,unknown,0.48159685730934143,0,1.0
+6534,21936,drug-gene,"('DB01032', 'Probenecid', 'drug')","('50833', 'TAS2R16', 'gene/protein')",unknown,unknown,0.48159706592559814,0,1.0

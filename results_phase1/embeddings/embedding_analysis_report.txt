@@ -1,0 +1,31 @@
+================================================================================
+NODE EMBEDDING ANALYSIS REPORT
+================================================================================
+
+Model: DrugDiseaseModel
+Embedding dimension: 128
+Total nodes: 30926
+
+Node Type Distribution:
+  Drugs: 6282
+  Diseases: 5593
+  Genes/Proteins: 19051
+
+Embedding Statistics:
+  Mean: 0.2049
+  Std: 1.3297
+  Min: -7.0293
+  Max: 7.0612
+
+Embedding Norms by Type:
+  Drug:
+    Mean norm: 16.8240
+    Std norm: 1.1412
+  Disease:
+    Mean norm: 16.0907
+    Std norm: 1.4604
+  Gene/Protein:
+    Mean norm: 14.1210
+    Std norm: 2.5132
+
+================================================================================
