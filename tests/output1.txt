@@ -1,0 +1,57 @@
+Using device: cuda
+
+Loading test data...
+Test edges: 15,372
+Full graph edges (train+val): 1,699,648
+Nodes: 30,926
+
+============================================================
+COMPLETE MRR COMPARISON TEST
+============================================================
+
+1. VERIFY IDENTICAL TEST SET:
+   Baseline: 15,372 edges
+   Phase 1:  15,372 edges
+   ✓ IDENTICAL
+
+2. BASELINE MODEL (old architecture, no LayerNorm):
+   Loading model from git history (commit c14de6b)...
+   Computing MRR on FULL test set (15,372 edges)...
+   Reported MRR:  0.2261
+   Computed MRR:  0.2261
+   Difference:    0.0000
+
+3. PHASE 1 MODEL (new architecture, with LayerNorm):
+   Loading model from current src/...
+   Computing MRR on FULL test set (15,372 edges)...
+   Reported MRR:  0.2707
+   Computed MRR:  0.2707
+   Difference:    0.0000
+
+4. DIRECT COMPARISON (FULL test set - 15,372 edges):
+   Baseline MRR:  0.2261
+   Phase 1 MRR:   0.2707
+   Improvement:   +19.8%
+
+   Baseline Mean Rank:  493.5
+   Phase 1 Mean Rank:   58.8
+   Improvement:         -88.1%
+
+   Baseline Hits@10:  0.4390
+   Phase 1 Hits@10:   0.4912
+   Improvement:       +11.9%
+
+5. ARCHITECTURE VERIFICATION:
+   Baseline checkpoint has LayerNorm weights: False
+   Phase 1 checkpoint has LayerNorm weights:  True
+
+============================================================
+CONCLUSION:
+============================================================
+✓ Phase 1 MRR is 19.8% better (FULL test set)
+✓ Improvement is REAL and reproducible
+✓ Architecture difference: LayerNorm + Skip Connections
+✓ Better convergence: val loss 0.1527→0.0438
+
+✓ Computed MRR matches reported MRR (both models)
+============================================================
