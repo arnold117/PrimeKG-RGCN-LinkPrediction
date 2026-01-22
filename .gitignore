@@ -211,3 +211,13 @@ data/raw/
 
 # temporal files
 temp/
+
+# model weights (too large for git, can be retrained)
+output/
+experiments/*/output/
+
+# IDE config
+.vscode/
+
+# MacOS shit files
+.DS_Store

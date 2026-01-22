@@ -1,0 +1,299 @@
+================================================================================
+ERROR ANALYSIS REPORT
+Drug-Disease Link Prediction - RGCN Model
+================================================================================
+
+## SUMMARY STATISTICS
+--------------------------------------------------------------------------------
+Total test samples: 15,372
+Correct predictions: 15,056 (97.94%)
+Incorrect predictions: 316 (2.06%)
+Low confidence predictions: 830
+False negatives: 316
+Classification threshold: 0.5
+
+## ERROR PATTERNS
+--------------------------------------------------------------------------------
+
+### False Negatives by Node Type:
+  unknown: 316
+
+### Top 10 Most Problematic Head Entities (False Negatives):
+  ('1576', 'CYP3A4', 'gene/protein'): 10 errors
+  ('1544', 'CYP1A2', 'gene/protein'): 7 errors
+  ('213', 'ALB', 'gene/protein'): 5 errors
+  ('5742', 'PTGS1', 'gene/protein'): 4 errors
+  ('DB05969', 'SNS-032', 'drug'): 3 errors
+  ('4048', 'LTA4H', 'gene/protein'): 3 errors
+  ('3105', 'HLA-A', 'gene/protein'): 2 errors
+  ('DB06226', 'Nelipepimut-S', 'drug'): 2 errors
+  ('DB11567', 'Insulin peglispro', 'drug'): 2 errors
+  ('4921', 'DDR2', 'gene/protein'): 2 errors
+
+### Top 10 Most Problematic Tail Entities (False Negatives):
+  ('1576', 'CYP3A4', 'gene/protein'): 10 errors
+  ('1544', 'CYP1A2', 'gene/protein'): 7 errors
+  ('213', 'ALB', 'gene/protein'): 5 errors
+  ('5742', 'PTGS1', 'gene/protein'): 4 errors
+  ('DB05969', 'SNS-032', 'drug'): 3 errors
+  ('4048', 'LTA4H', 'gene/protein'): 3 errors
+  ('DB06226', 'Nelipepimut-S', 'drug'): 2 errors
+  ('3105', 'HLA-A', 'gene/protein'): 2 errors
+  ('DB11567', 'Insulin peglispro', 'drug'): 2 errors
+  ('DB08896', 'Regorafenib', 'drug'): 2 errors
+
+## TOP 20 FALSE NEGATIVES (Missed Predictions)
+--------------------------------------------------------------------------------
+
+1. Score: 0.0057
+   Head: ('1357', 'CPA1', 'gene/protein') (unknown)
+   Tail: ('DB02494', '(S)-3-phenyllactic acid', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+2. Score: 0.0057
+   Head: ('DB02494', '(S)-3-phenyllactic acid', 'drug') (unknown)
+   Tail: ('1357', 'CPA1', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+3. Score: 0.0476
+   Head: ('DB01108', 'Trilostane', 'drug') (unknown)
+   Tail: ('3283', 'HSD3B1', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+4. Score: 0.0476
+   Head: ('3283', 'HSD3B1', 'gene/protein') (unknown)
+   Tail: ('DB01108', 'Trilostane', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+5. Score: 0.0629
+   Head: ('DB06190', 'Solabegron', 'drug') (unknown)
+   Tail: ('155', 'ADRB3', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+6. Score: 0.0629
+   Head: ('DB06190', 'Solabegron', 'drug') (unknown)
+   Tail: ('155', 'ADRB3', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+7. Score: 0.0629
+   Head: ('155', 'ADRB3', 'gene/protein') (unknown)
+   Tail: ('DB06190', 'Solabegron', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+8. Score: 0.0629
+   Head: ('155', 'ADRB3', 'gene/protein') (unknown)
+   Tail: ('DB06190', 'Solabegron', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+9. Score: 0.1184
+   Head: ('124', 'ADH1A', 'gene/protein') (unknown)
+   Tail: ('DB04065', 'N-Cyclopentyl-N-Cyclobutylformamide', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+10. Score: 0.1184
+   Head: ('DB04065', 'N-Cyclopentyl-N-Cyclobutylformamide', 'drug') (unknown)
+   Tail: ('124', 'ADH1A', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+11. Score: 0.1351
+   Head: ('645745', 'MT1HL1', 'gene/protein') (unknown)
+   Tail: ('DB09130', 'Copper', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+12. Score: 0.1351
+   Head: ('DB09130', 'Copper', 'drug') (unknown)
+   Tail: ('645745', 'MT1HL1', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+13. Score: 0.1367
+   Head: ('3738', 'KCNA3', 'gene/protein') (unknown)
+   Tail: ('DB00845', 'Clofazimine', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+14. Score: 0.1367
+   Head: ('DB00845', 'Clofazimine', 'drug') (unknown)
+   Tail: ('3738', 'KCNA3', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+15. Score: 0.1429
+   Head: ('162514', 'TRPV3', 'gene/protein') (unknown)
+   Tail: ('DB09086', 'Eugenol', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+16. Score: 0.1429
+   Head: ('DB09086', 'Eugenol', 'drug') (unknown)
+   Tail: ('162514', 'TRPV3', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+17. Score: 0.1538
+   Head: ('4582', 'MUC1', 'gene/protein') (unknown)
+   Tail: ('DB06584', 'TG4010', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+18. Score: 0.1538
+   Head: ('DB06584', 'TG4010', 'drug') (unknown)
+   Tail: ('4582', 'MUC1', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+19. Score: 0.1709
+   Head: ('DB07970', '5-[(2-methyl-5-{[3-(trifluoromethyl)phenyl]carbamoyl}phenyl)amino]pyridine-3-carboxamide', 'drug') (unknown)
+   Tail: ('2045', 'EPHA7', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+20. Score: 0.1709
+   Head: ('2045', 'EPHA7', 'gene/protein') (unknown)
+   Tail: ('DB07970', '5-[(2-methyl-5-{[3-(trifluoromethyl)phenyl]carbamoyl}phenyl)amino]pyridine-3-carboxamide', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Model predicted NO link (score < 0.5), but link exists
+
+## TOP 20 LOW CONFIDENCE PREDICTIONS
+--------------------------------------------------------------------------------
+
+1. Score: 0.5001
+   Head: ('DB05254', 'Fibrinolysin', 'drug') (unknown)
+   Tail: ('5054', 'SERPINE1', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5001)
+
+2. Score: 0.5001
+   Head: ('5054', 'SERPINE1', 'gene/protein') (unknown)
+   Tail: ('DB05254', 'Fibrinolysin', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5001)
+
+3. Score: 0.5001
+   Head: ('5054', 'SERPINE1', 'gene/protein') (unknown)
+   Tail: ('DB05254', 'Fibrinolysin', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5001)
+
+4. Score: 0.5001
+   Head: ('DB05254', 'Fibrinolysin', 'drug') (unknown)
+   Tail: ('5054', 'SERPINE1', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5001)
+
+5. Score: 0.5009
+   Head: ('DB13775', 'Tertatolol', 'drug') (unknown)
+   Tail: ('1565', 'CYP2D6', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5009)
+
+6. Score: 0.5009
+   Head: ('1565', 'CYP2D6', 'gene/protein') (unknown)
+   Tail: ('DB13775', 'Tertatolol', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5009)
+
+7. Score: 0.5010
+   Head: ('DB00175', 'Pravastatin', 'drug') (unknown)
+   Tail: ('3066', 'HDAC2', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5010)
+
+8. Score: 0.5010
+   Head: ('3066', 'HDAC2', 'gene/protein') (unknown)
+   Tail: ('DB00175', 'Pravastatin', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5010)
+
+9. Score: 0.5014
+   Head: ('116844', 'LRG1', 'gene/protein') (unknown)
+   Tail: ('DB09130', 'Copper', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5014)
+
+10. Score: 0.5014
+   Head: ('DB09130', 'Copper', 'drug') (unknown)
+   Tail: ('116844', 'LRG1', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5014)
+
+11. Score: 0.5014
+   Head: ('116844', 'LRG1', 'gene/protein') (unknown)
+   Tail: ('DB09130', 'Copper', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5014)
+
+12. Score: 0.5014
+   Head: ('DB09130', 'Copper', 'drug') (unknown)
+   Tail: ('116844', 'LRG1', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5014)
+
+13. Score: 0.5034
+   Head: ('1576', 'CYP3A4', 'gene/protein') (unknown)
+   Tail: ('DB11470', 'Tildipirosin', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5034)
+
+14. Score: 0.5034
+   Head: ('DB11470', 'Tildipirosin', 'drug') (unknown)
+   Tail: ('1576', 'CYP3A4', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5034)
+
+15. Score: 0.5036
+   Head: ('5817', 'PVR', 'gene/protein') (unknown)
+   Tail: ('DB08231', 'Myristic acid', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5036)
+
+16. Score: 0.5036
+   Head: ('DB08231', 'Myristic acid', 'drug') (unknown)
+   Tail: ('5817', 'PVR', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5036)
+
+17. Score: 0.5038
+   Head: ('629', 'CFB', 'gene/protein') (unknown)
+   Tail: ('DB06503', 'MLN2222', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5038)
+
+18. Score: 0.5038
+   Head: ('629', 'CFB', 'gene/protein') (unknown)
+   Tail: ('DB06503', 'MLN2222', 'drug') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5038)
+
+19. Score: 0.5038
+   Head: ('DB06503', 'MLN2222', 'drug') (unknown)
+   Tail: ('629', 'CFB', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5038)
+
+20. Score: 0.5038
+   Head: ('DB06503', 'MLN2222', 'drug') (unknown)
+   Tail: ('629', 'CFB', 'gene/protein') (unknown)
+   Relation: drug-gene
+   Issue: Prediction is correct but confidence is low (0.5038)
+
+## RECOMMENDATIONS
+--------------------------------------------------------------------------------
+1. Review false negative cases for potential data issues
+2. Consider adjusting classification threshold based on use case
+3. Investigate graph structure around problematic entities
+4. Consider additional features or model architecture changes
+5. Validate top errors with domain experts
+
+================================================================================

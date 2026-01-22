@@ -1,0 +1,1512 @@
+[
+  {
+    "drug": {
+      "idx": 7926,
+      "id": "DB03589",
+      "name": "Mesoxalic acid",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 732,
+      "id": "11913_7088_11743_12153_7089_11194_12321_15140_4975_11561_11647_11777_12344_12609_12630_12631_14265_10422_14036_14316_100088",
+      "name": "Alzheimer disease",
+      "type": "disease"
+    },
+    "score": 0.7781205773353577,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 7926,
+            "name": "Mesoxalic acid",
+            "type": "drug"
+          },
+          {
+            "idx": 21089,
+            "name": "ME2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 5730,
+            "name": "NADH",
+            "type": "drug"
+          },
+          {
+            "idx": 17877,
+            "name": "GAPDHS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "drug-gene",
+          "drug-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 7926,
+            "name": "Mesoxalic acid",
+            "type": "drug"
+          },
+          {
+            "idx": 21089,
+            "name": "ME2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 5730,
+            "name": "NADH",
+            "type": "drug"
+          },
+          {
+            "idx": 17877,
+            "name": "GAPDHS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "drug-gene",
+          "drug-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 7926,
+            "name": "Mesoxalic acid",
+            "type": "drug"
+          },
+          {
+            "idx": 21089,
+            "name": "ME2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 5730,
+            "name": "NADH",
+            "type": "drug"
+          },
+          {
+            "idx": 17877,
+            "name": "GAPDHS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "drug-gene",
+          "drug-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 7926,
+            "name": "Mesoxalic acid",
+            "type": "drug"
+          },
+          {
+            "idx": 21089,
+            "name": "ME2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 5730,
+            "name": "NADH",
+            "type": "drug"
+          },
+          {
+            "idx": 17877,
+            "name": "GAPDHS",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "drug-gene",
+          "drug-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 7926,
+            "name": "Mesoxalic acid",
+            "type": "drug"
+          },
+          {
+            "idx": 21089,
+            "name": "ME2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 5730,
+            "name": "NADH",
+            "type": "drug"
+          },
+          {
+            "idx": 19272,
+            "name": "HMOX1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "drug-gene",
+          "drug-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        17877,
+        "GAPDHS"
+      ],
+      [
+        19272,
+        "HMOX1"
+      ],
+      [
+        21089,
+        "ME2"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 5797,
+      "id": "DB00226",
+      "name": "Guanadrel",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 732,
+      "id": "11913_7088_11743_12153_7089_11194_12321_15140_4975_11561_11647_11777_12344_12609_12630_12631_14265_10422_14036_14316_100088",
+      "name": "Alzheimer disease",
+      "type": "disease"
+    },
+    "score": 0.7742143869400024,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 5797,
+            "name": "Guanadrel",
+            "type": "drug"
+          },
+          {
+            "idx": 26067,
+            "name": "SLC6A2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 23890,
+            "name": "PRKCE",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21023,
+            "name": "MAPT",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 5797,
+            "name": "Guanadrel",
+            "type": "drug"
+          },
+          {
+            "idx": 26067,
+            "name": "SLC6A2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 23890,
+            "name": "PRKCE",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21023,
+            "name": "MAPT",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 5797,
+            "name": "Guanadrel",
+            "type": "drug"
+          },
+          {
+            "idx": 26067,
+            "name": "SLC6A2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 23890,
+            "name": "PRKCE",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21023,
+            "name": "MAPT",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 5797,
+            "name": "Guanadrel",
+            "type": "drug"
+          },
+          {
+            "idx": 26067,
+            "name": "SLC6A2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 23890,
+            "name": "PRKCE",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21023,
+            "name": "MAPT",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 5797,
+            "name": "Guanadrel",
+            "type": "drug"
+          },
+          {
+            "idx": 26067,
+            "name": "SLC6A2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 23890,
+            "name": "PRKCE",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 24864,
+            "name": "BAX",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        24864,
+        "BAX"
+      ],
+      [
+        21023,
+        "MAPT"
+      ],
+      [
+        23890,
+        "PRKCE"
+      ],
+      [
+        26067,
+        "SLC6A2"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 10815,
+      "id": "DB08839",
+      "name": "Serotonin",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 732,
+      "id": "11913_7088_11743_12153_7089_11194_12321_15140_4975_11561_11647_11777_12344_12609_12630_12631_14265_10422_14036_14316_100088",
+      "name": "Alzheimer disease",
+      "type": "disease"
+    },
+    "score": 0.7741625308990479,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 10815,
+            "name": "Serotonin",
+            "type": "drug"
+          },
+          {
+            "idx": 19453,
+            "name": "HTR3A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 12568,
+            "name": "ABCA7",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 10815,
+            "name": "Serotonin",
+            "type": "drug"
+          },
+          {
+            "idx": 19453,
+            "name": "HTR3A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 12568,
+            "name": "ABCA7",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 10815,
+            "name": "Serotonin",
+            "type": "drug"
+          },
+          {
+            "idx": 19453,
+            "name": "HTR3A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 12568,
+            "name": "ABCA7",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 10815,
+            "name": "Serotonin",
+            "type": "drug"
+          },
+          {
+            "idx": 19453,
+            "name": "HTR3A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 12568,
+            "name": "ABCA7",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 10815,
+            "name": "Serotonin",
+            "type": "drug"
+          },
+          {
+            "idx": 19453,
+            "name": "HTR3A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 12568,
+            "name": "ABCA7",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        12568,
+        "ABCA7"
+      ],
+      [
+        19453,
+        "HTR3A"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 7077,
+      "id": "DB01889",
+      "name": "16,17-Androstene-3-Ol",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 732,
+      "id": "11913_7088_11743_12153_7089_11194_12321_15140_4975_11561_11647_11777_12344_12609_12630_12631_14265_10422_14036_14316_100088",
+      "name": "Alzheimer disease",
+      "type": "disease"
+    },
+    "score": 0.7695102095603943,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 0,
+    "paths": [],
+    "intermediate_genes": []
+  },
+  {
+    "drug": {
+      "idx": 7448,
+      "id": "DB02623",
+      "name": "Aminophosphonic acid-guanylate ester",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 732,
+      "id": "11913_7088_11743_12153_7089_11194_12321_15140_4975_11561_11647_11777_12344_12609_12630_12631_14265_10422_14036_14316_100088",
+      "name": "Alzheimer disease",
+      "type": "disease"
+    },
+    "score": 0.7694337964057922,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 0,
+    "paths": [],
+    "intermediate_genes": []
+  },
+  {
+    "drug": {
+      "idx": 8713,
+      "id": "DB05079",
+      "name": "HY10275",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 732,
+      "id": "11913_7088_11743_12153_7089_11194_12321_15140_4975_11561_11647_11777_12344_12609_12630_12631_14265_10422_14036_14316_100088",
+      "name": "Alzheimer disease",
+      "type": "disease"
+    },
+    "score": 0.7688421010971069,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 8713,
+            "name": "HY10275",
+            "type": "drug"
+          },
+          {
+            "idx": 19384,
+            "name": "HRH1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 28187,
+            "name": "CAMK2A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21023,
+            "name": "MAPT",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 8713,
+            "name": "HY10275",
+            "type": "drug"
+          },
+          {
+            "idx": 19384,
+            "name": "HRH1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 28187,
+            "name": "CAMK2A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21023,
+            "name": "MAPT",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 8713,
+            "name": "HY10275",
+            "type": "drug"
+          },
+          {
+            "idx": 19384,
+            "name": "HRH1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 28187,
+            "name": "CAMK2A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21023,
+            "name": "MAPT",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 8713,
+            "name": "HY10275",
+            "type": "drug"
+          },
+          {
+            "idx": 19384,
+            "name": "HRH1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 28187,
+            "name": "CAMK2A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21023,
+            "name": "MAPT",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 8713,
+            "name": "HY10275",
+            "type": "drug"
+          },
+          {
+            "idx": 19384,
+            "name": "HRH1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 28187,
+            "name": "CAMK2A",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21679,
+            "name": "NOS3",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        28187,
+        "CAMK2A"
+      ],
+      [
+        19384,
+        "HRH1"
+      ],
+      [
+        21023,
+        "MAPT"
+      ],
+      [
+        21679,
+        "NOS3"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 9102,
+      "id": "DB06174",
+      "name": "Noscapine",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 732,
+      "id": "11913_7088_11743_12153_7089_11194_12321_15140_4975_11561_11647_11777_12344_12609_12630_12631_14265_10422_14036_14316_100088",
+      "name": "Alzheimer disease",
+      "type": "disease"
+    },
+    "score": 0.7683669328689575,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 9102,
+            "name": "Noscapine",
+            "type": "drug"
+          },
+          {
+            "idx": 15222,
+            "name": "CYP3A4",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 13010,
+            "name": "PGRMC1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 9102,
+            "name": "Noscapine",
+            "type": "drug"
+          },
+          {
+            "idx": 15222,
+            "name": "CYP3A4",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 13010,
+            "name": "PGRMC1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 9102,
+            "name": "Noscapine",
+            "type": "drug"
+          },
+          {
+            "idx": 15222,
+            "name": "CYP3A4",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 13010,
+            "name": "PGRMC1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 9102,
+            "name": "Noscapine",
+            "type": "drug"
+          },
+          {
+            "idx": 15222,
+            "name": "CYP3A4",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 13010,
+            "name": "PGRMC1",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 3,
+        "nodes": [
+          {
+            "idx": 9102,
+            "name": "Noscapine",
+            "type": "drug"
+          },
+          {
+            "idx": 15222,
+            "name": "CYP3A4",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 17972,
+            "name": "AMFR",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        17972,
+        "AMFR"
+      ],
+      [
+        15222,
+        "CYP3A4"
+      ],
+      [
+        13010,
+        "PGRMC1"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 7406,
+      "id": "DB02545",
+      "name": "Fexaramine",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 732,
+      "id": "11913_7088_11743_12153_7089_11194_12321_15140_4975_11561_11647_11777_12344_12609_12630_12631_14265_10422_14036_14316_100088",
+      "name": "Alzheimer disease",
+      "type": "disease"
+    },
+    "score": 0.7681019306182861,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 0,
+    "paths": [],
+    "intermediate_genes": []
+  },
+  {
+    "drug": {
+      "idx": 9314,
+      "id": "DB06704",
+      "name": "Iobenguane",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 732,
+      "id": "11913_7088_11743_12153_7089_11194_12321_15140_4975_11561_11647_11777_12344_12609_12630_12631_14265_10422_14036_14316_100088",
+      "name": "Alzheimer disease",
+      "type": "disease"
+    },
+    "score": 0.7679350972175598,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 9314,
+            "name": "Iobenguane",
+            "type": "drug"
+          },
+          {
+            "idx": 26067,
+            "name": "SLC6A2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 23890,
+            "name": "PRKCE",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21023,
+            "name": "MAPT",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 9314,
+            "name": "Iobenguane",
+            "type": "drug"
+          },
+          {
+            "idx": 26067,
+            "name": "SLC6A2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 23890,
+            "name": "PRKCE",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21023,
+            "name": "MAPT",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 9314,
+            "name": "Iobenguane",
+            "type": "drug"
+          },
+          {
+            "idx": 26067,
+            "name": "SLC6A2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 23890,
+            "name": "PRKCE",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21023,
+            "name": "MAPT",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 9314,
+            "name": "Iobenguane",
+            "type": "drug"
+          },
+          {
+            "idx": 26067,
+            "name": "SLC6A2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 23890,
+            "name": "PRKCE",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21023,
+            "name": "MAPT",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 9314,
+            "name": "Iobenguane",
+            "type": "drug"
+          },
+          {
+            "idx": 26067,
+            "name": "SLC6A2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 23890,
+            "name": "PRKCE",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 24864,
+            "name": "BAX",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        24864,
+        "BAX"
+      ],
+      [
+        21023,
+        "MAPT"
+      ],
+      [
+        23890,
+        "PRKCE"
+      ],
+      [
+        26067,
+        "SLC6A2"
+      ]
+    ]
+  },
+  {
+    "drug": {
+      "idx": 11146,
+      "id": "DB09546",
+      "name": "Iobenguane sulfate I-123",
+      "type": "drug"
+    },
+    "disease": {
+      "idx": 732,
+      "id": "11913_7088_11743_12153_7089_11194_12321_15140_4975_11561_11647_11777_12344_12609_12630_12631_14265_10422_14036_14316_100088",
+      "name": "Alzheimer disease",
+      "type": "disease"
+    },
+    "score": 0.7676489353179932,
+    "is_known": false,
+    "status": "Novel Prediction",
+    "num_paths": 5,
+    "paths": [
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 11146,
+            "name": "Iobenguane sulfate I-123",
+            "type": "drug"
+          },
+          {
+            "idx": 26067,
+            "name": "SLC6A2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 23890,
+            "name": "PRKCE",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21023,
+            "name": "MAPT",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 11146,
+            "name": "Iobenguane sulfate I-123",
+            "type": "drug"
+          },
+          {
+            "idx": 26067,
+            "name": "SLC6A2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 23890,
+            "name": "PRKCE",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21023,
+            "name": "MAPT",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 11146,
+            "name": "Iobenguane sulfate I-123",
+            "type": "drug"
+          },
+          {
+            "idx": 26067,
+            "name": "SLC6A2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 23890,
+            "name": "PRKCE",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21023,
+            "name": "MAPT",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 11146,
+            "name": "Iobenguane sulfate I-123",
+            "type": "drug"
+          },
+          {
+            "idx": 26067,
+            "name": "SLC6A2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 23890,
+            "name": "PRKCE",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 21023,
+            "name": "MAPT",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      },
+      {
+        "length": 4,
+        "nodes": [
+          {
+            "idx": 11146,
+            "name": "Iobenguane sulfate I-123",
+            "type": "drug"
+          },
+          {
+            "idx": 26067,
+            "name": "SLC6A2",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 23890,
+            "name": "PRKCE",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 24864,
+            "name": "BAX",
+            "type": "gene/protein"
+          },
+          {
+            "idx": 732,
+            "name": "Alzheimer disease",
+            "type": "disease"
+          }
+        ],
+        "relations": [
+          "drug-gene",
+          "gene-gene",
+          "gene-gene",
+          "gene-disease"
+        ]
+      }
+    ],
+    "intermediate_genes": [
+      [
+        24864,
+        "BAX"
+      ],
+      [
+        21023,
+        "MAPT"
+      ],
+      [
+        23890,
+        "PRKCE"
+      ],
+      [
+        26067,
+        "SLC6A2"
+      ]
+    ]
+  }
+]

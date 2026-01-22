@@ -1,0 +1,184 @@
+================================================================================
+FAILURE ANALYSIS REPORT
+================================================================================
+
+EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+Analyzed 5 failure cases and 5 success cases
+Identified 4 key failure modes
+Generated 12 improvement suggestions
+
+================================================================================
+WORST PREDICTION FAILURES
+================================================================================
+
+1. 16,17-Androstene-3-Ol → typical urticaria pigmentosa
+   Type: FP (Predicted positive but actually negative)
+   Prediction Score: 0.9398
+   Ground Truth: 0
+   Confidence Error: 0.9398
+
+   Structural Analysis:
+     - Drug neighborhood: 0 nodes
+     - Disease neighborhood: 224 nodes
+     - Common neighbors: 0
+     - Connecting paths: 0
+
+   Potential Reasons for Failure:
+     ✗ No direct paths connecting drug and disease
+     ✗ No common neighbors between drug and disease
+     ⚠ Sparse drug neighborhood (limited information)
+
+2. Porphobilinogen → agenesis of the corpus callosum with peripheral neuropathy
+   Type: FP (Predicted positive but actually negative)
+   Prediction Score: 0.9240
+   Ground Truth: 0
+   Confidence Error: 0.9240
+
+   Structural Analysis:
+     - Drug neighborhood: 65 nodes
+     - Disease neighborhood: 0 nodes
+     - Common neighbors: 0
+     - Connecting paths: 0
+
+   Potential Reasons for Failure:
+     ✗ No direct paths connecting drug and disease
+     ✗ No common neighbors between drug and disease
+     ⚠ Sparse disease neighborhood (limited information)
+
+3. (2S)-2-[3-(AMINOMETHYL)PHENYL]-3-[(R)-HYDROXY{(1R)-2-METHYL-1-[(PHENYLSULFONYL)AMINO]PROPYL}PHOSPHORYL]PROPANOIC ACID → achondrogenesis
+   Type: FP (Predicted positive but actually negative)
+   Prediction Score: 0.9010
+   Ground Truth: 0
+   Confidence Error: 0.9010
+
+   Structural Analysis:
+     - Drug neighborhood: 9 nodes
+     - Disease neighborhood: 176 nodes
+     - Common neighbors: 0
+     - Connecting paths: 0
+
+   Potential Reasons for Failure:
+     ✗ No direct paths connecting drug and disease
+     ✗ No common neighbors between drug and disease
+     ⚠ Sparse drug neighborhood (limited information)
+
+4. SNX-5422 → renal dysplasia (disease)
+   Type: FP (Predicted positive but actually negative)
+   Prediction Score: 0.8988
+   Ground Truth: 0
+   Confidence Error: 0.8988
+
+   Structural Analysis:
+     - Drug neighborhood: 876 nodes
+     - Disease neighborhood: 24 nodes
+     - Common neighbors: 1
+     - Connecting paths: 1
+     - Shortest path length: 4
+
+   Potential Reasons for Failure:
+     ⚠ Very few connecting paths (weak connection)
+     ⚠ Very few common neighbors
+
+5. (2S,3R)-2-[[4-(Tert-butylcarbamoyl)piperazine-1-carbonyl]amino]-6-(diaminomethylideneamino)-3-formylhexanoic acid → mandibuloacral dysplasia with type A lipodystrophy
+   Type: FP (Predicted positive but actually negative)
+   Prediction Score: 0.8983
+   Ground Truth: 0
+   Confidence Error: 0.8983
+
+   Structural Analysis:
+     - Drug neighborhood: 114 nodes
+     - Disease neighborhood: 735 nodes
+     - Common neighbors: 1
+     - Connecting paths: 1
+     - Shortest path length: 4
+
+   Potential Reasons for Failure:
+     ⚠ Very few connecting paths (weak connection)
+     ⚠ Very few common neighbors
+
+================================================================================
+SUCCESSFUL PREDICTIONS (For Comparison)
+================================================================================
+
+1. Protirelin → resistance to thyrotropin-releasing hormone syndrome
+   Prediction Score: 0.8663
+   Ground Truth: 1
+   Paths: 1, Common neighbors: 31
+
+2. Caplacizumab → von Willebrand disease
+   Prediction Score: 0.8564
+   Ground Truth: 1
+   Paths: 1, Common neighbors: 47
+
+3. m-Hydroxyhippuric acid → developmental defect during embryogenesis
+   Prediction Score: 0.8550
+   Ground Truth: 1
+   Paths: 2, Common neighbors: 32
+
+4. Thieno[2,3-B]Pyridine-2-Carboxamidine → Henoch-Schoenlein purpura
+   Prediction Score: 0.8536
+   Ground Truth: 1
+   Paths: 14, Common neighbors: 120
+
+5. (2S)-2-ETHOXY-3-{4-[2-(10H-PHENOXAZIN-10-YL)ETHOXY]PHENYL}PROPANOIC ACID → adenocarcinoma
+   Prediction Score: 0.8517
+   Ground Truth: 1
+   Paths: 20, Common neighbors: 370
+
+================================================================================
+STRUCTURAL COMPARISON: FAILURES VS SUCCESSES
+================================================================================
+
+Average Connecting Paths:
+  Failures: 0.40
+  Successes: 7.60
+  Difference: 7.20
+
+Average Common Neighbors:
+  Failures: 0.40
+  Successes: 120.00
+  Difference: 119.60
+
+Average Drug Neighborhood Size:
+  Failures: 213
+  Successes: 141
+  Difference: -72
+
+Average Disease Neighborhood Size:
+  Failures: 232
+  Successes: 1798
+  Difference: 1567
+
+================================================================================
+FAILURE MODE HYPOTHESES
+================================================================================
+
+1. Model fails when there are FEW CONNECTING PATHS between drug and disease (failures: 0.4 paths, successes: 7.6 paths). Suggests model relies heavily on graph connectivity.
+
+2. Model fails when drug and disease have FEW COMMON NEIGHBORS (failures: 0.4, successes: 120.0). Suggests common neighbors provide strong signal for prediction.
+
+3. Model makes more FALSE POSITIVES (5) than false negatives (0). May be over-predicting connections, possibly due to high-degree nodes creating spurious associations.
+
+4. Failures occur in SPARSE NEIGHBORHOODS (avg 444 nodes) compared to successes (1819 nodes). Model may need more context to make accurate predictions.
+
+================================================================================
+SUGGESTED IMPROVEMENTS
+================================================================================
+
+• Consider attention mechanisms to focus on relevant paths
+• Add auxiliary node features (e.g., from external databases)
+• Use graph neural network with higher-order aggregation
+• Add negative sampling during training with hard negatives
+• Add higher-order path features to capture multi-hop relationships
+• Increase number of GCN layers to expand receptive field
+• Use graph completion techniques to densify neighborhoods
+• Use degree-normalized aggregation to reduce bias toward high-degree nodes
+• Augment graph with inferred edges (e.g., from similarity)
+• Add common neighbor features explicitly to the model
+• Consider GraphSAINT or similar sampling for better neighborhood coverage
+• Increase regularization (dropout, weight decay) to reduce overfitting
+
+================================================================================
+END OF REPORT
+================================================================================
