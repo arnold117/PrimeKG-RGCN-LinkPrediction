@@ -263,7 +263,7 @@ class PrimeKGPreprocessor:
         return data
     
     def split_edges(
-        self, 
+        self,
         df: pd.DataFrame,
         train_ratio: float = 0.7,
         val_ratio: float = 0.15,
@@ -271,35 +271,38 @@ class PrimeKGPreprocessor:
         random_seed: int = 42
     ) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         """
-        Split drug-disease edges into train/val/test sets.
-        
+        Split drug-gene edges into train/val/test sets.
+
+        IMPORTANT: Splits are done at the *undirected edge* level to prevent
+        data leakage. Each undirected edge (A-B) is assigned to exactly one
+        split, ensuring that neither (A->B) nor (B->A) appears in multiple splits.
+
         Note: We split only specific edge types for link prediction tasks,
         while keeping all other edges in the training set for message passing.
-        
+
         Args:
             df: Filtered KG DataFrame
             train_ratio: Training set ratio
             val_ratio: Validation set ratio
             test_ratio: Test set ratio
             random_seed: Random seed for reproducibility
-            
+
         Returns:
             Tuple of (train_df, val_df, test_df)
         """
         logger.info("Splitting edges into train/val/test sets...")
-        
+        logger.info("Using undirected-edge-aware splitting to prevent data leakage")
+
         # Identify target edges for link prediction
-        # We'll split drug-gene edges since these are crucial for drug discovery
-        # and we have a good number of them for meaningful train/val/test splits
         target_relation = 'drug-gene'
-        
+
         target_mask = df['relation_standard'] == target_relation
         target_df = df[target_mask].copy()
         other_df = df[~target_mask].copy()
-        
+
         logger.info(f"Target edges ({target_relation}): {len(target_df):,}")
         logger.info(f"Other edges (kept in train): {len(other_df):,}")
-        
+
         # Check if we have target edges to split
         if len(target_df) == 0:
             logger.warning(f"No {target_relation} edges found! Using gene-disease instead.")
@@ -309,39 +312,83 @@ class PrimeKGPreprocessor:
             other_df = df[~target_mask].copy()
             logger.info(f"Target edges ({target_relation}): {len(target_df):,}")
             logger.info(f"Other edges (kept in train): {len(other_df):,}")
-        
-        # Split target edges
+
+        # Create canonical edge ID for undirected edge grouping
+        # This ensures (A, B) and (B, A) are treated as the same edge
+        target_df = target_df.copy()
+        target_df['edge_id'] = target_df.apply(
+            lambda row: tuple(sorted([str(row['x_id']), str(row['y_id'])])),
+            axis=1
+        )
+
+        # Get unique undirected edges
+        unique_edges = target_df['edge_id'].unique()
+        logger.info(f"Unique undirected edges to split: {len(unique_edges):,}")
+
+        # Split unique edge IDs (not rows)
         np.random.seed(random_seed)
-        
+
         # First split: train vs (val + test)
-        train_target, val_test_target = train_test_split(
-            target_df,
+        train_edge_ids, val_test_edge_ids = train_test_split(
+            unique_edges,
             test_size=(val_ratio + test_ratio),
             random_state=random_seed
         )
-        
+
         # Second split: val vs test
         val_ratio_adjusted = val_ratio / (val_ratio + test_ratio)
-        val_target, test_target = train_test_split(
-            val_test_target,
+        val_edge_ids, test_edge_ids = train_test_split(
+            val_test_edge_ids,
             test_size=(1 - val_ratio_adjusted),
             random_state=random_seed
         )
-        
+
+        # Convert to sets for fast lookup
+        train_edge_ids = set(train_edge_ids)
+        val_edge_ids = set(val_edge_ids)
+        test_edge_ids = set(test_edge_ids)
+
+        # Assign rows to splits based on their edge_id
+        train_target = target_df[target_df['edge_id'].isin(train_edge_ids)].drop(columns=['edge_id'])
+        val_target = target_df[target_df['edge_id'].isin(val_edge_ids)].drop(columns=['edge_id'])
+        test_target = target_df[target_df['edge_id'].isin(test_edge_ids)].drop(columns=['edge_id'])
+
         # Training set includes all training target edges + all other edges
         train_df = pd.concat([train_target, other_df], ignore_index=True)
         val_df = val_target.copy()
         test_df = test_target.copy()
-        
+
         logger.info(f"Train edges: {len(train_df):,} ({len(train_target):,} target + {len(other_df):,} other)")
         logger.info(f"Val edges: {len(val_df):,}")
         logger.info(f"Test edges: {len(test_df):,}")
-        
+
+        # Verify no leakage
+        train_ids = set(train_target.apply(
+            lambda row: tuple(sorted([str(row['x_id']), str(row['y_id'])])), axis=1
+        ))
+        val_ids = set(val_target.apply(
+            lambda row: tuple(sorted([str(row['x_id']), str(row['y_id'])])), axis=1
+        ))
+        test_ids = set(test_target.apply(
+            lambda row: tuple(sorted([str(row['x_id']), str(row['y_id'])])), axis=1
+        ))
+
+        train_val_overlap = len(train_ids & val_ids)
+        train_test_overlap = len(train_ids & test_ids)
+        val_test_overlap = len(val_ids & test_ids)
+
+        if train_val_overlap > 0 or train_test_overlap > 0 or val_test_overlap > 0:
+            logger.error(f"Data leakage detected! train-val: {train_val_overlap}, "
+                        f"train-test: {train_test_overlap}, val-test: {val_test_overlap}")
+        else:
+            logger.info("Verified: No data leakage between splits")
+
         self.stats['train_edges'] = len(train_df)
         self.stats['val_edges'] = len(val_df)
         self.stats['test_edges'] = len(test_df)
         self.stats['train_target_edges'] = len(train_target)
-        
+        self.stats['unique_target_edges'] = len(unique_edges)
+
         return train_df, val_df, test_df
     
     def save_processed_data(
