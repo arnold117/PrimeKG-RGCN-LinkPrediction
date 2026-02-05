@@ -777,12 +777,19 @@ def parse_args():
         help='Early stopping patience (0 to disable)'
     )
     
-    # Device arguments
+    # Device arguments - auto-detect best available: CUDA > MPS > CPU
+    def get_default_device():
+        if torch.cuda.is_available():
+            return 'cuda'
+        elif torch.backends.mps.is_available():
+            return 'mps'
+        return 'cpu'
+
     parser.add_argument(
         '--device',
         type=str,
-        default='cuda' if torch.cuda.is_available() else 'cpu',
-        help='Device to use for training (cuda/cpu). Auto-detects GPU if available.'
+        default=get_default_device(),
+        help='Device to use for training (cuda/mps/cpu). Auto-detects best available.'
     )
     parser.add_argument(
         '--seed',
