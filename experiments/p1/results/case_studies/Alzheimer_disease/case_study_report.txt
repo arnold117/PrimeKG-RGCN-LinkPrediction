@@ -1,0 +1,195 @@
+================================================================================
+DRUG-DISEASE PREDICTION CASE STUDY
+================================================================================
+
+Disease: Alzheimer disease
+Disease ID: 11913_7088_11743_12153_7089_11194_12321_15140_4975_11561_11647_11777_12344_12609_12630_12631_14265_10422_14036_14316_100088
+Analysis Date: 2025-12-06 13:09:37
+Model: DrugDiseaseModel
+
+--------------------------------------------------------------------------------
+SUMMARY
+--------------------------------------------------------------------------------
+Total predictions analyzed: 10
+Known treatments: 0
+Novel predictions: 10
+Average prediction score: 0.7706
+Total graph paths found: 35
+
+================================================================================
+TOP DRUG PREDICTIONS
+================================================================================
+
+1. Mesoxalic acid
+   Status: Novel Prediction
+   Prediction Score: 0.7781
+   Drug ID: DB03589
+   Key Genes/Proteins (3):
+      - GAPDHS
+      - HMOX1
+      - ME2
+   Connection Paths (5 found):
+      Path 1 (4 steps):
+         Mesoxalic acid → ME2 → NADH → GAPDHS → Alzheimer disease
+      Path 2 (4 steps):
+         Mesoxalic acid → ME2 → NADH → GAPDHS → Alzheimer disease
+
+2. Guanadrel
+   Status: Novel Prediction
+   Prediction Score: 0.7742
+   Drug ID: DB00226
+   Key Genes/Proteins (4):
+      - BAX
+      - MAPT
+      - PRKCE
+      - SLC6A2
+   Connection Paths (5 found):
+      Path 1 (4 steps):
+         Guanadrel → SLC6A2 → PRKCE → MAPT → Alzheimer disease
+      Path 2 (4 steps):
+         Guanadrel → SLC6A2 → PRKCE → MAPT → Alzheimer disease
+
+3. Serotonin
+   Status: Novel Prediction
+   Prediction Score: 0.7742
+   Drug ID: DB08839
+   Key Genes/Proteins (2):
+      - ABCA7
+      - HTR3A
+   Connection Paths (5 found):
+      Path 1 (3 steps):
+         Serotonin → HTR3A → ABCA7 → Alzheimer disease
+      Path 2 (3 steps):
+         Serotonin → HTR3A → ABCA7 → Alzheimer disease
+
+4. 16,17-Androstene-3-Ol
+   Status: Novel Prediction
+   Prediction Score: 0.7695
+   Drug ID: DB01889
+   No direct paths found in graph
+
+5. Aminophosphonic acid-guanylate ester
+   Status: Novel Prediction
+   Prediction Score: 0.7694
+   Drug ID: DB02623
+   No direct paths found in graph
+
+6. HY10275
+   Status: Novel Prediction
+   Prediction Score: 0.7688
+   Drug ID: DB05079
+   Key Genes/Proteins (4):
+      - CAMK2A
+      - HRH1
+      - MAPT
+      - NOS3
+   Connection Paths (5 found):
+      Path 1 (4 steps):
+         HY10275 → HRH1 → CAMK2A → MAPT → Alzheimer disease
+      Path 2 (4 steps):
+         HY10275 → HRH1 → CAMK2A → MAPT → Alzheimer disease
+
+7. Noscapine
+   Status: Novel Prediction
+   Prediction Score: 0.7684
+   Drug ID: DB06174
+   Key Genes/Proteins (3):
+      - AMFR
+      - CYP3A4
+      - PGRMC1
+   Connection Paths (5 found):
+      Path 1 (3 steps):
+         Noscapine → CYP3A4 → PGRMC1 → Alzheimer disease
+      Path 2 (3 steps):
+         Noscapine → CYP3A4 → PGRMC1 → Alzheimer disease
+
+8. Fexaramine
+   Status: Novel Prediction
+   Prediction Score: 0.7681
+   Drug ID: DB02545
+   No direct paths found in graph
+
+9. Iobenguane
+   Status: Novel Prediction
+   Prediction Score: 0.7679
+   Drug ID: DB06704
+   Key Genes/Proteins (4):
+      - BAX
+      - MAPT
+      - PRKCE
+      - SLC6A2
+   Connection Paths (5 found):
+      Path 1 (4 steps):
+         Iobenguane → SLC6A2 → PRKCE → MAPT → Alzheimer disease
+      Path 2 (4 steps):
+         Iobenguane → SLC6A2 → PRKCE → MAPT → Alzheimer disease
+
+10. Iobenguane sulfate I-123
+   Status: Novel Prediction
+   Prediction Score: 0.7676
+   Drug ID: DB09546
+   Key Genes/Proteins (4):
+      - BAX
+      - MAPT
+      - PRKCE
+      - SLC6A2
+   Connection Paths (5 found):
+      Path 1 (4 steps):
+         Iobenguane sulfate I-123 → SLC6A2 → PRKCE → MAPT → Alzheimer disease
+      Path 2 (4 steps):
+         Iobenguane sulfate I-123 → SLC6A2 → PRKCE → MAPT → Alzheimer disease
+
+================================================================================
+MEDICAL INTERPRETATION
+================================================================================
+
+Known Treatments:
+  No known treatments found in top predictions.
+
+Novel Predictions:
+  • Mesoxalic acid (score: 0.7781)
+    This is a novel prediction not directly seen in training.
+    Connected through: GAPDHS, HMOX1, ME2
+  • Guanadrel (score: 0.7742)
+    This is a novel prediction not directly seen in training.
+    Connected through: BAX, MAPT, PRKCE
+  • Serotonin (score: 0.7742)
+    This is a novel prediction not directly seen in training.
+    Connected through: ABCA7, HTR3A
+  • 16,17-Androstene-3-Ol (score: 0.7695)
+    This is a novel prediction not directly seen in training.
+  • Aminophosphonic acid-guanylate ester (score: 0.7694)
+    This is a novel prediction not directly seen in training.
+
+================================================================================
+BIOLOGICAL INSIGHTS
+================================================================================
+
+Most frequent intermediate genes/proteins:
+  • MAPT: appears in 4 prediction paths
+  • BAX: appears in 3 prediction paths
+  • PRKCE: appears in 3 prediction paths
+  • SLC6A2: appears in 3 prediction paths
+  • GAPDHS: appears in 1 prediction paths
+  • HMOX1: appears in 1 prediction paths
+  • ME2: appears in 1 prediction paths
+  • ABCA7: appears in 1 prediction paths
+  • HTR3A: appears in 1 prediction paths
+  • CAMK2A: appears in 1 prediction paths
+
+These genes may play key roles in the disease mechanism and could be
+potential therapeutic targets.
+
+================================================================================
+RECOMMENDATIONS
+================================================================================
+
+1. Validate novel predictions with literature review and domain experts
+2. Investigate high-confidence predictions for potential drug repurposing
+3. Examine intermediate genes for mechanism of action insights
+4. Consider experimental validation for top novel candidates
+5. Review known treatments for model validation
+
+================================================================================
+END OF REPORT
+================================================================================
