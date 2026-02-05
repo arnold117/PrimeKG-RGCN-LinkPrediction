@@ -1,11 +1,18 @@
 """
-Training Script for RGCN Drug-Disease Link Prediction
+Training Script for Link Prediction Models
 
-This script trains the DrugDiseaseModel on the preprocessed PrimeKG data
+This script trains various link prediction models on the preprocessed PrimeKG data
 using negative sampling and binary cross-entropy loss.
 
+Supported models:
+- rgcn: Relational GCN (uses relation types)
+- mlp: MLP baseline (ignores graph structure)
+- gcn: Standard GCN (ignores relation types) [TODO]
+- gat: Graph Attention Network [TODO]
+
 Usage:
-    python src/train.py --epochs 100 --lr 0.001 --batch_size 1024
+    python src/train.py --model rgcn --epochs 50
+    python src/train.py --model mlp --epochs 50 --output_dir output/mlp
 """
 
 import os
@@ -26,7 +33,7 @@ from torch.cuda.amp import autocast, GradScaler
 # Add parent directory to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from src.models.rgcn import DrugDiseaseModel
+from src.models import get_encoder, LinkPredictor, list_models
 
 
 # Setup logging
@@ -100,20 +107,20 @@ class NegativeSampler:
 
 class Trainer:
     """
-    Trainer for RGCN link prediction model.
-    
+    Trainer for link prediction models.
+
     Args:
-        model (DrugDiseaseModel): The model to train
+        model (nn.Module): The model to train (RGCN, MLP, GCN, GAT)
         train_data (dict): Training data dictionary
         val_data (dict): Validation data dictionary
         full_graph (dict): Full graph structure for message passing
         device (torch.device): Device to use for training
         args (argparse.Namespace): Training arguments
     """
-    
+
     def __init__(
         self,
-        model: DrugDiseaseModel,
+        model: nn.Module,
         train_data: Dict,
         val_data: Dict,
         full_graph: Dict,
@@ -623,43 +630,101 @@ def load_data(data_dir: str) -> Tuple[Dict, Dict, Dict, Dict]:
     return train_data, val_data, full_graph, mappings
 
 
+class EncoderDecoderModel(nn.Module):
+    """
+    Generic Encoder + Decoder model for link prediction.
+
+    Combines any encoder (RGCN, MLP, GCN, GAT) with DistMult decoder.
+    """
+
+    def __init__(self, encoder: nn.Module, decoder: nn.Module):
+        super().__init__()
+        self.encoder = encoder
+        self.decoder = decoder
+
+    def forward(
+        self,
+        edge_index: torch.Tensor,
+        edge_type: torch.Tensor,
+        head_indices: torch.Tensor,
+        tail_indices: torch.Tensor,
+        relation_types: torch.Tensor
+    ) -> torch.Tensor:
+        """Forward pass."""
+        # Encode graph to get node embeddings
+        node_embeddings = self.encoder(edge_index, edge_type)
+
+        # Get embeddings for head and tail entities
+        head_emb = node_embeddings[head_indices]
+        tail_emb = node_embeddings[tail_indices]
+
+        # Predict links
+        scores = self.decoder(head_emb, tail_emb, relation_types)
+        return scores
+
+    def state_dict(self, *args, **kwargs):
+        """Return state dict with consistent key names."""
+        return super().state_dict(*args, **kwargs)
+
+    def load_state_dict(self, state_dict, *args, **kwargs):
+        """Load state dict."""
+        return super().load_state_dict(state_dict, *args, **kwargs)
+
+
 def create_model(
     num_nodes: int,
     num_relations: int,
     args: argparse.Namespace
-) -> DrugDiseaseModel:
+) -> nn.Module:
     """
-    Create the model.
-    
+    Create the model based on --model argument.
+
     Args:
         num_nodes (int): Number of nodes
         num_relations (int): Number of relations
         args (argparse.Namespace): Model arguments
-    
+
     Returns:
-        DrugDiseaseModel instance
+        EncoderDecoderModel instance
     """
-    logger.info("Creating model...")
-    model = DrugDiseaseModel(
+    model_type = getattr(args, 'model', 'rgcn').lower()
+    logger.info(f"Creating model: {model_type.upper()}")
+
+    # Get encoder class
+    encoder_cls = get_encoder(model_type)
+
+    # Create encoder
+    encoder = encoder_cls(
         num_nodes=num_nodes,
         num_relations=num_relations,
         embedding_dim=args.embedding_dim,
         hidden_dim=args.hidden_dim,
         dropout=args.dropout,
-        decoder_dropout=args.decoder_dropout,
-        num_bases=args.num_bases
+        num_bases=getattr(args, 'num_bases', None),
+        use_layer_norm=True,
+        use_skip_connections=True
     )
-    
+
+    # Create decoder (same for all models)
+    decoder = LinkPredictor(
+        num_relations=num_relations,
+        embedding_dim=args.hidden_dim,
+        dropout=args.decoder_dropout
+    )
+
+    # Combine into model
+    model = EncoderDecoderModel(encoder, decoder)
+
     num_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
     logger.info(f"Model created with {num_params:,} parameters")
-    
+
     return model
 
 
 def parse_args():
     """Parse command line arguments."""
     parser = argparse.ArgumentParser(
-        description='Train RGCN model for drug-disease link prediction'
+        description='Train link prediction models (RGCN, MLP, GCN, GAT)'
     )
     
     # Data arguments
@@ -683,6 +748,13 @@ def parse_args():
     )
     
     # Model arguments
+    parser.add_argument(
+        '--model',
+        type=str,
+        default='rgcn',
+        choices=list_models(),
+        help=f'Model architecture to use. Available: {list_models()}'
+    )
     parser.add_argument(
         '--embedding_dim',
         type=int,
