@@ -14,13 +14,18 @@ All encoders have the same interface:
 from .rgcn import DrugDiseaseRGCN, LinkPredictor, DrugDiseaseModel
 from .mlp import MLPEncoder
 from .gcn import GCNEncoder
+from .gat import GATEncoder
+from .graphsage import GraphSAGEEncoder
+from .gin import GINEncoder
 
 # Model registry
 ENCODER_REGISTRY = {
     'rgcn': DrugDiseaseRGCN,
     'mlp': MLPEncoder,
     'gcn': GCNEncoder,
-    # 'gat': GATEncoder,  # TODO
+    'gat': GATEncoder,
+    'graphsage': GraphSAGEEncoder,
+    'gin': GINEncoder,
 }
 
 
