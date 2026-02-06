@@ -1,22 +1,22 @@
 # PrimeKG-RGCN-LinkPrediction
 
-Relational Graph Convolutional Network (RGCN) for drug-disease link prediction using the PrimeKG knowledge graph. Includes comprehensive analysis tools for model evaluation, failure analysis, drug repurposing, and interpretable predictions.
+Multi-architecture Graph Neural Network comparison for drug-disease link prediction using the PrimeKG knowledge graph. Compares 6 GNN architectures (RGCN, GCN, GAT, GraphSAGE, GIN) and an MLP baseline with strict evaluation under hard negative sampling.
 
 ## Overview
 
-This project implements a complete pipeline for biomedical link prediction, from data preprocessing to advanced analysis. The RGCN model learns from drug-gene and gene-disease relationships to predict potential therapeutic indications, with extensive tools for validation, interpretation, and medical hypothesis generation.
+This project implements a complete pipeline for biomedical link prediction, from data preprocessing to advanced analysis. Multiple GNN encoders learn from drug-gene and gene-disease relationships to predict potential therapeutic indications, with strict evaluation ensuring no data leakage and hard negative sampling for reliable metrics.
 
 ### Key Features
 
-- RGCN model: Relational graph convolutions for heterogeneous biomedical graphs
+- **Multi-model comparison**: 6 architectures (RGCN, GCN, GAT, GraphSAGE, GIN, MLP) with unified training and evaluation
+- **Strict evaluation**: Hard negative sampling (50 negatives/positive) with data-leakage-free splitting
+- **Modular design**: Plug-and-play encoder registry — easy to add new GNN architectures
 - Comprehensive evaluation: classification metrics, ranking metrics, and error analysis
 - Medical validation: biological plausibility checking and evidence gathering
 - Drug repurposing: disease-specific case studies with pathway analysis
 - Interpretable predictions: path-based explanations with natural language generation
 - Embedding analysis: t-SNE/UMAP visualization and clustering
-- Baseline comparison: compare with random, degree, and TransE baselines
-- Failure analysis: deep dive into prediction errors and improvement suggestions
-- GPU accelerated: optimized for fast inference and batch processing
+- GPU accelerated: optimized for fast inference and batch processing (CUDA / MPS / CPU)
 
 ## Methodology
 
@@ -93,21 +93,28 @@ Optional:
 
 ## Model Performance
 
-### ⚠️ Data Leakage Fix (v2.0)
+### Data Leakage Fix (v2.0)
 
-Previous versions had a data leakage issue where 71.5% of test edges' reverse directions existed in training data. This has been fixed with **undirected-edge-aware splitting**.
+Previous versions had a data leakage issue where 71.5% of test edges' reverse directions existed in training data. This has been fixed with **undirected-edge-aware splitting**, ensuring 0% data leakage.
 
-### Evaluation Metrics (After Fix)
+### Multi-Model Comparison
 
 **Strict Evaluation** (hard negative sampling, 50 negatives per positive):
 
-| Metric | Value |
-|--------|-------|
-| **AUC-ROC** | 0.9794 |
-| **AP** | 0.6697 |
-| **Hits@10** | 0.9789 |
-| **Hits@50** | 1.0000 |
-| **MRR** | 0.8699 |
+| Rank | Model | AUC-ROC | AP | Hits@10 | Hits@50 | MRR |
+|:----:|:------|--------:|-----:|--------:|--------:|-----:|
+| 1 | **GAT** | **0.9866** | **0.7955** | **0.9831** | 1.0000 | **0.9031** |
+| 2 | RGCN | 0.9794 | 0.6697 | 0.9789 | 1.0000 | 0.8699 |
+| 3 | GIN | 0.9774 | 0.6522 | 0.9757 | 1.0000 | 0.8613 |
+| 4 | GraphSAGE | 0.9742 | 0.6394 | 0.9789 | 1.0000 | 0.8862 |
+| 5 | GCN | 0.9657 | 0.5538 | 0.9724 | 1.0000 | 0.8640 |
+| 6 | MLP | 0.6592 | 0.0314 | 0.5234 | 0.9874 | 0.2710 |
+
+**Key Findings:**
+- **Graph structure is critical**: All GNNs (AUC-ROC > 0.96) vastly outperform MLP baseline (0.66)
+- **Attention mechanism wins**: GAT achieves best AP (0.7955), 18.8% higher than second-place RGCN
+- **Relation types help moderately**: RGCN > GCN (0.9794 vs 0.9657), but less impactful than attention
+- **Theoretical expressiveness ≠ task performance**: GIN (WL-test equivalent) ranks 3rd, not 1st
 
 **Data Split:**
 - Train: 838,882 edges (35,910 drug-gene + 802,972 other)
@@ -126,20 +133,8 @@ Previous versions had a data leakage issue where 71.5% of test edges' reverse di
 | Embedding Dim | 64 |
 | Dropout | 0.5 |
 | Negative Samples | 1 |
+| Decoder | DistMult |
 | Device | CUDA / MPS / CPU (auto-detect) |
-
-### Performance Analysis
-
-**Strengths:**
-- Excellent classification performance (AUC-ROC ~0.98)
-- High ranking performance with hard negatives
-- No data leakage - results are trustworthy
-- Supports Apple Silicon (MPS) and CUDA
-
-**Key Improvements in v2.0:**
-- Fixed undirected edge splitting to prevent leakage
-- Added strict evaluation with hard negative sampling
-- Added MPS device support for Apple Silicon
 
 ## Project Structure
 
@@ -157,7 +152,8 @@ PrimeKG-RGCN-LinkPrediction/
 │
 ├── src/
 │   ├── run_full_analysis.py    # Main entry point for all analyses
-│   ├── train.py                # Model training
+│   ├── train.py                # Multi-model training (--model flag)
+│   ├── strict_evaluation.py    # Strict eval with hard negatives
 │   ├── evaluate.py             # Basic evaluation metrics
 │   ├── analyze_results.py      # Advanced result analysis
 │   ├── error_analysis.py       # Error pattern analysis
@@ -169,17 +165,25 @@ PrimeKG-RGCN-LinkPrediction/
 │   ├── analyze_failures.py     # Failure mode analysis
 │   ├── data/
 │   │   └── preprocess.py       # Data preprocessing
-│   └── models/
-│       └── rgcn.py             # RGCN model implementation
+│   └── models/                 # Modular encoder registry
+│       ├── __init__.py         # Model registry & get_encoder()
+│       ├── rgcn.py             # Relational GCN (uses edge types)
+│       ├── gcn.py              # Standard GCN
+│       ├── gat.py              # Graph Attention Network
+│       ├── graphsage.py        # GraphSAGE
+│       ├── gin.py              # Graph Isomorphism Network
+│       └── mlp.py              # MLP baseline (no graph)
 │
-├── output/                # Training outputs (auto-generated)
-│   ├── checkpoints/       # Regular training checkpoints
-│   │   ├── checkpoint_epoch_10.pt
-│   │   ├── checkpoint_epoch_20.pt
-│   │   └── ...
-│   └── models/            # Best and final models
-│       ├── best_model.pt      # Model with best validation performance
-│       └── final_model.pt     # Model from last epoch
+├── output/                # Training outputs (per-model subdirectories)
+│   ├── rgcn/              # RGCN outputs
+│   │   ├── models/            # best_model.pt, final_model.pt
+│   │   ├── checkpoints/       # Periodic checkpoints
+│   │   └── analysis/          # Strict evaluation results
+│   ├── gat/               # GAT outputs (same structure)
+│   ├── gcn/               # GCN outputs
+│   ├── graphsage/         # GraphSAGE outputs
+│   ├── gin/               # GIN outputs
+│   └── mlp/               # MLP outputs
 │
 ├── results/               # Evaluation results (Best model)
 │   ├── results.json           # Basic metrics
@@ -221,15 +225,17 @@ PrimeKG-RGCN-LinkPrediction/
 ### 1. Training
 
 ```bash
-# Train with default settings
-python src/train.py
+# Train RGCN (default)
+python src/train.py --model rgcn --epochs 50 --output_dir output/rgcn
 
-# Custom configuration
-python src/train.py \
-    --epochs 100 \
-    --hidden_dim 128 \
-    --lr 0.001 \
-    --batch_size 512
+# Train GAT (best performing)
+python src/train.py --model gat --epochs 50 --output_dir output/gat
+
+# Available models: rgcn, gcn, gat, graphsage, gin, mlp
+python src/train.py --model <model_name> --epochs 50 --output_dir output/<model_name>
+
+# Run on server (continues after terminal disconnect)
+nohup python src/train.py --model gat --epochs 50 --output_dir output/gat > output/gat/train.log 2>&1 &
 ```
 
 Detailed guide: [guide/TRAINING_GUIDE.md](guide/TRAINING_GUIDE.md)
@@ -285,33 +291,42 @@ python src/run_full_analysis.py --help
 ### Training
 
 ```bash
-# Basic training with default parameters
-python src/train.py
+# Train any model
+python src/train.py --model <model_name> --epochs 50 --output_dir output/<model_name>
 
 # With memory optimization
-python src/train.py --batch_size 256 --gradient_accumulation_steps 4
-
-# Custom output directory
-python src/train.py --output_dir my_experiment
+python src/train.py --model rgcn --batch_size 256 --gradient_accumulation_steps 4
 ```
 
-**Training outputs:**
-- `output/checkpoints/`: Regular checkpoints (every 10 epochs)
-- `output/models/best_model.pt`: Best validation performance
-- `output/models/final_model.pt`: Last epoch
-- `training.log`: Detailed logs
+**Training outputs** (per model in `output/<model_name>/`):
+- `models/best_model.pt`: Best validation performance
+- `models/final_model.pt`: Last epoch
+- `checkpoints/`: Periodic checkpoints
 
 Detailed guide: [guide/TRAINING_GUIDE.md](guide/TRAINING_GUIDE.md)
 
-### Evaluation
+### Strict Evaluation
+
+```bash
+# Evaluate with hard negative sampling (50 negatives per positive)
+python src/strict_evaluation.py \
+    --model gat \
+    --checkpoint output/gat/models/best_model.pt \
+    --output_dir output/gat/analysis
+
+# Custom number of negatives
+python src/strict_evaluation.py --model rgcn --num_neg 100
+```
+
+### Basic Evaluation
 
 ```bash
 # Basic evaluation
-python src/evaluate.py --model_path output/models/best_model.pt
+python src/evaluate.py --model_path output/rgcn/models/best_model.pt
 
 # Custom settings
 python src/evaluate.py \
-    --model_path output/models/best_model.pt \
+    --model_path output/rgcn/models/best_model.pt \
     --output_dir results \
     --batch_size 512 \
     --k_values 10 50 100
@@ -623,11 +638,10 @@ Contributions are welcome! Here are some areas for improvement:
 
 2. **Advanced Baselines**
    - Implement ComplEx, RotatE embeddings
-   - Add graph attention networks (GAT)
    - Include rule-based methods
 
 3. **Interpretability**
-   - Attention visualization
+   - GAT attention weight visualization
    - GNNExplainer integration
    - Counterfactual explanations
 

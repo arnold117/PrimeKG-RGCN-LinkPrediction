@@ -4,8 +4,10 @@ Model Registry for Link Prediction
 Available encoders:
 - rgcn: Relational GCN (uses relation types)
 - mlp: MLP baseline (ignores graph structure)
-- gcn: Standard GCN (ignores relation types) [TODO]
-- gat: Graph Attention Network [TODO]
+- gcn: Standard GCN (ignores relation types)
+- gat: Graph Attention Network (multi-head attention)
+- graphsage: GraphSAGE (sample and aggregate)
+- gin: Graph Isomorphism Network (WL-test equivalent)
 
 All encoders have the same interface:
     encoder(edge_index, edge_type) -> node_embeddings [num_nodes, hidden_dim]
