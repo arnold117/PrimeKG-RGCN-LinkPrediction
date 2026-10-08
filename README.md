@@ -1,19 +1,19 @@
 # PrimeKG-RGCN-LinkPrediction
 
-Multi-architecture Graph Neural Network comparison for drug-disease link prediction using the PrimeKG knowledge graph. Compares 6 GNN architectures (RGCN, GCN, GAT, GraphSAGE, GIN) and an MLP baseline with strict evaluation under hard negative sampling.
+Multi-architecture Graph Neural Network comparison for drug–target (drug–gene) link prediction on a PrimeKG subgraph. Compares five GNN architectures (RGCN, GCN, GAT, GraphSAGE, GIN) and an MLP baseline with strict evaluation under hard negative sampling.
 
 ## Overview
 
-This project implements a complete pipeline for biomedical link prediction, from data preprocessing to advanced analysis. Multiple GNN encoders learn from drug-gene and gene-disease relationships to predict potential therapeutic indications, with strict evaluation ensuring no data leakage and hard negative sampling for reliable metrics.
+This project implements a complete pipeline for biomedical link prediction, from data preprocessing to advanced analysis. Multiple GNN encoders learn from drug–gene, gene–gene and gene–disease relationships to predict held-out drug–gene links, evaluated with a leakage-aware split and hard negative sampling (see *Known limitation* below).
 
 ### Key Features
 
-- **Multi-model comparison**: 6 architectures (RGCN, GCN, GAT, GraphSAGE, GIN, MLP) with unified training and evaluation
-- **Strict evaluation**: Hard negative sampling (50 negatives/positive) with data-leakage-free splitting
+- **Multi-model comparison**: 5 GNN architectures (RGCN, GCN, GAT, GraphSAGE, GIN) + MLP baseline with unified training and evaluation
+- **Strict evaluation**: Hard negative sampling (50 degree-matched negatives per positive, i.e. ranking among 51 candidates) with an undirected-edge-aware split
 - **Modular design**: Plug-and-play encoder registry — easy to add new GNN architectures
 - Comprehensive evaluation: classification metrics, ranking metrics, and error analysis
-- Medical validation: biological plausibility checking and evidence gathering
-- Drug repurposing: disease-specific case studies with pathway analysis
+- Plausibility heuristics (exploratory): graph-structure checks; literature / clinical-trial checks are placeholders
+- Exploratory disease case studies: drugs ranked by embedding similarity (not a trained drug–disease predictor)
 - Interpretable predictions: path-based explanations with natural language generation
 - Embedding analysis: t-SNE/UMAP visualization and clustering
 - GPU accelerated: optimized for fast inference and batch processing (CUDA / MPS / CPU)
@@ -24,11 +24,11 @@ This project implements a complete pipeline for biomedical link prediction, from
 Drug --[interacts]--> Gene --[associated]--> Disease
 ```
 
-The model learns to predict drug-disease indications by:
+The model learns to predict drug–gene (drug–target) links by:
 
-1. Encoding drug-gene and gene-disease relationships
-2. Learning node embeddings via relational graph convolutions
-3. Predicting links between drug and disease nodes
+1. Encoding drug–gene, gene–gene and gene–disease relationships
+2. Learning node embeddings via graph convolutions
+3. Scoring held-out drug–gene pairs with a DistMult decoder
 
 ## Dataset
 
@@ -95,7 +95,9 @@ Optional:
 
 ### Data Leakage Fix (v2.0)
 
-Previous versions had a data leakage issue where 71.5% of test edges' reverse directions existed in training data. This has been fixed with **undirected-edge-aware splitting**, ensuring 0% data leakage.
+Previous versions had a data leakage issue where 71.5% of test edges' reverse directions existed in training data. This has been fixed with **undirected-edge-aware splitting**: no edge or its reverse appears in more than one split.
+
+**Known limitation:** strict evaluation computes node embeddings over the full graph (`full_graph.pt`), so held-out drug–gene edges are present in the GNNs' message-passing neighbourhoods at test time. GNN metrics are therefore likely optimistic relative to the MLP baseline, which does not use the graph. Re-evaluation with a training-only message-passing graph is planned.
 
 ### Multi-Model Comparison
 
@@ -481,7 +483,9 @@ the disease pathology."
 
 Detailed guide: [guide/EXPLAIN_PREDICTIONS_GUIDE.md](guide/EXPLAIN_PREDICTIONS_GUIDE.md)
 
-### Medical Validation
+### Plausibility Heuristics (exploratory)
+
+Note: the literature and clinical-trial checks in `medical_validation.py` are placeholders (mock signals); only the graph-structure heuristics are implemented.
 
 ```bash
 # Validate top novel predictions
@@ -674,7 +678,7 @@ If you use this code in your research, please cite:
 ```bibtex
 @software{primekg_rgcn_2025,
   author = {arnold117},
-  title = {PrimeKG-RGCN-LinkPrediction: Drug-Disease Link Prediction with Relational Graph Convolutional Networks},
+  title = {PrimeKG-RGCN-LinkPrediction: Drug–Target Link Prediction with Graph Neural Networks},
   year = {2025},
   url = {https://github.com/arnold117/PrimeKG-RGCN-LinkPrediction}
 }
