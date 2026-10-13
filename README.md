@@ -4,7 +4,7 @@ Multi-architecture Graph Neural Network comparison for drug–target (drug–gen
 
 ## Overview
 
-This project implements a complete pipeline for biomedical link prediction, from data preprocessing to advanced analysis. Multiple GNN encoders learn from drug–gene, gene–gene and gene–disease relationships to predict held-out drug–gene links, evaluated with a leakage-aware split and hard negative sampling (see *Known limitation* below).
+This project implements a reproducible pipeline for biomedical link prediction, from data preprocessing to advanced analysis. Multiple GNN encoders learn from drug–gene, gene–gene and gene–disease relationships to predict held-out drug–gene links, evaluated with a leakage-aware split and hard negative sampling (see *Known limitation* below).
 
 ### Key Features
 
@@ -44,8 +44,8 @@ This project uses [PrimeKG](https://github.com/mims-harvard/PrimeKG), a precisio
 
 **Our processed graph:**
 - **30,926** nodes (6,282 drugs, 5,593 diseases, 19,051 genes/proteins)
-- **849,456** edges (3 relation types)
-- **Train/Val/Test split**: 70% / 15% / 15%
+- **854,278** edges (3 relation types)
+- **Train/Val/Test split**: 70% / 15% / 15% of the drug–gene edges; all other relations stay in the training graph for message passing
 
 **Reference**: Chandak et al., "Building a knowledge graph to enable precision medicine." *Nature Scientific Data* (2023).
 
@@ -93,27 +93,27 @@ Optional:
 
 ## Model Performance
 
-### Data Leakage Fix (v2.0)
+### Split-Level Leakage Fix (v2.0)
 
-Previous versions had a data leakage issue where 71.5% of test edges' reverse directions existed in training data. This has been fixed with **undirected-edge-aware splitting**: no edge or its reverse appears in more than one split.
+Previous versions had a split-level leakage issue where 71.5% of test edges' reverse directions existed in training data. This has been fixed with **undirected-edge-aware splitting**: no edge or its reverse appears in more than one split.
 
 **Known limitation:** strict evaluation computes node embeddings over the full graph (`full_graph.pt`), so held-out drug–gene edges are present in the GNNs' message-passing neighbourhoods at test time. GNN metrics are therefore likely optimistic relative to the MLP baseline, which does not use the graph. Re-evaluation with a training-only message-passing graph is planned.
 
 ### Multi-Model Comparison
 
-**Strict Evaluation** (hard negative sampling, 50 negatives per positive):
+**Strict Evaluation** (hard negative sampling, 50 degree-matched negatives per positive, i.e. each test drug–gene edge ranked among 51 candidates). These numbers are not comparable with full-entity-ranking results in the literature; Hits@50 is omitted because it is near-automatic with 51 candidates (any rank but last counts as a hit).
 
-| Rank | Model | AUC-ROC | AP | Hits@10 | Hits@50 | MRR |
-|:----:|:------|--------:|-----:|--------:|--------:|-----:|
-| 1 | **GAT** | **0.9866** | **0.7955** | **0.9831** | 1.0000 | **0.9031** |
-| 2 | RGCN | 0.9794 | 0.6697 | 0.9789 | 1.0000 | 0.8699 |
-| 3 | GIN | 0.9774 | 0.6522 | 0.9757 | 1.0000 | 0.8613 |
-| 4 | GraphSAGE | 0.9742 | 0.6394 | 0.9789 | 1.0000 | 0.8862 |
-| 5 | GCN | 0.9657 | 0.5538 | 0.9724 | 1.0000 | 0.8640 |
-| 6 | MLP | 0.6592 | 0.0314 | 0.5234 | 0.9874 | 0.2710 |
+| Rank | Model | AUC-ROC | AP | Hits@10 | MRR |
+|:----:|:------|--------:|-----:|--------:|-----:|
+| 1 | **GAT** | **0.9866** | **0.7955** | **0.9831** | **0.9031** |
+| 2 | RGCN | 0.9794 | 0.6697 | 0.9789 | 0.8699 |
+| 3 | GIN | 0.9774 | 0.6522 | 0.9757 | 0.8613 |
+| 4 | GraphSAGE | 0.9742 | 0.6394 | 0.9789 | 0.8862 |
+| 5 | GCN | 0.9657 | 0.5538 | 0.9724 | 0.8640 |
+| 6 | MLP | 0.6592 | 0.0314 | 0.5234 | 0.2710 |
 
 **Key Findings:**
-- **Graph structure is critical**: All GNNs (AUC-ROC > 0.96) vastly outperform MLP baseline (0.66)
+- **GNNs outperform the MLP baseline** (AUC-ROC > 0.96 vs. 0.66), though part of this gap likely comes from test edges being present in the message-passing graph (see *Known limitation* above)
 - **Attention mechanism wins**: GAT achieves best AP (0.7955), 18.8% higher than second-place RGCN
 - **Relation types help moderately**: RGCN > GCN (0.9794 vs 0.9657), but less impactful than attention
 - **Theoretical expressiveness ≠ task performance**: GIN (WL-test equivalent) ranks 3rd, not 1st
@@ -122,7 +122,7 @@ Previous versions had a data leakage issue where 71.5% of test edges' reverse di
 - Train: 838,882 edges (35,910 drug-gene + 802,972 other)
 - Val: 7,688 edges
 - Test: 7,708 edges
-- **Data Leakage: 0%** ✓
+- **Split-level leakage (edge or its reverse in more than one split): 0%**. Test edges are still present in the message-passing graph at evaluation time (see *Known limitation* above)
 
 ### Training Configuration
 
@@ -159,10 +159,10 @@ PrimeKG-RGCN-LinkPrediction/
 │   ├── evaluate.py             # Basic evaluation metrics
 │   ├── analyze_results.py      # Advanced result analysis
 │   ├── error_analysis.py       # Error pattern analysis
-│   ├── case_studies.py         # Disease-specific predictions
+│   ├── case_studies.py         # Exploratory disease case studies (embedding similarity)
 │   ├── visualize_embeddings.py # Embedding visualization
 │   ├── explain_predictions.py  # Path-based explanations
-│   ├── medical_validation.py   # Biological validation
+│   ├── medical_validation.py   # Graph-structure plausibility heuristics (exploratory)
 │   ├── compare_methods.py      # Baseline comparison
 │   ├── analyze_failures.py     # Failure mode analysis
 │   ├── data/
@@ -190,11 +190,11 @@ PrimeKG-RGCN-LinkPrediction/
 ├── results/               # Evaluation results (Best model)
 │   ├── results.json           # Basic metrics
 │   ├── analysis/              # Advanced analysis
-│   ├── case_studies/          # Disease-specific studies
+│   ├── case_studies/          # Exploratory disease case studies
 │   ├── embeddings/            # Embedding visualizations
 │   ├── error_analysis/        # Error patterns
 │   ├── explanations/          # Prediction explanations
-│   ├── validation/            # Medical validation
+│   ├── validation/            # Plausibility heuristics (exploratory)
 │   ├── comparison/            # Method comparison
 │   └── failure_analysis/      # Failure mode analysis
 │
@@ -269,10 +269,10 @@ python src/run_full_analysis.py --help
 **Available Analyses:**
 1. **evaluate** - Basic metrics (AUC-ROC, Hits@K, MRR)
 2. **errors** - Error pattern analysis
-3. **case_studies** - Disease-specific predictions
+3. **case_studies** - Exploratory disease case studies (embedding similarity)
 4. **embeddings** - Embedding visualization
 5. **explanations** - Path-based explanations
-6. **validation** - Medical validation
+6. **validation** - Plausibility heuristics (exploratory)
 7. **comparison** - Baseline comparison
 8. **failures** - Failure mode analysis
 
@@ -389,7 +389,9 @@ python src/error_analysis.py \
 
 Detailed guide: [guide/ERROR_ANALYSIS_GUIDE.md](guide/ERROR_ANALYSIS_GUIDE.md)
 
-### Disease-Specific Case Studies
+### Disease Case Studies (exploratory)
+
+Drugs are ranked by cosine similarity between learned drug and disease embeddings. The graph has no drug–disease edges, so this is not a trained drug–disease predictor; the rankings are unvalidated hypotheses.
 
 ```bash
 # Analyze top drug predictions for a disease
@@ -409,16 +411,14 @@ python src/case_studies.py \
 ```
 
 **Generates:**
-- **Case study report**: Top predictions with biological insights
-- **Prediction scores plot**: Bar chart of confidence scores
+- **Case study report**: Top-ranked drugs by embedding similarity
+- **Prediction scores plot**: Bar chart of similarity scores
 - **Network diagrams**: Drug-gene-disease pathways
 - **JSON export**: Machine-readable results
 
 **Features:**
 - Known vs novel predictions
 - Connection paths through genes
-- Mechanistic interpretations
-- Medical recommendations
 
 Detailed guide: [guide/CASE_STUDIES_GUIDE.md](guide/CASE_STUDIES_GUIDE.md)
 
@@ -518,11 +518,6 @@ Detailed guide: [guide/MEDICAL_VALIDATION_GUIDE.md](guide/MEDICAL_VALIDATION_GUI
 # Compare with baselines
 python src/compare_methods.py --methods random degree rgcn
 
-# Include TransE baseline
-python src/compare_methods.py \
-    --methods random degree transe rgcn \
-    --transe_epochs 50
-
 # Full analysis with all plots
 python src/compare_methods.py \
     --methods random degree rgcn \
@@ -533,7 +528,6 @@ python src/compare_methods.py \
 **Baselines:**
 - **Random**: Random predictions (lower bound)
 - **Node Degree**: Popularity-based predictions
-- **TransE**: Translation-based embeddings
 - **RGCN**: Your model
 
 **Outputs:**
@@ -591,10 +585,10 @@ results_final/
 ├── evaluation/          # Basic metrics (AUC, Hits@K, MRR)
 ├── analysis/            # Performance by disease frequency, relation type
 ├── error_analysis/      # False positive/negative patterns
-├── case_studies/        # Top predictions for specific diseases
+├── case_studies/        # Exploratory embedding-similarity rankings for specific diseases
 ├── embeddings/          # t-SNE/UMAP visualizations, clusters
 ├── explanations/        # Path-based reasoning for predictions
-├── validation/          # Biological plausibility scores
+├── validation/          # Plausibility heuristic scores (exploratory)
 ├── comparison/          # Baseline method comparisons
 └── failures/            # Failure case deep-dives
 ```
@@ -606,10 +600,10 @@ results_final/
 | `evaluation_results.csv` | Basic metrics overview | First check of model performance |
 | `performance_by_disease_frequency.png` | Bias analysis | Check if model favors common diseases |
 | `error_patterns.txt` | Common failure modes | Understand systematic errors |
-| `alzheimers_predictions.csv` | Disease-specific predictions | Validate domain knowledge |
+| `alzheimers_predictions.csv` | Exploratory disease case study | Sanity-check rankings against domain knowledge |
 | `embedding_clusters_report.txt` | Entity clustering | Discover entity groupings |
 | `explanation_summary.txt` | Top explanations | Understand model reasoning |
-| `validation_report.txt` | Biological validation | Assess medical plausibility |
+| `validation_report.txt` | Plausibility heuristics (exploratory) | Screen predictions with graph-structure checks |
 | `paper_table_latex.txt` | Method comparison table | Include in publications |
 | `failure_analysis_report.txt` | Error hypotheses | Guide model improvements |
 
@@ -731,7 +725,7 @@ A: Reduce batch size or hidden dimensions in `src/train.py`.
 **Q: Can I add more baseline methods?**  
 A: Yes! Extend the `BaselineMethod` class in `src/compare_methods.py`.
 
-**Q: How accurate are the medical validations?**  
-A: Current implementation uses proxy signals. For production use, integrate real biomedical databases.
+**Q: How reliable are the plausibility checks?**  
+A: Only the graph-structure heuristics are implemented; the literature and clinical-trial checks are placeholders (mock). Real validation would require integrating biomedical databases.
 
 ---
