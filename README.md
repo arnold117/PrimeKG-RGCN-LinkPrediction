@@ -473,13 +473,7 @@ python src/explain_predictions.py \
 - **Path ranking**: Top-K most important paths
 - **Sankey diagrams**: Flow visualization (optional)
 
-**Example output:**
-```
-"Metformin may treat diabetes mellitus through a pathway 
-involving PRKAB1, PRKAA2, and RFX6. This connection suggests 
-a 4-step mechanism linking the drug's molecular targets to 
-the disease pathology."
-```
+Paths are graph-structure heuristics for exploration, not validated mechanisms.
 
 Detailed guide: [guide/EXPLAIN_PREDICTIONS_GUIDE.md](guide/EXPLAIN_PREDICTIONS_GUIDE.md)
 
@@ -711,7 +705,7 @@ For questions or issues:
 ## FAQ
 
 **Q: How long does training take?**  
-A: ~4-5 hours on a single GPU (RTX 1070) for 100 epochs.
+A: It depends on hardware. The reported comparison used 50 epochs per model (see `experiments/model_comparison_report.md`).
 
 **Q: Can I use this on my own knowledge graph?**  
 A: Yes! Modify `src/data/preprocess.py` to load your data format.
